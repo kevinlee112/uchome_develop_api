@@ -1,0 +1,400 @@
+<?php
+/*
+	[UCenter Home] (C) 2007-2008 Comsenz Inc.
+	$Id: do_login.php 13210 2009-08-20 07:09:06Z liguode $
+*/
+
+if(!defined('IN_UCHOME')) {
+	exit('Access Denied');
+}
+
+include_once(S_ROOT.'./source/function_cp.php');
+// 活动分类
+if(!@include_once(S_ROOT.'./data/data_eventclass.php')) {
+	include_once(S_ROOT.'./source/function_cache.php');
+	eventclass_cache();
+}
+$uid = empty($_POST['uid'])?0:intval($_POST['uid']);
+$op = empty($_POST['op'])?'':$_POST['op'];
+$lat = empty($_GET['lat'])?'':$_GET['lat'];
+$lng = empty($_GET['lng'])?'':$_GET['lng'];
+$result = array(
+			'errcode' => 0,
+			'errmsg' => 'error'
+		);
+
+if ($op == "listcat") {
+	$client = "";
+	foreach ($_REQUEST as $key => $value) 
+	{
+    		$client = $client. "Key: $key; Value: $value ";
+	}
+
+	writeLog("listcat: ". json_encode(getAroundLatLng($lat, $lng, 3000)));
+	$eventCat = array();
+	$queryEvent = $_SGLOBAL['db']->query("SELECT * FROM ".tname("eventclass"));
+	while($value=$_SGLOBAL['db']->fetch_array($queryEvent)) {
+		$value['pic'] = $_SGLOBAL['eventclass'][$value['classid']]['poster'];
+		$eventCat[] = $value;
+	}
+	$result['eventcat'] = $eventCat;
+	echo json_encode($result);
+} else if ($op == "addevent") {
+
+        $space = getspace($uid);
+        $_SGLOBAL['supe_uid'] = $uid;
+        $_SGLOBAL['supe_username'] = $space['name'];
+	// 基本信息
+	$arr1 = array(
+		"title" => getstr($_POST['title'], 80, 1, 1, 1),
+		"classid" => intval($_POST['classid']),
+		"province" => getstr('靠', 20, 1, 1),
+		"city" => getstr('靠', 20, 1, 1),
+		"location" => getstr('', 80, 1, 1, 1),
+		"starttime" => $_SGLOBAL['timestamp'],//sstrtotime($_SGLOBAL['timestamp']),
+		"endtime" => $_SGLOBAL['timestamp']+1000000,//sstrtotime($_SGLOBAL['timestamp'] + 1000000),
+		"deadline" => $_SGLOBAL['timestamp'] + 1000000,//sstrtotime($_SGLOBAL['timestamp'] + 1000000),
+		"public" => 2,//intval($_POST['public'])
+		"lat" => $lat,
+		"lng" => $lng
+	);
+	// 扩展信息
+	$arr2 = array(
+		"detail" => getstr($_POST['detail'], '', 1, 1, 1, 0, 1),
+		"limitnum" => 10, //intval($_POST['limitnum']),
+		"verify" => 0, //intval($_POST['verify']),
+		"allowpost" => 1, //intval($_POST['allowpost']),
+		"allowpic" => 1, //intval($_POST['allowpic']),
+		"allowfellow" => 0, //intval($_POST['allowfellow']),
+		"allowinvite" => 1, //intval($_POST['allowinvite']),
+		"template" => getstr(0, 255, 1, 1, 1) //$_POST['template']
+	);
+	
+	//echo json_encode($arr1);
+	
+	//检查输入
+	if(empty($arr1['title'])){
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_title_empty';
+	} elseif(empty($arr1['classid'])){
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_classid_empty';
+	} elseif(empty($arr1['city'])) {
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_city_empty';
+	} elseif(empty($arr2['detail'])) {
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_detail_empty';
+	} elseif($arr1['endtime']-$arr1['starttime']>360 * 24 * 3600) {
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_bad_time_range'. "   " . $arr1['endtime']-$arr1['starttime'];		
+	} elseif($arr1['endtime']<$arr1['starttime']) {
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_bad_endtime';
+	} elseif($arr1['deadline']>$arr1['endtime']) {
+		$result['errcode'] = 40001;
+		$result['errmsg'] = 'event_bad_deadline';
+	} elseif(!$eventid && $arr1['starttime']<$_SGLOBAL['timestamp']) {
+                  $result['errcode'] = 40001;
+                  $result['errmsg'] = 'event_bad_starttime+'. $arr1['starttime'] . ":". $_SGLOBAL['timestamp'];
+          } 	
+	
+	$arr1['topicid'] = 0;//$_POST['topicid'];
+	
+	// 创建者
+	$arr1['uid'] = $uid;
+	$arr1['username'] = $_POST['username'];
+	// 创建时间
+	$arr1['dateline'] = $_SGLOBAL['timestamp'];
+	$arr1['updatetime'] = $_SGLOBAL['timestamp'];
+	
+	//人数
+	$arr1['membernum'] = 1;
+	
+	// 是否需要审核
+	$arr1['grade'] = 0;//checkperm("verifyevent") ? 0 : 1;
+	
+	// 插入 活动（event） 表
+	$eventid = inserttable("event", $arr1, 1);
+
+
+	if (! $eventid){
+		$result['errcode'] = 40002;
+		$result['errmsg'] = "event_create_failed"; // 创建活动失败，请检查你输入的内容
+	}
+	// 活动信息
+	$arr2['eventid'] = $eventid;
+	inserttable("eventfield", $arr2);
+
+
+	$arr3 = array(
+			"eventid" => $eventid,
+			"uid" => $arr1['uid'],
+			"username" => $arr1['username'],
+			"status" => 4,  // 发起者
+			"fellow" => 0,
+			"template" => $arr1['template'],
+			"dateline" => $_SGLOBAL['timestamp']
+		   );
+	// 插入 用户活动（userevent） 表
+	inserttable("userevent", $arr3);
+	
+	//统计
+	updatestat('event');
+	
+	//include_once(S_ROOT.'./source/function_cp.php');
+	
+	//更新用户统计
+	if(empty($space['eventnum'])) {
+		$space['eventnum'] = getcount('event', array('uid'=>$space['uid']));
+		$eventnumsql = "eventnum=".$space['eventnum'];
+	} else {
+		$eventnumsql = 'eventnum=eventnum+1';
+	}
+	
+	//积分
+	/*$reward = getreward('createevent', 0);
+	$_SGLOBAL['db']->query("UPDATE ".tname('space')." SET {$eventnumsql}, lastpost='$_SGLOBAL[timestamp]', updatetime='$_SGLOBAL[timestamp]', credit=credit+$reward[credit], experience=experience+$reward[experience] WHERE uid=$arr1[uid]");*/
+	echo json_encode($result);
+} else if ($op == "listevent") {
+	
+	$view = 'all';
+	$type = 'going';  // going 
+	$wherearr = array();
+	$fromsql = $joinsql = $orderby = '';
+	$needquery = true;
+	
+	$fromsql = tname("event")." e";
+	$wherearr[] = "e.endtime >= '$_SGLOBAL[timestamp]'";
+	$orderby = " e.dateline DESC";
+	$theurl .= "&type=going";
+
+
+	$isRefresh = empty($_POST['refresh'])?'':$_POST['refresh'];
+        $dateline = empty($_POST['dateline'])?'0':$_POST['dateline'];
+        $where = "";
+        if ($isRefresh == "yes") {
+            $wherearr[] = " e.dateline > ".$dateline;
+        } else if($isRefresh == "no"){
+            $wherearr[] = " e.dateline < ".$dateline;
+        }
+
+	
+	$start = 0;
+	$perpage = 10;
+
+	$sex = empty($_POST['sex'])?'':$_POST['sex'];	
+ 	if (!empty($sex)) {
+		$joinsql = ", " . tname('spacefield') . " sf ";
+		$wherearr[] = " sf.sex = " . $sex;
+		$wherearr[] = " sf.uid = e.uid";
+	}
+
+
+        $game = empty($_POST['game'])?'':$_POST['game'];
+        if (!empty($game)) {
+                $wherearr[] = " e.classid = " . $game;
+        }
+
+	
+	$sort = empty($_POST['sort'])?'':$_POST['sort'];
+	if (!empty($sort) && !empty($lat) && !empty($lng)) {
+		$sql = "SELECT e.*" . ", (6378.138 * 2 * asin(sqrt(pow(sin((e.lat * pi() / 180 - $lat * pi() / 180) / 2),2) + cos(e.lat * pi() / 180) * cos($lat * pi() / 180) * pow(sin((e.lng * pi() / 180 - $lng * pi() / 180) / 2),2))) * 1000)  as distancetmp " . " FROM $fromsql $joinsql WHERE ".implode(" AND ", $wherearr) ." ORDER BY distancetmp ASC  LIMIT $start, $perpage";
+	} else {
+		$sql = "SELECT e.* FROM $fromsql $joinsql WHERE ".implode(" AND ", $wherearr) ." ORDER BY $orderby LIMIT $start, $perpage";
+	}
+	
+
+	writeLog($sql);
+	$query = $_SGLOBAL['db']->query($sql);
+	
+	while($event = $_SGLOBAL['db']->fetch_array($query)){
+		if($event['poster']){
+			$event['pic'] = pic_get($event['poster'], $event['thumb'], $event['remote']);
+		} else {
+			$event['pic'] = $_SGLOBAL['eventclass'][$event['classid']]['poster'];
+		}
+		realname_set($event['uid'], $event['username']);
+		if($view=="friend"){
+			realname_set($event['fuid'], $event['fusername']);
+			$fevents[$event['eventid']][] = array("fuid"=>$event['fuid'], "fusername"=>$event['fusername'], "status"=>$event['status']);
+		}
+
+		$avatar_exists = ckavatar($event['uid']);
+		if ($avatar_exists ==1) {
+			$avatarfile = avatar_file($event['uid'], 'middle');
+	                $event["avatarfile"] = $avatarfile;
+		}
+
+		$queryName = $_SGLOBAL['db']->query("SELECT name FROM ".tname("space"). " where uid=".$event['uid']);
+                $eventNameValue = $_SGLOBAL['db']->fetch_array($queryName);
+                $event["name"] = $eventNameValue['name'];
+
+		$queryEvent = $_SGLOBAL['db']->query("SELECT * FROM ".tname("eventclass"). " where classid=".$event['classid']);
+		$eventCValue = $_SGLOBAL['db']->fetch_array($queryEvent);
+		$event["classname"] = $eventCValue['classname'];
+
+		$tmpId = $event['uid'];
+        	$queryContact = $_SGLOBAL['db']->query('SELECT sex FROM '.tname('spacefield')." WHERE uid = '$tmpId'");
+        	$valueContact = $_SGLOBAL['db']->fetch_array($queryContact);
+		$event['sex'] = $valueContact['sex'];
+		writeLog("listevent: lat ".$lat." lng ".$lng." elat ".$event['lat']." elng ".$event['lng']);
+		if (empty($lat) || empty($lng) || empty($event['lat']) || empty($event['lng'])) {
+		    $event['distance'] = 1000000;
+		} else {
+			$event['distance'] = round(getDistance($lat, $lng, $event['lat'], $event['lng']), 2);
+		}//writeLog("distance: ".$event['distance']);
+		$eventlist[] = $event;
+	}
+	$result['eventlist'] = $eventlist;
+	echo json_encode($result);
+} else if ($op == "event") {
+	
+	$eventid = isset($_POST['id']) ? intval($_POST['id']) : 0;
+	$myid = isset($_POST['myid']) ? intval($_POST['myid']) : 0;
+	$view = isset($_GET['view']) ? $_GET['view'] : "all";
+	
+		// 活动信息
+	$query = $_SGLOBAL['db']->query("SELECT e.*, ef.* FROM ".tname("event")." e LEFT JOIN ".tname("eventfield")." ef ON e.eventid=ef.eventid WHERE e.eventid='$eventid'");
+	$event = $_SGLOBAL['db']->fetch_array($query);
+	if(! $event){
+		$result['errmsg'] = "event_does_not_exist"; // 活动不存在或者已被删除
+	}
+
+	$tmpId = $event['uid'];
+	$queryContact = $_SGLOBAL['db']->query('SELECT qq, msn FROM '.tname('spacefield')." WHERE uid = '$tmpId'");
+        $valueContact = $_SGLOBAL['db']->fetch_array($queryContact);
+
+        $event['qq'] = $valueContact['qq'];
+        $event['weixin'] = $valueContact['msn'];
+
+	$avatar_exists = ckavatar($tmpId);
+        if($avatar_exists) {
+            $avatarfile = avatar_file($tmpId, 'middle');
+            $event["avatarfile"] = $avatarfile;
+	}
+
+
+
+	$queryEvent = $_SGLOBAL['db']->query("SELECT * FROM ".tname("eventclass"). " where classid=".$event['classid']);
+        $eventCValue = $_SGLOBAL['db']->fetch_array($queryEvent);
+        $event["classname"] = $eventCValue['classname'];
+
+		//hebinbin
+	$event['isfriend'] = getfriendstatus($myid, $event['uid']);
+
+
+	$queryCredit = $_SGLOBAL['db']->query("SELECT credit, name FROM ".tname('space')." WHERE uid='$event[uid]'");
+        $valueCredi = $_SGLOBAL['db']->fetch_array($queryCredit);
+        $event['credit'] = $valueCredi['credit'];
+	$event['name'] = $valueCredi['name'];
+	
+		// 查看活动综合
+		// 处理活动介绍
+		include_once(S_ROOT.'./source/function_blog.php');
+		
+		$event['detail'] = blog_bbcode($event['detail']);
+		// 海报
+		if($event['poster']){
+			$event['pic'] = pic_get($event['poster'], $event['thumb'], $event['remote'], 0);
+		} else {
+			$event['pic'] = $_SGLOBAL['eventclass'][$event['classid']]['poster'];
+		}
+		
+		// 活动组织者
+		$relateduids = array();//查找参加此活动的成员也参加的活动用
+		$admins = array();
+		$query = $_SGLOBAL['db']->query("SELECT * FROM ".tname("userevent")." WHERE eventid = '$eventid' AND status IN ('3', '4') ORDER BY status DESC");
+		while($value = $_SGLOBAL['db']->fetch_array($query)){
+			realname_set($value['uid'], $value['username']);
+			$admins[] = $value;
+			$relateduids[] = $value['uid'];
+		}
+	$result['admins'] = $admins;
+		// 活动成员
+		$members = array();
+		$query = $_SGLOBAL['db']->query("SELECT * FROM ".tname("userevent")." WHERE eventid = '$eventid' AND status=2 ORDER BY dateline DESC LIMIT 14");
+		while($value = $_SGLOBAL['db']->fetch_array($query)){
+			realname_set($value['uid'], $value['username']);
+			$members[] = $value;
+			$relateduids[] = $value['uid'];
+		}
+	$result['members'] = $members;
+		// 感兴趣的
+		$follows = array();
+		$query = $_SGLOBAL['db']->query("SELECT * FROM ".tname("userevent")." WHERE eventid='$eventid' AND status=1 ORDER BY dateline DESC LIMIT 12");
+		while($value = $_SGLOBAL['db']->fetch_array($query)){
+			realname_set($value['uid'], $value['username']);
+			$follows[] = $value;
+		}
+	$result['follows'] = $follows;
+		// 待审核人数
+		$verifynum = 0;
+		if($_SGLOBAL['supe_userevent']['status'] >= 3){
+			$verifynum = $_SGLOBAL['db']->result($_SGLOBAL['db']->query("SELECT count(*) FROM ".tname("userevent")." WHERE eventid = '$eventid' AND status=0"),0);
+		}
+
+		// 参加这个活动的人也参加了那些活动
+		$relatedevents = array();
+		if($relateduids){
+			$query = $_SGLOBAL['db']->query("SELECT e.*, ue.* FROM ".tname("userevent")." ue LEFT JOIN ".tname("event")." e ON ue.eventid=e.eventid WHERE ue.uid IN (".simplode($relateduids).") ORDER BY ue.dateline DESC LIMIT 0,8");
+			while ($value = $_SGLOBAL['db']->fetch_array($query)) {
+				$relatedevents[$value['eventid']] = $value;
+			}
+		}
+
+		// 活动留言，取20条
+		$comments = array();
+		$query = $_SGLOBAL['db']->query("SELECT * FROM ".tname('comment')." WHERE id='$eventid' AND idtype='eventid' ORDER BY dateline DESC LIMIT 20");
+		while ($value = $_SGLOBAL['db']->fetch_array($query)) {
+			realname_set($value['authorid'], $value['author']);
+			$comments[] = $value;
+		}
+
+		// 活动照片
+		$photolist = $badpicids = array();
+		$query = $_SGLOBAL['db']->query("SELECT pic.*, ep.* FROM ".tname("eventpic")." ep LEFT JOIN ".tname("pic")." pic ON ep.picid = pic.picid WHERE ep.eventid='$eventid' ORDER BY ep.picid DESC LIMIT 10");
+		while($value = $_SGLOBAL['db']->fetch_array($query)){
+			if(!$value['filepath']){//照片已经被删除
+				$badpicids[] = $value['picid'];
+				continue;
+			}
+			realname_set($value['uid'], $value['username']);
+			$value['pic'] = pic_get($value['filepath'], $value['thumb'], $value['remote']);
+			$photolist[] = $value;
+		}
+
+		if($badpicids) {
+			$_SGLOBAL['db']->query("DELETE FROM ".tname("eventpic")." WHERE eventid='$eventid' AND picid IN (".simplode($badpicids).")");
+		}
+
+		//活动话题
+		$threadlist = array();
+		if($event['tagid']) {
+			$count = $_SGLOBAL['db']->result($_SGLOBAL['db']->query("SELECT COUNT(*) FROM ".tname('thread')." WHERE eventid='$eventid'"),0);
+			if($count) {
+				$query = $_SGLOBAL['db']->query("SELECT * FROM ".tname('thread')." WHERE eventid='$eventid' ORDER BY lastpost DESC LIMIT 10");
+				while ($value = $_SGLOBAL['db']->fetch_array($query)) {
+					realname_set($value['uid'], $value['username']);
+					$threadlist[] = $value;
+				}
+			}
+		}
+
+		// 活动查看数加 1
+		if(true){//$event['uid'] != $_SGLOBAL['supe_uid']){
+			$_SGLOBAL['db']->query("UPDATE ".tname("event")." SET viewnum=viewnum+1 WHERE eventid='$eventid'");
+			$event['viewnum'] += 1;
+		}
+
+		//活动开始倒计时
+		if($event['starttime'] > $_SGLOBAL['timestamp']) {
+			$countdown = intval((mktime(0,0,0,gmdate('m',$event['starttime']),gmdate('d',$event['starttime']),gmdate('Y',$event['starttime'])) -
+						mktime(0,0,0,gmdate('m',$_SGLOBAL['timestamp']),gmdate('d',$_SGLOBAL['timestamp']),gmdate('Y',$_SGLOBAL['timestamp']))) / 86400);
+		}
+		$result['event'] = $event;
+		echo json_encode($result);
+	
+}
+
+?>

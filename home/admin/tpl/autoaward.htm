@@ -1,0 +1,199 @@
+<!--{template admin/tpl/header}-->
+<script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+<script  language="javascript" type="text/javascript" >
+<!--display的显示影藏方式 block：显示，none：影藏 ；影藏后不占有原有位置-->
+function run(){
+alert("^^^^");
+var imgId=document.getElementById("id");
+if(imgId.style.display=="block")
+imgId.style.display="none";
+else
+imgId.style.display="block";
+}
+<!--visibility的显示影藏方式 visible:显示，hidden：影藏 影藏后仍占有原有位置-->
+function run2(){
+
+var pic = document.getElementsByTagName("img");
+alert(pic.length);
+for (var i=0;i<pic.length;i++) {
+    var imgId = pic[i];
+
+var newNode = document.createElement("P");//创建一个P标签  
+        newNode.innerHTML = "<font color='red'>替换</font>";  
+        var oldNode = imgId;//获取body里面第一个p元素  
+        oldNode.parentNode.replaceChild(newNode,oldNode);//直接替换了标签
+
+    if(imgId.style.display=="block")
+        imgId.style.display="none";
+    else
+        imgId.style.display="block";
+    }
+}
+
+window.onload = function(){
+    var dateline1 = document.getElementById("dateline1");
+    var dateline2 = document.getElementById("dateline2");
+    var monthId = document.getElementById("month");
+    var seperator1 = "-";
+    var seperator2 = ":";
+    var timeStamp = new Date();
+    if(dateline1.value === "2017-04-01 00:00:00"){
+        var date = new Date(timeStamp);
+        var month = date.getMonth() + 1;
+        var strDate = '01';
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        dateline1.value = date.getFullYear() + seperator1 + month + seperator1 + strDate
+            + " " + "00:00:00";
+    }
+    monthId.value = dateline1.value.substring(0, 7);
+    if(dateline2.value === "2017-04-07 00:00:00"){
+        date = new Date(timeStamp);
+        month = date.getMonth() + 1;
+        strDate = date.getDate();
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+        dateline2.value = date.getFullYear() + seperator1 + month + seperator1 + strDate
+            + " " + date.getHours() + seperator2 + date.getMinutes() + seperator2 + date.getSeconds();
+    }
+
+}
+
+function datelineMin() {
+    var dateline1 = document.getElementById("dateline1");
+    var date = new Date(dateline1.value);
+    var month = date.getMonth()+1;
+    return '%y-'+month+'-01';
+}
+
+function datelineMax() {
+    var dateline1 = document.getElementById("dateline1");
+    var date = new Date(dateline1.value);
+    var month = date.getMonth()+1;
+    return '%y-'+month+'-%ld';
+}
+
+function dateChange() {
+    var dateline1 = document.getElementById("dateline1");
+    var dateline2 = document.getElementById("dateline2");
+    var  month= document.getElementById("month");
+    dateline1.value = month.value+"-01 00:00:00";
+    dateline2.value = month.value+dateline2.value.substring(7);
+}
+
+</script>
+
+<div class="mainarea">
+<div class="maininner">
+
+	<form method="get" action="admincp.php">
+	<div class="block style4">
+		
+		<table cellspacing="3" cellpadding="3">
+		<tr><th>用户标识</th><td><input type="text" name="moneyloguid" value="$_GET[moneyloguid]"></td>
+			<th>记录状态</th><td>
+                        <select name="autoawardstatus">
+                        <option value="">不限制</option>
+                        <option value="1"<!--{if $_GET[autoawardstatus]==1}--> selected<!--{/if}-->>成功</option>
+                        <option value="9"<!--{if $_GET[autoawardstatus]==9}--> selected<!--{/if}-->>失败</option>
+                     </select>
+                        </td>
+
+                </tr>
+		<tr><th>创建时间</th>
+			<td colspan="2">
+				<input type="text" style="width: 160px;" class="Wdate" id="dateline1" onfocus="var Min = datelineMin(); var Max = datelineMax(); WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss', firstDayOfWeek:1,minDate:Min,maxDate:Max})"   name="dateline1" value="<!--{if empty($_GET[dateline1])}-->2017-04-01 00:00:00<!--{else}-->$_GET[dateline1]<!--{/if}-->" size="10">
+				<input type="text" style="width: 160px;" class="Wdate" id="dateline2" onfocus="var Min = datelineMin(); var Max = datelineMax(); WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss', firstDayOfWeek:1,minDate:Min,maxDate:Max})"   name="dateline2" value="<!--{if empty($_GET[dateline2])}-->2017-04-07 00:00:00<!--{else}-->$_GET[dateline2]<!--{/if}-->" size="10">
+			</td>
+			<td>
+				月份：<input type="text" style="width: 80px" class="Wdate" id="month" onfocus="WdatePicker({dateFmt:'yyyy-MM',Mchanging:dateChange()})"   name="month" value="2017-04" size="10" readonly="readonly">
+			</td>
+		</tr>
+	
+		<tr><th>结果排序</th>
+		<td colspan="3">
+		<select name="orderby">
+		<option value="">默认排序</option>
+		<option value="dateline"$orderby[dateline]>创建时间</option>
+		<option value="blognum"$orderby[blognum]>日志数</option>
+		</select>
+		<select name="ordersc">
+		<option value="desc"$ordersc[desc]>递减</option>
+		<option value="asc"$ordersc[asc]>递增</option>
+		</select>
+		<select name="perpage">
+		<option value="20"$perpages[20]>每页显示20个</option>
+		<option value="50"$perpages[50]>每页显示50个</option>
+		<option value="100"$perpages[100]>每页显示100个</option>
+                <option value="200"$perpages[200]>每页显示200个</option>
+                <!--<option value="2000"$perpages[2000]>每页显示2000个</option>-->
+		</select>
+		<input type="hidden" name="ac" value="autoaward">
+		<input type="submit" name="searchsubmit" value="搜索" class="submit">
+		<input value="影藏显示:display" onclick="run2();" type="button"/>
+		</td>
+		<th><span style="margin-left:40px;">是否自动</span></th>
+		<td>
+			<input type="button" class="submit" name="isAuto" onclick="changeAuto()" value=$auto />
+		</td>
+		</tr>
+		</table>
+	</div>
+	</form>
+<!--{if $list}-->
+
+	<form method="post" action="admincp.php?ac=autoaward" name="autoForm">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+	<div class="bdrcontent">
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+        <th width="40">编号</th>
+		<th width="100">订单号</th>
+		<th width="60">商品名</th>
+		<th width="80">用户Uid</th>
+		<th width="80">昵称</th>
+		<th width="60">QQ</th>
+		<th width="30">状态</th>
+		<th width="100">时间</th>
+	</tr>
+	<!--{loop $list $value}-->
+	<tr>
+		<td> $value[autoawardid]</td>
+		<td>$value[autoawardmid]</td>
+		<td> $value[moneylogtip]</td>
+		<td>$value[moneyloguid]</td>
+		<td>$value[moneylogusername]</td>
+		<td>$value[moneylogqq]</td>
+
+<!--{if $value['autoawardstatus'] == 1}-->
+        <td>成功</td>
+        <!--{else}-->
+        <td>失败</td>
+        <!--{/if}-->
+		<td><!--{date('Y-m-d H:i', $value[dateline])}--></td>
+	</tr>
+	<!--{/loop}-->
+	</table>
+	</div>
+	<div class="footactions">
+		<div class="pages">$multi</div>
+	</div>
+	</form>
+<!--{else}-->
+	<div class="bdrcontent">
+		<p>指定条件下还没有数据</p>
+	</div>
+<!--{/if}-->
+</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

@@ -1,0 +1,512 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+<div class="maininner">
+
+<div class="tabs_header">
+	<ul class="tabs" id="tabs">
+		<li id="task"><a href="admincp.php?ac=creditstore&available=1" onclick="appendStyle(this);"><span>浏览任务</span></a></li>
+		<li id="good"><a href="admincp.php?ac=creditstore&op=good" onclick="appendStyle(this);"><span>浏览商品</span></a></li>
+		<li id="treasure"><a href="admincp.php?ac=creditstore&op=treasure" onclick="appendStyle(this);"><span>浏览夺宝商品</span></a></li>
+		<li class="null"><a href="admincp.php?ac=creditstore&op=add">添加新商品&任务</a></li>
+	</ul>
+	<script>
+		window.onload=appendStyle($classId);
+	</script>
+</div>
+
+<!--{if $list }-->
+	<!--{if $op=='good'}-->
+	<form method="post">
+		<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+		<div class="bdrcontent">
+	
+		<div class="title">
+		<h3>商城列表</h3>
+		<p>客户端会根据商品列表的更新时间来显示列表顺序</p>
+		</div>
+	
+		<table cellspacing="0" cellpadding="0" class="formtable">
+		<tr>
+		<th width="100">名称</th>
+		<td width="50">种类</td>
+		<th width="30">价格</th>
+	        <td width="30">图标</td>
+	        <td width="30">大图</td>
+	        <td width="40">总数</td>
+	        <th width="40">参与数</th>
+	        <td width="40">中奖数</td>
+	        <td width="30">频率</td>
+	        <td width="30">日限量</td>
+	        <td width="40">渠道</td>
+	        <th width="100">说明</th>
+	        <td width="50">是否上架</td>
+	        <td width="50">时间</td>
+	
+			
+		<td width="100">操作</td>
+		</tr>
+		<!--{loop $list $value}-->
+		<tr>
+		<th><span>$value[title]</span></th>
+		<!--{if $value['category'] == 1}-->
+		<td>积分抽奖</td>
+		<!--{elseif $value['category'] == 2}-->
+	        <td>积分抽奖样式2</td>
+		<!--{elseif $value['category'] == 0}-->
+		<td>积分兑换</td>
+	        <!--{elseif $value['category'] == 11}-->
+	        <td>奖金兑换商品</td>
+	        <!--{elseif $value['category'] == 3}-->
+	        <td>奖金兑换夺宝商品</td>
+	        <!--{elseif $value['category'] == 21}-->
+	        <td>任务</td>
+		<!--{/if}-->
+        <td>$value[price]</td>
+        <td><img src="$value[icon]" width="20" height="20" /></td>
+        <td><img src="$value[image]" width="20" height="20" /></td>
+        <td>$value[count]</td>
+        <td>$value[uncounted]</td>
+        <td>$value[counted]</td>
+        <td>$value[rate]</td>
+        <td>$value[chance]</td>
+        <td>$value[channelname]</td>
+        <td>$value[note]</td>
+        <!--{if $value['available'] == 1}-->
+        <td>上架中</td>
+        <!--{else}-->
+        <td>已下架</td>
+        <!--{/if}-->
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+		<td width="100">
+		<a href="admincp.php?ac=creditstore&op=edit&gid=$value[gid]">编辑</a>
+		<a href="admincp.php?ac=creditstore&op=viewuser&gid=$value[gid]">中奖者</a>
+		<!--{if $value['available'] == 1}-->
+		<a href="admincp.php?ac=creditstore&op=editdisavailable&gid=$value[gid]">下架</a>
+		<!--{else}-->
+		<a href="admincp.php?ac=creditstore&op=editavailable&gid=$value[gid]">上架</a>
+		<!--{/if}-->
+		</td>
+		</tr>
+		<!--{/loop}-->
+		</table>
+		</div>
+		</form>
+	<!--{elseif $op=='treasure'}-->
+	<form method="post">
+		<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+		<div class="bdrcontent">
+	
+		<div class="title">
+		<h3>夺宝商城列表</h3>
+		<p>客户端会根据商品列表的更新时间来显示列表顺序</p>
+		</div>
+	
+		<table cellspacing="0" cellpadding="0" class="formtable">
+		<tr>
+		<th width="100">名称</th>
+		<td width="50">种类</td>
+		<td width="30">概率</td>
+		<th width="30">价格</th>
+	        <td width="30">图标</td>
+	        <td width="30">大图</td>
+	        <td width="40">总数</td>
+	        <th width="40">参与数</th>
+	        <td width="40">中奖数</td>
+	        <td width="30">频率</td>
+	        <td width="40">渠道</td>
+	        <th width="100">说明</th>
+	        <td width="50">是否上架</td>
+	        <td width="50">时间</td>
+	
+			
+		<td width="100">操作</td>
+		</tr>
+		<!--{loop $list $value}-->
+		<tr>
+		<th><span>$value[title]</span></th>
+		<!--{if $value['category'] == 1}-->
+		<td>积分抽奖</td>
+		<!--{elseif $value['category'] == 2}-->
+	        <td>积分抽奖样式2</td>
+		<!--{elseif $value['category'] == 0}-->
+		<td>积分兑换</td>
+	        <!--{elseif $value['category'] == 11}-->
+	        <td>奖金兑换商品</td>
+	        <!--{elseif $value['category'] == 3}-->
+	        <td>奖金兑换夺宝商品</td>
+	        <!--{elseif $value['category'] == 21}-->
+	        <td>任务</td>
+		<!--{/if}-->
+		<td>$value[chance]</td>
+        <td>$value[price]</td>
+        <td><img src="$value[icon]" width="20" height="20" /></td>
+        <td><img src="$value[image]" width="20" height="20" /></td>
+        <td>$value[count]</td>
+        <td>$value[uncounted]</td>
+        <td>$value[counted]</td>
+        <td>$value[rate]</td>
+        <td>$value[channelname]</td>
+        <td>$value[note]</td>
+        <!--{if $value['available'] == 1}-->
+        <td>上架中</td>
+        <!--{else}-->
+        <td>已下架</td>
+        <!--{/if}-->
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+		<td width="100">
+		<a href="admincp.php?ac=creditstore&op=edit&gid=$value[gid]">编辑</a>
+		<a href="admincp.php?ac=creditstore&op=viewuser&gid=$value[gid]">中奖者</a>
+		<!--{if $value['available'] == 1}-->
+		<a href="admincp.php?ac=creditstore&op=editdisavailable&gid=$value[gid]">下架</a>
+		<!--{else}-->
+		<a href="admincp.php?ac=creditstore&op=editavailable&gid=$value[gid]">上架</a>
+		<!--{/if}-->
+		</td>
+		</tr>
+		<!--{/loop}-->
+		</table>
+		</div>
+		</form>
+	<!--{else}-->
+	<form method="get" action="admincp.php">
+	<div class="block style4">
+		<table cellspacing="2" cellpadding="2">
+			<tr>
+				<th>上架状态</th>
+				<td>
+					<select name="available">
+					<option value="">不限制</option>
+					<option value="1"<!--{if $_GET[available]==1}--> selected<!--{/if}-->>上架</option>
+					<option value="0"<!--{if $_GET[available]==0}--> selected<!--{/if}-->>下架</option>
+					</select>
+				</td>
+				<th>限量状态</th>
+				<td>
+					<select name="limitstatus">
+					<option value="">不限制</option>
+					<option value="1"<!--{if $_GET[limitstatus]==1}--> selected<!--{/if}-->>已到量</option>
+					<option value="2"<!--{if $_GET[limitstatus]==2}--> selected<!--{/if}-->>未到量</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>结果排序</th>
+				<td colspan="3">
+					<select name="perpage">
+						<option value="100"$perpages[100]>每页显示100个</option>
+						<option value="不限"<!--{if $_GET[perpage]=='不限'}--> selected<!--{/if}-->>不限</option>
+					</select>
+					<input type="hidden" name="ac" value="creditstore">
+					<input type="submit" name="searchsubmit" value="搜索" class="submit">
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+	<form method="post">
+	<div class="footactions" style="border-top:1px solid #ff8e00;">
+		<div class="pages">$multi</div>
+	</div>
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+	<div class="bdrcontent">
+
+	<div class="title">
+	<h3>任务列表</h3>
+	<p>客户端会根据任务列表的更新时间来显示列表顺序</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+	<th width="100">名称</th>
+	<td width="50">种类</td>
+	<th width="30">价格</th>
+        <td width="30">图标</td>
+        <td width="30">大图</td>
+        <td width="40">总限量</td>
+        <th width="40">提交数</th>
+        <!-- <td width="40">通过数</td> -->
+        <td width="30">日限量</td>
+        <td width="40">渠道</td>
+        <td width="50">是否上架</td>
+        <td width="50">限量状态</td>
+        <td width="50">时间</td>
+
+		
+	<td width="100">操作</td>
+	</tr>
+	<!--{loop $list $value}-->
+	<tr>
+	<th><span>$value[title]</span></th>
+	<!--{if $value['taskcategory'] == 1}-->
+	<td>应用安装</td>
+	<!--{elseif $value['taskcategory'] == 2}-->
+        <td>注册访问</td>
+	<!--{elseif $value['taskcategory'] == 3}-->
+	<td>问卷调查</td>
+        <!--{elseif $value['category'] == 4}-->
+        <td>有奖答题</td>
+        <!--{elseif $value['category'] == 5}-->
+        <td>分享推广</td>
+        <!--{else}-->
+        <td>&nbsp;</td>
+	<!--{/if}-->
+        <td>$value[price]</td>
+        <td><img src="$value[icon]" width="20" height="20" /></td>
+        <td><img src="$value[image]" width="20" height="20" /></td>
+        <td>$value[count]</td>
+        <td><a href="admincp.php?ac=taskmanage&taskmanagegid=$value[gid]" target="_blank">$value[task]</a></td>
+        <!-- <td><a href="admincp.php?ac=taskmanage&taskmanagegid=$value[gid]" target="_blank">$value[succeed]</a></td> -->
+        <td>$value[rate]</td>
+        <td>$value[channelname]</td>
+        <!--{if $value['available'] == 1}-->
+        <td>上架中</td>
+        <!--{else}-->
+        <td>已下架</td>
+        <!--{/if}-->
+		<td>
+			<!--{if $value['limitstatus']==1}-->
+				已到量
+			<!--{else}-->
+				&nbsp;
+			<!--{/if}-->
+		</td>
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+	<td width="100">
+	<a href="admincp.php?ac=creditstore&op=edit&gid=$value[gid]&available=$_GET[available]">编辑</a>
+	<a href="admincp.php?ac=creditstore&op=viewuser&gid=$value[gid]">中奖者</a>
+	<!--{if $value['available'] == 1}-->
+	<a href="admincp.php?ac=creditstore&op=editdisavailable&gid=$value[gid]&available=$_GET[available]">下架</a>
+	<!--{else}-->
+	<a href="admincp.php?ac=creditstore&op=editavailable&gid=$value[gid]&available=$_GET[available]">上架</a>
+	<!--{/if}-->
+	</td>
+	</tr>
+	<!--{/loop}-->
+	</table>
+	</div>
+	</form>
+	<!--{/if}-->
+<!--{/if}-->
+
+<!--{if $listuser }-->
+        <form method="post" action="admincp.php?ac=usergroup">
+        <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+        <div class="bdrcontent">
+
+        <div class="title">
+        <h3>中奖者列表</h3>
+        <p>根据中奖顺序来显示列表顺序</p>
+        </div>
+
+        <table cellspacing="0" cellpadding="0" class="formtable">
+        <tr>
+        <th width="100">用户名</th>
+        <th width="100">QQ</th>
+        <td width="50">时间</td>
+
+
+        <td width="80">操作</td>
+        </tr>
+        <!--{loop $listuser $value}-->
+        <tr>
+        <th><span>$value[name]</span></th>
+	<th><span>$value[qq]</span></th>
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+        <td width="100">
+        <a href="admincp.php?ac=creditlist&op=edit&uid=$value[uid]">查看</a>
+        </td>
+        </tr>
+        <!--{/loop}-->
+        </table>
+        </div>
+        </form>
+
+
+<!--{/if}-->
+
+
+<!--{if $thevalue}-->
+	<script type="text/javascript">
+	function credisshow(value) {
+		/*if(value=='0') {
+			document.getElementById('tr_credit').style.display = 'none';
+		} else {
+			document.getElementById('tr_credit').style.display = '';
+		}*/
+	}
+	</script>
+<!--{eval
+	$_TPL['discount'] = array(
+		'0' => '不打折',
+		'1' => '1折',
+		'2' => '2折',
+		'3' => '3折',
+		'4' => '4折',
+		'5' => '5折',
+		'6' => '6折',
+		'7' => '7折',
+		'8' => '8折',
+		'9' => '9折',
+		'-1' => '免费'
+	);
+}-->
+	<form method="post" action="admincp.php?ac=creditstore&gid=$thevalue[gid]">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+	<input type="hidden" name="available" value="$_GET[available]"/>
+	<!--{if $thevalue['category']==11}-->
+		<input type="hidden" name="op" value="good"/>
+	<!--{elseif $thevalue['category']==3}-->
+		<input type="hidden" name="op" value="treasure"/>
+	<!--{else}-->
+		<input type="hidden" name="op" value=""/>
+	<!--{/if}-->
+	<div class="bdrcontent">
+
+	<div class="title">
+		<h3>$thevalue[title] 商品&任务</h3>
+		<p>这里设置积分商城中商品属性或者奖金兑换商品或者任务</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr><th style="width:12em;">名称</th><td><input type="text" name="set[title]" value="$thevalue[title]"></td></tr>
+	<tr>
+		<th style="width:12em;">渠道</th>
+		<td>
+			<select name="channelid">
+				<option value="">不限制</option>
+				<!--{if $thevalue}-->
+					<!--{loop $channel $channelvalue}-->
+						<option value=$channelvalue[channelid] <!--{if $channelvalue['channelid']==$thevalue['channelid']}-->selected<!--{/if}-->>$channelvalue[channelname]</option>
+					<!--{/loop}-->
+				<!--{else}-->
+					<!--{loop $channel $channelvalue}-->
+						<option value=$channelvalue[channelid]>$channelvalue[channelname]</option>
+					<!--{/loop}-->
+				<!--{/if}-->
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<th>类别</th>
+		<td>
+			<input id="category0" type="radio" name="set[category]" value="0" onclick="removeTask();" <!--{if $thevalue['category']==0}--> checked<!--{/if}-->> 积分兑换
+			<input id="category1" type="radio" name="set[category]" value="1" onclick="removeTask();" <!--{if $thevalue['category']==1}--> checked<!--{/if}-->> 积分抽奖
+            <input id="category2" type="radio" name="set[category]" value="2" onclick="removeTask();" <!--{if $thevalue['category']==2}--> checked<!--{/if}-->> 积分抽奖样式2
+            <input id="category3" type="radio" name="set[category]" value="11" onclick="removeTask();" <!--{if $thevalue['category']==11}--> checked<!--{/if}-->> 奖金兑换商品
+            <input id="category5" type="radio" name="set[category]" value="3" onclick="removeTask();" <!--{if $thevalue['category']==3}--> checked<!--{/if}-->> 奖金兑换夺宝商品
+            <input id="category4" type="radio" name="set[category]" value="21" onclick="appendTask();" <!--{if $thevalue['category']==21}--> checked<!--{/if}-->> 奖金获取任务
+            <select name="set[taskcategory]" style="display:none;">
+            	<option value="0"></option>
+            	<option value="1" <!--{if $thevalue['taskcategory']==1}--> checked<!--{/if}-->>应用安装</option>
+            	<option value="2" <!--{if $thevalue['taskcategory']==2}--> checked<!--{/if}-->>注册访问</option>
+            	<option value="3" <!--{if $thevalue['taskcategory']==3}--> checked<!--{/if}-->>问卷调查</option>
+            	<option value="4" <!--{if $thevalue['taskcategory']==4}--> checked<!--{/if}-->>有奖答题</option>
+            	<option value="5" <!--{if $thevalue['taskcategory']==5}--> checked<!--{/if}-->>分享推广</option>
+            </select>
+            <select name="set[taskRate]" style="display:none;">
+				<option value="0"></option>
+				<option value="1" <!--{if $thevalue['taskrate']==1}--> checked<!--{/if}-->>一次性</option>
+				<option value="2" <!--{if $thevalue['taskrate']==2}--> checked<!--{/if}-->>每日</option>
+			</select>
+            <script>
+            	window.onload=getTaskCategoryValue($thevalue['taskcategory'],$thevalue['taskrate']);
+            </script>
+		</td>
+	</tr>
+	<tr id="tr_credit"><th>抽奖概率</th><td>
+	<input type="text" name="set[chance]" value="$thevalue[chance]" size="20">
+	/1000(当选择奖金兑换商品时，该处填写商品的日数量限制)</td></tr>
+
+	<tr><th>价格</th><td><input type="text" name="set[price]" value="$thevalue[price]" size="10"> 例如：50</td></tr>
+
+<tr><th>提示(列表中显示)</th>
+	<td><input type="text" name="set[showlabel]" value="$thevalue[showlabel]" size="30"></td>
+</tr>
+
+<tr><th>提示颜色</th>
+        <td><input type="text" name="set[showlabelcolor]" value="$thevalue[showlabelcolor]" size="20"></td>
+</tr>
+	
+	<tr><th>商品或任务图标</th><td><input type="text" name="set[icon]" value="$thevalue[icon]" size="40"> 填写URL地址，大小 50*50 最佳</td></tr>
+
+	<tr><th>商品说明图</th><td><input type="text" name="set[image]" value="$thevalue[image]" size="40"> 填写URL地址，大小 250*250 最佳</td></tr>
+        <tr><th>文件下载地址</th><td><input type="text" name="set[fileurl]" value="$thevalue[fileurl]" size="40"> 任务文件下载地址(当选择夺宝商品时，此说明处请填写开奖晒图标题)</td></tr>
+        <tr><th>应用包名</th><td><input type="text" name="set[pkgname]" value="$thevalue[pkgname]" size="50"> 任务文件包名(当选择夺宝商品时，此说明处请填写开奖者的晒图)</td></tr>
+        <tr>
+                <th>任务类型</th>
+                <td>
+                        <input type="radio" name="set[tasktype]" value="3"<!--{if $thevalue['tasktype']==3}--> checked<!--{/if}-->> 网页分享型
+                        <input type="radio" name="set[tasktype]" value="2"<!--{if $thevalue['tasktype']==2}--> checked<!--{/if}-->> 网页阅读型
+                        <input type="radio" name="set[tasktype]" value="1"<!--{if $thevalue['tasktype']==1}--> checked<!--{/if}-->> 启动类型
+                        <input type="radio" name="set[tasktype]" value="0"<!--{if $thevalue['tasktype']==0}--> checked<!--{/if}-->> 下载类型
+                        <input type="radio" name="set[tasktype]" value="4"<!--{if $thevalue['tasktype']==4}--> checked<!--{/if}-->> URL目标验证
+                </td>
+        </tr>
+        <tr>
+			<th>显示金额范围</th>
+			<td>
+				<select name="set[moneyrange]">
+					<option value="">-----</option>
+					<!--{loop $rangeValue $value}-->
+						<option value="$value[mrid]" <!--{if $thevalue['moneyrange']==$value['mrid']}-->selected<!--{/if}-->><!--{$value[firstrange]}-->--<!--{$value[secondrange]}--></option>
+					<!--{/loop}-->
+				</select>
+			</td>
+		</tr>
+        <tr><th>任务－主时长</th><td><input type="text" name="set[mainmills]" value="$thevalue[mainmills]" size="50"> </td></tr>
+        <tr><th>任务－主标题</th><td><input type="text" name="set[maintitle]" value="$thevalue[maintitle]" size="50">(当选择夺宝商品时，此说明处请填写获奖计算方式和获奖号码) </td></tr>
+        <tr><th>任务2-时长</th><td><input type="text" name="set[submills]" value="$thevalue[submills]" size="50">单位：秒</td></tr>
+        <tr><th>任务2-标题</th><td><input type="text" name="set[subtips]" value="$thevalue[subtips]" size="50">(当选择夺宝商品时，此说明处请填写开奖者的晒图)</td></tr>
+        <tr><th>任务2-奖金</th><td><input type="text" name="set[submoney]" value="$thevalue[submoney]" size="50"></td></tr>
+	<tr><th>任务2-间隔</th><td><input type="text" name="set[subinterval]" value="$thevalue[subinterval]" size="50">单位：秒</td></tr>
+
+        <tr><th>任务3-时长</th><td><input type="text" name="set[thirdmills]" value="$thevalue[thirdmills]" size="50">单位：秒</td></tr>
+        <tr><th>任务3-标题</th><td><input type="text" name="set[thirdtips]" value="$thevalue[thirdtips]" size="50">(当选择夺宝商品时，此说明处请填写开奖者的晒图)</td></tr>
+        <tr><th>任务3-奖金</th><td><input type="text" name="set[thirdmoney]" value="$thevalue[thirdmoney]" size="50"></td></tr>
+	<tr><th>任务3-间隔</th><td><input type="text" name="set[thirdinterval]" value="$thevalue[thirdinterval]" size="50">单位：秒</td></tr>
+
+	<tr><th>商品总数</th><td>
+        <input type="text" name="set[count]" value="$thevalue[count]" size="20">商品总数</td></tr>
+        <tr><th>商品频率</th><td>
+        <input type="text" name="set[rate]" value="$thevalue[rate]" size="20">/天　(用户每天消费积分的次数)</td></tr>
+        <tr><th>商品说明</th><td>
+        <textarea name="set[note]" cols="60" rows="2">$thevalue[note]</textarea>(当选择夺宝商品时，此说明处请填写商品内容说明)</td></tr>
+
+	<tr>
+		<th>是否上架</th>
+		<td>
+			<input type="radio" name="set[available]" value="1"<!--{if $thevalue['available']==1}--> checked<!--{/if}-->> 上架
+			<input type="radio" name="set[available]" value="0"<!--{if $thevalue['available']!=1}--> checked<!--{/if}-->> 下架
+		</td>
+	</tr>
+	</table>
+
+	<!--{if $thevalue[system]}-->
+	<br />
+	<div class="title">
+	<h3>$thevalue[grouptitle] 管理权限</h3>
+	<!--{/if}-->
+
+	</div>
+
+	<div class="footactions">
+	<input type="hidden" name="set[gid]" value="$thevalue[gid]">
+	<input type="submit" name="thevaluesubmit" value="提交" class="submit">
+	</div>
+
+	</form>
+
+<!--{/if}-->
+
+</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

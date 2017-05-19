@@ -1,0 +1,9 @@
+<?PHP exit;?>	2017-04-20 17:03:03		127.0.0.1	0	/home/dotest.php?ac=appregister	GET{ac=appregister;}POST{op=gettasklist;moneytypeid=6;uid=3097758;taskcategory=116494;}
+<?PHP exit;?>	2017-04-20 17:20:19		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=gettasklist;uid=3281491;taskcategory=1;}
+<?PHP exit;?>	2017-04-20 17:35:11		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}
+<?PHP exit;?>	2017-04-20 17:35:35		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}
+<?PHP exit;?>	2017-04-20 17:36:53		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}
+<?PHP exit;?>	2017-04-20 17:37:49		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}
+<?PHP exit;?>	2017-04-20 17:39:57		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}
+<?PHP exit;?>	2017-04-20 17:41:59		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}
+<?PHP exit;?>	2017-04-20 17:43:07		127.0.0.1	0	/home/dotest.php?ac=appmoney	GET{ac=appmoney;}POST{appversion=2.6.5;channel=9999;deviceid=6608D7DA151F17B2DB9CF54C03C339E9;op=getmoneylog;uid=1303;dateline=1491283755;refresh=no;}

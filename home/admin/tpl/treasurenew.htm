@@ -1,0 +1,265 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+        <meta name="wap-font-scale" content="no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>一元夺宝-$treasure[title]</title>
+		<link rel="stylesheet" type="text/css" href="admin/tpl/treasure_1.css" />
+		<link rel="stylesheet" type="text/css" href="admin/tpl/treasure_2.css" />
+		<link rel="stylesheet" type="text/css" href="admin/tpl/treasure_3.css" />
+		<style>.w-backToTop{bottom: 55px;}</style>
+		<script type="text/javascript" src="source/script_common.js"></script>
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=47778673" charset="UTF-8"></script>
+	</head>
+	<body class="wap f-hasActionBar f-hasTransparentActionBar">
+		<div class="m-detail" id="pro-view-0" module-id="module-1" module-launched="true">
+		    <div class="g-body">
+		        <div class="g-wrap">
+		            <div class="g-wrap-hd" id="detailHeader">
+		                <div class="w-slideShow m-detail-gallery" id="gallery">
+		                    <ul class="w-slideShow-wrap" pro="wrap" style="width: 500%; left: 0px; top: 0px; height: 640px;">
+		                        <li pro="item" class="w-slideShow-wrap-item selected" style="width: 20%;">
+		                                <img src="$treasure[image]" />
+		                        </li>
+		                    </ul>
+		                </div>
+		                <p class="m-detail-goods-title">
+							<span class="m-detail-goods-name">$treasure[title]</span>
+						</p>
+            		</div>
+            		<div class="g-wrap-bd">
+                		<div class="m-detail-goods-info" id="goodsInfo">
+                    		<div class="m-detail-published">
+                    			<!--{if $status==3}-->
+		                        <div class="m-detail-published-winner" style="padding:25px 15px 15px;height:10%;">
+		                            <i class="w-ico w-ico-winner"></i>
+		                            <div class="w-record">
+		                                <div class="w-record-avatar"><!--{avatar($trueGoodUser[moneyloguid],small)}--></div>
+		                                <div class="w-record-detail">
+		                                    <p class="w-record-detail-winner f-breakword">获得者：$trueGoodUser[name]($trueGoodUser[resideprovince].$trueGoodUser[residecity])</p>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <!--{else}-->
+		                        <div class="m-detail-type-cnt f-clear">
+                                    <div class="m-detail-type-info">
+                                        <div class="m-detail-type-hd">
+                                            <h2>一元夺宝</h2>
+                                        </div>
+                                        <div class="m-detail-type-bd">
+                                            <p class="m-detail-type-tip">只需要一元就有机会获得商品！</p>
+                                            <p class="m-detail-buyTip">1元=1夺宝号</p>
+                                            <div class="m-detail-one-period">$treasure[gid]期</div>
+                                            <div class="w-progressBar">
+                                                <p class="w-progressBar-txt">揭晓进度 <span class="txt-blue">$schedule%</span></p>
+                                                <p class="w-progressBar-wrap">
+                                                    <span class="bar" style="width:$schedule%"></span>
+                                                </p>
+                                                <p class="w-progressBar-times txt-gray">
+                                                    <span class="w-progressBar-times-l">总需<i class="txt-blue">$goodCounts</i>人次</span>
+                                                    <span class="w-progressBar-times-r">剩余<i class="txt-blue">$counted</i>人次</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--{if $status==1}-->
+	                                    <div class="m-detail-type-opt" id="oneBtnBuyWithMall">
+	                                    	<a id="btnOneQuickBuy" class="w-button">立即购买</a>
+			            					<script>
+		                                    	button=document.getElementById("btnOneQuickBuy");
+	   											button.onclick=function(){
+	   												buyGoodEle1=document.getElementById('pro-view-68');
+	   									        	buyGoodEle2=document.getElementById('pro-view-81');
+	   									        	gid=document.getElementById('gid');
+	   									        	buyGoodEle1.style.display="inline";
+	   									        	buyGoodEle2.style.display="inline";	
+	   											}
+	                                    	</script>
+	                                    	<div class="w-popup" tabindex="0" id="pro-view-68" style="display:none;transform: translate3d(0px, 0px, 0px);">
+												<div class="w-popup-title w-bar">
+													<h2 class="w-popup-title-text">夺宝有风险，参与需谨慎</h2>
+													<span class="w-bar-arr w-ico w-ico-x" pro="close" id="jumpOut"></span>
+												</div>
+												<script>
+													var jumpOut=document.getElementById("jumpOut");
+													jumpOut.onclick=function(){
+														buyGoodEle1=document.getElementById('pro-view-68');
+														buyGoodEle2=document.getElementById('pro-view-81');
+														buyGoodEle1.style.display="none";
+														buyGoodEle2.style.display="none";
+													}
+												</script>
+												<div pro="content" class="w-popup-content">
+													<div class="w-quickbuy" id="pro-view-70">
+														<section class="w-quickbuy-msg">
+															<p class="title">参与人次</p>
+															<div class="w-quickbuy-numInput" pro="input">
+																<div class="w-number" id="pro-view-72">
+																	<span class="w-number-btn w-number-btn-minus" id="countminus" pro="minus">－</span>
+																	<input class="w-number-input" pro="input" id="count" value="10" pattern="[0-9]*">
+																	<span class="w-number-btn w-number-btn-plus" id="countplus" pro="plus">＋</span>
+																</div>
+																<p class="txt-red" style="margin-top: 5px;line-height: 18px;" id="pro-view-78"></p>
+																<script>
+																	var countminus=document.getElementById("countminus");
+																	countminus.onclick=function(){
+																		count=document.getElementById('count');
+																		countShow=document.getElementById('pro-view-80');
+																		if(count.value!=0){
+																			count.value--;
+																		}
+																		countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																	}
+																	var countplus=document.getElementById("countplus");
+																	countplus.onclick=function(){
+																		count=document.getElementById('count');
+																		countShow=document.getElementById('pro-view-80');
+																		count.value++;
+																		countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																	}
+																	var count=document.getElementById("count");
+																	count.onchange=function(){
+																		countShow=document.getElementById('pro-view-80');
+																		countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																	}
+																</script>
+															</div>
+															<div class="w-quickbuy-numChoice">
+																<div pro="numchoice">
+																	<div class="w-numberchoice" id="pro-view-73">
+																		<ul class="w-numberchoice-quickbuylist f-clear" pro="list">
+																			<li class="w-numberchoice-quickbuylist-item" id="pro-view-74">5</li>
+																			<li class="w-numberchoice-quickbuylist-item" id="pro-view-75">20</li>
+																			<li class="w-numberchoice-quickbuylist-item" id="pro-view-76">50</li>
+																			<li class="w-numberchoice-quickbuylist-item" id="pro-view-77">100</li>
+																		</ul>
+																	</div>
+																	<script>
+																		var pro74=document.getElementById("pro-view-74");
+																		pro74.onclick=function(){
+																			count=document.getElementById('count');
+																			countShow=document.getElementById('pro-view-80');
+																			count.value=pro74.innerHTML;
+																			countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																		}
+																		var pro75=document.getElementById("pro-view-75");
+																		pro75.onclick=function(){
+																			count=document.getElementById('count');
+																			countShow=document.getElementById('pro-view-80');
+																			count.value=pro75.innerHTML;
+																			countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																		}
+																		var pro76=document.getElementById("pro-view-76");
+																		pro76.onclick=function(){
+																			count=document.getElementById('count');
+																			countShow=document.getElementById('pro-view-80');
+																			count.value=pro76.innerHTML;
+																			countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																		}
+																		var pro77=document.getElementById("pro-view-77");
+																		pro77.onclick=function(){
+																			count=document.getElementById('count');
+																			countShow=document.getElementById('pro-view-80');
+																			count.value=pro77.innerHTML;
+																			countShow.innerHTML="共 <span class='txt-red'>"+count.value+"</span>元";
+																		}
+																	</script>
+																</div>
+															</div>
+														</section>
+														<section class="w-quickbuy-total" pro="total">
+															<p class="total" id="pro-view-80">共 <span class="txt-red">10</span>元</p>
+														</section>
+														<section class="w-quickbuy-operation">
+															<button class="w-button w-button-xl" type="button" id="pro-view-71" style="width: 100%; height: 44px;">立即购买</button>
+														</section>
+														<script>
+															var pro71=document.getElementById("pro-view-71");
+															pro71.onclick=function(){
+																if(confirm("确定要一元夺宝吗？")){
+																	buyGoodEle1=document.getElementById('pro-view-68');
+																	buyGoodEle2=document.getElementById('pro-view-81');
+																	buyGoodEle1.style.display="none";
+																	buyGoodEle2.style.display="none";
+																	count=document.getElementById('count');
+																	gid=document.getElementById('gid');
+																	window.location.href="treasurenew.php?code=$code&num="+count.value+"&gid=$gid";
+																}
+															}
+														</script>
+													</div>
+												</div>
+											</div>
+											<div class="w-mask w-mask-lower" id="pro-view-81" style="display:none;"></div>
+	                                    </div>
+	                                <!--{elseif $status==2}-->
+	                                	<div class="m-detail-type-opt" id="oneBtnBuyWithMall">
+	                                    	<a id="btnOneQuickBuy" class="w-button">余额不足</a>
+	                                    </div>
+	                                <!--{elseif $status==4}-->
+	                                	<div class="m-detail-type-opt" id="oneBtnBuyWithMall">
+	                                    	<a id="btnOneQuickBuy" class="w-button">人数已满</a>
+	                                    </div>
+	                                <!--{/if}-->
+                                </div>
+                    		</div>
+                    		<!--{/if}-->
+                    		<p class="m-detail-published-result">
+	                            <span class="luckyCode">$treasure[maintitle]</span>
+	                        </p>
+	                        <!--{if $treasure['imgStatus']==1}-->
+	                        <div class="m-detail-more">
+	                        	<div class="w-bar-text w-bar">$treasure['fileurl']</div>
+		                        <div class="m-detail-type-cnt f-clear">
+									<img src="$treasure['pkgname']" alt="" width="100%">
+									<img src="$treasure['subtips']" alt="" width="100%">
+									<img src="$treasure['thirdtips']" alt="" width="100%">
+		                        </div>
+			                </div>
+			                <!--{/if}-->
+	                        <div class="m-detail-more">
+		                        <div class="w-bar-text w-bar">商品详情 </div>
+		                        <div class="m-detail-type-cnt f-clear">$treasure[note]</div>
+			                </div>
+                		</div>
+                		<div class="m-detail-record" module="detail/main/records/Records" module-id="module-5" module-launched="true">
+                			<div id="pro-view-3">
+                				<!--{if $moneylogStatus==1}-->
+	                				<div class="w-bar" pro="header">
+	                					所有参与记录<!-- <span class="w-bar-hint" id="pro-view-4">( 自<i class="txt-blue">$time</i>开始 )</span> -->
+	                				</div>
+	                				<!--{loop $moneylog $value}-->
+	                				<div class="m-detail-record-wrap" id="pro-view-9">
+										<ul class="m-detail-record-list" pro="entry">
+											<li id="pro-view-10">
+												<div class="f-clear">
+													<div class="avatar">
+														<img width="35" height="35" src="$value[moneyloguserphoto]" />
+													</div>
+													<div class="info">
+														<p class="meta1 f-breakword">
+															<a href="javascript:void(0);" class="nickname">$value[name]</a><span class="address">($value[resideprovince].$value[residecity])</span>
+														</p>
+														<p class="meta2">$value[date]</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!--{/loop}-->
+									<div style="float:right;padding-right:10%;"><span style="margin-right:8px;">共<b>$totalPage</b>页</span>$multi</div>
+								<!--{else}-->
+									<div class="w-bar" pro="header">
+	                					所有参与记录<span class="w-bar-hint" id="pro-view-4">( 无)</span>
+	                				</div>
+                				<!--{/if}-->
+							</div>
+						</div>
+            		</div>
+        		</div>
+    		</div>
+    	</div>
+	</body>
+</html>

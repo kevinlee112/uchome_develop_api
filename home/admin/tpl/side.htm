@@ -1,0 +1,62 @@
+<!--{if $menus[0]}-->
+	<div class="block style1">
+		<h2>基本设置</h2>
+		<ul class="folder">
+		<li class="active"><a href="admincp.php?ac=messagelog">发送信息</a></li>
+                <li class="active"><a href="admincp.php?ac=messagerule">触发信息</a></li>
+		<li class="active"><a href="admincp.php?ac=banner">Banner系统</a></li>
+                <li class="active"><a href="admincp.php?ac=subject">话题管理-晒图</a></li>
+		<li class="active"><a href="admincp.php?ac=dashenbang">大神榜管理-本周</a></li>
+		<li class="active"><a href="admincp.php?ac=moneytype">福利-赚奖金方式</a></li>
+		<li class="active"><a href="admincp.php?ac=moneylog">福利-赚取和消耗记录</a></li>
+	 	<li class="active"><a href="admincp.php?ac=moneylogb">奖金记录统计</a></li>
+		<li class="active"><a href="admincp.php?ac=creditstore&available=1">商城&任务列表</a></li>
+		<li class="active"><a href="admincp.php?ac=creditlist">积分记录</a></li>
+		<li class="active"><a href="admincp.php?ac=moneylist">奖金记录</a></li>
+		<li class="active"><a href="admincp.php?ac=autoaward">发奖记录</a></li>
+        <li class="active"><a href="admincp.php?ac=taskmanage">分发统计管理</a></li>
+        <li class="active"><a href="admincp.php?ac=channel">渠道管理</a></li>
+        <li class="active"><a href="admincp.php?ac=productanalyze">签到用户数据分析</a></li>
+        <li class="active"><a href="admincp.php?ac=notemanage">短信管理</a></li>
+        <li class="active"><a href="admincp.php?ac=moneyrange">金额范围限制</a></li>
+			<li class="active"><a href="admincp.php?ac=goodsstore">商品库</a></li>
+			<li class="active"><a href="admincp.php?ac=goodscategory">商品分类方式</a></li>
+			<li class="active"><a href="admincp.php?ac=goodsplatform">平台管理商品</a></li>
+			<li class="active"><a href="admincp.php?ac=goodsorder">订单管理</a></li>
+		<!--{loop $acs[0] $value}-->
+		<!--{if $menus[0][$value]}-->
+		<!--{if $ac==$value}--><li class="active"><!--{else}--><li><!--{/if}--><a href="admincp.php?ac=$value">{$_TPL[menunames][$value]}</a></li>
+		<!--{/if}-->
+		<!--{/loop}-->
+		</ul>
+	</div>
+<!--{/if}-->
+
+	<div class="block style1">
+		<h2>批量管理</h2>
+		<ul class="folder">
+		<!--{loop $acs[3] $value}-->
+		<!--{if $ac==$value}--><li class="active"><!--{else}--><li><!--{/if}--><a href="admincp.php?ac=$value">{$_TPL[menunames][$value]}</a></li>
+		<!--{/loop}-->
+		<!--{loop $acs[1] $value}-->
+		<!--{if $menus[1][$value]}-->
+		<!--{if $ac==$value}--><li class="active"><!--{else}--><li><!--{/if}--><a href="admincp.php?ac=$value">{$_TPL[menunames][$value]}</a></li>
+		<!--{/if}-->
+		<!--{/loop}-->
+		</ul>
+	</div>
+	
+<!--{if $menus[2]}-->
+	<div class="block style1">
+		<h2>高级设置</h2>
+		<ul class="folder">
+		<li class="active"><a href="admincp.php?ac=batch">批量招贴</a></li>
+		<!--{loop $acs[2] $value}-->
+		<!--{if $menus[2][$value]}-->
+		<!--{if $ac==$value}--><li class="active"><!--{else}--><li><!--{/if}--><a href="admincp.php?ac=$value">{$_TPL[menunames][$value]}</a></li>
+		<!--{/if}-->
+		<!--{/loop}-->
+		<!--{if $menus[0][config]}--><li><a href="{UC_API}" target="_blank">UCenter</a></li><!--{/if}-->
+		</ul>
+	</div>
+<!--{/if}-->

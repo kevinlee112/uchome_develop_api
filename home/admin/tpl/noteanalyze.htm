@@ -1,0 +1,109 @@
+<!--{template admin/tpl/header}-->
+<div class="mainarea">
+<div class="maininner">
+	<div class="tabs_header">
+		<ul class="tabs">
+			<li$actives[view]><a href="admincp.php?ac=notemanage"><span>发送短信</span></a></li>
+			<li$actives[view]><a href="admincp.php?ac=noteanalyze"><span>短信统计</span></a></li>
+		</ul>
+	</div>
+	<form method="get" action="admincp.php" name="noteAnalyzeForm">
+	<div class="block style4">
+		<table cellspacing="3" cellpadding="3">
+			<tr><th>用户标识</th><td><input type="text" name="uid" value="$_GET[uid]"></td></tr>
+			<tr>
+				<th>发送时间</th>
+				<td colspan="2">
+					<input type="text" name="dateline1" value="$_GET[dateline1]" size="10"> ~
+					<input type="text" name="dateline2" value="$_GET[dateline2]" size="10"> (YYYY-MM-DD)
+				</td>
+			</tr>
+			<tr>
+				<th>最后访问时间</th>
+				<td colspan="2">
+					<input type="text" name="lastlogin1" value="$_GET[lastlogin1]" size="10"> ~
+					<input type="text" name="lastlogin2" value="$_GET[lastlogin2]" size="10"> (YYYY-MM-DD)
+				</td>
+			</tr>
+			<tr>
+				<th>最后提交任务时间</th>
+				<td colspan="2">
+					<input type="text" name="taskdate1" value="$_GET[taskdate1]" size="10"> ~
+					<input type="text" name="taskdate2" value="$_GET[taskdate2]" size="10"> (YYYY-MM-DD)
+				</td>
+			</tr>
+			<tr>
+				<th>结果排序</th>
+				<td colspan="3">
+					<select name="orderby">
+					<option value="">默认排序</option>
+					<option value="dateline"$orderby[dateline]>发送时间</option>
+					<option value="lastlogin"$orderby[lastlogin]>最后访问时间</option>
+					<option value="taskdate"$orderby[taskdate]>最后提交任务时间</option>
+					</select>
+					<select name="ordersc">
+					<option value="desc"$ordersc[desc]>递减</option>
+					<option value="asc"$ordersc[asc]>递增</option>
+					</select>
+					<select name="perpage">
+					<option value="20"$perpages[20]>每页显示20个</option>
+					<option value="50"$perpages[50]>每页显示50个</option>
+					<option value="100"$perpages[100]>每页显示100个</option>
+	                <option value="200"$perpages[200]>每页显示200个</option>
+	                <option value="2000"$perpages[2000]>每页显示2000个</option>
+					</select>
+					<input type="hidden" name="ac" value="noteanalyze">
+					<input type="submit" name="searchsubmit" value="搜索" class="submit" />
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+
+	<!--{if $noteList}-->
+
+	<form method="post" action="admincp.php?ac=noteanalyze" name="noteAnalyzeForm">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+	<div class="bdrcontent">
+	
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+        <th width="40">任务标识</th>
+		<th width="40">用户标识</th>
+		<th width="40">手机号码</th>
+		<th width="40">QQ</th>
+		<th width="40">发送时间</th>
+		<th width="40">最后访问时间</th>
+		<th width="40">最后提交任务时间</th>
+	</tr>
+	<!--{loop $noteList $value}-->
+	<tr>
+		<td>$value[nid]</td>
+		<td>$value[uid]</td>
+        <td>$value[mobile]</td>
+        <td>$value[qq]</td>
+        <td>$value[dateline]</td>
+        <td>$value[lastlogin]</td>
+        <td>$value[taskdate]</td>
+	</tr>
+	<!--{/loop}-->
+	</table>
+	</div>
+	<div class="footactions">
+		<input type="hidden" name="mpurl" value="$mpurl">
+		<div class="pages">$multi</div>
+	</div>
+	
+	</form>
+	<!--{else}-->
+	<div class="bdrcontent">
+		<p>指定条件下还没有数据</p>
+	</div>
+	<!--{/if}-->
+</div>
+</div>
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

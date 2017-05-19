@@ -1,0 +1,9 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+<div class="maininner">
+
+
+	<div class="tabs_header">
+		<ul class="tabs">
+			<li$actives[all]><a href="admincp.php?ac=$ac"><span>娴忚

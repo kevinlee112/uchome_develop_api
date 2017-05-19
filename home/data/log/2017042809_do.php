@@ -1,0 +1,3 @@
+<?PHP exit;?>	2017-04-28 09:16:17		127.0.0.1	0	/home/do.php?ac=appmoney	GET{ac=appmoney;}POST{op=getmoneygoods;moneytypeid=6;uid=3097758;taskcategory=116494;taskid=294;step=1;debug=1;appversion=2.6.5;}
+<?PHP exit;?>	2017-04-28 09:16:38		127.0.0.1	0	/home/do.php?ac=appmoney	GET{ac=appmoney;}POST{op=getmoneygoods;moneytypeid=6;uid=3097758;taskcategory=116494;taskid=294;step=1;debug=0;appversion=2.6.5;}
+<?PHP exit;?>	2017-04-28 09:16:44		127.0.0.1	0	/home/do.php?ac=appmoney	GET{ac=appmoney;}POST{op=getmoneygoods;moneytypeid=6;uid=3097758;taskcategory=116494;taskid=294;step=1;debug=0;appversion=2.6.5;}

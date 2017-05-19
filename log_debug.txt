@@ -1,0 +1,18 @@
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+^^^^^^^^^^^^^^^^^^^
+SELECT COUNT(*) FROM uchome_autoaward autoaward LEFT JOIN uchome_moneylog moneylog ON uchome_autoaward.autoawardmid =uchome_moneylog.moneylogid 1  ORDER BY autoawardid  DESC  LIMIT 0,20
+SELECT COUNT(*) FROM uchome_autoaward autoaward LEFT JOIN uchome_moneylog moneylog ON uchome_autoaward.autoawardmid =uchome_moneylog.moneylogid 1  ORDER BY autoawardid  LIMIT 0,20
+SELECT COUNT(*) FROM uchome_autoaward autoaward LEFT JOIN uchome_moneylog moneylog ON uchome_autoaward.autoawardmid =uchome_moneylog.moneylogid 1  ORDER BY autoawardid  LIMIT 0,50
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE moneylogtypecategory='0' AND moneylogstatus='0'  ORDER BY moneylogid  DESC  LIMIT 0,50
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE moneylogtypecategory='0' AND moneylogstatus='0'  ORDER BY moneylogid  DESC  LIMIT 0,50
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE moneylogtypecategory='0' AND moneylogstatus='0'  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE 1  ORDER BY moneylogid  DESC  LIMIT 0,20
+SELECT * FROM uchome_moneylog, uchome_moneylog WHERE moneylogtypecategory='0' AND moneylogstatus='0'  ORDER BY moneylogid  DESC  LIMIT 0,20

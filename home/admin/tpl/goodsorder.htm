@@ -1,0 +1,214 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+    <div class="maininner">
+
+        <div class="tabs_header">
+            <ul class="tabs">
+                <li$actives[view]><a href="admincp.php?ac=goodsorder"><span>浏览订单</span></a></li>
+                <li class="null"><a href="admincp.php?ac=goodsorder&op=add">添加新订单</a></li>
+                <li style="padding-left: 10px">
+                    <form action="admincp.php?ac=goodsorder&op=upload" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file" id="file" class="t_input"/>
+                        <input type="submit" name="uploadsubmit" value="批量导入订单" class="submit">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!--{if $list }-->
+
+        <!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群'
+                );
+        }-->
+        <form method="get" action="admincp.php" name="searchcondition">
+            <div class="block style4">
+                <table cellspacing="3" cellpadding="2">
+                    <tr>
+                        <th>用户标识</th><td><input type="text" name="uid" value="$_GET[uid]"></td>
+                        <th>商品ＩＤ</th><td><input type="text" name="goodsid" value="$_GET[goodsid]"></td>
+                    </tr>
+                    <tr><th>订单ＩＤ</th><td><input type="text" name="orderid" value="$_GET[orderid]"></td>
+                        　　　　<th> 订单状态</th><td>
+                            <select name="available">
+                                <option value="" <!--{if $_GET[available]==0}--> selected<!--{/if}-->> 不限</option>
+                                <option value="1"　<!--{if $_GET[available]==1}--> selected<!--{/if}-->>订单付款</option>
+                                <option value="3"　<!--{if $_GET[available]==3}--> selected<!--{/if}-->>订单失效</option>
+                                <option value="2"　<!--{if $_GET[available]==2}--> selected<!--{/if}-->>订单结算</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><th>创建时间</th>
+                        <td colspan="3">
+                            <input type="text" name="dateline1" value="$_GET[dateline1]" size="10"> ~
+                            <input type="text" name="dateline2" value="$_GET[dateline2]" size="10">
+                        </td>
+                    </tr>
+                    <tr><th>结果排序</th>
+                        <td colspan="3">
+                            <select name="orderby">
+                                <option value="">默认排序</option>
+                                <option value="payamount"$orderby[payamount]>商品价格</option>
+                                <option value="returnamount"$orderby[returnamount]>返利金额</option>
+                            </select>
+                            <select name="ordersc">
+                                <option value="desc"$ordersc[desc]>递减</option>
+                                <option value="asc"$ordersc[asc]>递增</option>
+                            </select>
+                            <select name="perpage">
+                                <option value="20"$perpages[20]>每页显示20个</option>
+                                <option value="50"$perpages[50]>每页显示50个</option>
+                                <option value="100"$perpages[100]>每页显示100个</option>
+                                <option value="200"$perpages[200]>每页显示200个</option>
+                                <!--<option value="2000"$perpages[2000]>每页显示2000个</option>-->
+                            </select>
+                            <input type="hidden" name="ac" value="goodsorder" />
+                            <input type="submit" name="searchsubmit" value="搜索" class="submit" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+        <form method="post" action="admincp.php?ac=goodsorder">
+            <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+            <div class="footactions" style="border-top:1px solid #ff8e00;">
+                <div class="pages">$multi</div>
+            </div>
+            <div class="bdrcontent">
+
+                <div class="title">
+                    <h3>商品库</h3>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" class="formtable">
+                    <tr>
+                    <tr>
+                        <th width="40">用户标识</th>
+                        <th width="100">商品ID</th>
+                    　　<th width="20">商品平台</th>　　　
+                        <th width="40">订单ＩＤ</th>
+                        <th width="30">付款金额</th>
+                        <th width="30">返利金额</th>
+                        <th width="30">订单状态</th>
+                        <th width="40">记录标识</th>
+                        <th width="40">创建时间</th>
+                        <th width="30">操作</th>
+                    </tr>
+                    <!--{loop $list $value}-->
+                    <tr>
+                        <td> $value[uid]</td>
+                        <td> $value[goodsid]</td>
+                        <td> $value[platform]</td>
+                        <td> $value[orderid]</td>
+                        <td> $value[payamount]</td>
+                        <td> $value[returnamount]</td>
+                        <td> $value[available]</td>
+                        <td> $value[moneylogid]</td>
+                        <td> $value[dateline]</td>
+                        <td width="100">
+                            <a href="admincp.php?ac=goodsorder&op=edit&id=$value[id]">编辑</a>
+                        </td>
+                    </tr>
+                    <!--{/loop}-->
+                </table>
+            </div>
+            <div class="footactions" style="border-top:1px solid #ff8e00;">
+                <div class="pages">$multi</div>
+            </div>
+            <!--<div class="footactions">
+                <input type="submit" name="updatesubmit" value="提交更新" class="submit">
+            </div> -->
+        </form>
+        <!--{else}-->
+        <div class="bdrcontent">
+            <p>指定条件下还没有数据</p>
+        </div>
+        <!--{/if}-->
+
+        <!--{if $thevalue}-->
+        <script type="text/javascript">
+            function credisshow(value) {
+                /*if(value=='0') {
+                 document.getElementById('tr_credit').style.display = 'none';
+                 } else {
+                 document.getElementById('tr_credit').style.display = '';
+                 }*/
+            }
+        </script>
+
+        <!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群',
+                );
+        }-->
+
+        <form method="post" action="admincp.php?ac=goodsorder&id=$thevalue[id]">
+            <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+            <div class="bdrcontent">
+
+                <div class="title">
+                    <h3>$thevalue[title] 商品信息</h3>
+                    <p>在这里编辑商品库中商品具体信息</p>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" class="formtable">
+                    <tr><th style="width:12em;">用户标识</th><td><input  size="20" type="text" name="set[uid]" value="$thevalue[uid]" <!--{if !empty($thevalue[uid])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;" >商品ＩＤ</th><td><input size="60" type="text" name="set[goodsid]" value="$thevalue[goodsid]" <!--{if !empty($thevalue[goodsid])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;">商品名</th><td><input size="60" type="text" name="set[goodsname]" value="$thevalue[goodsname]"<!--{if !empty($thevalue[goodsname])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;">订单ＩＤ</th><td><input size="60" type="text" name="set[orderid]" value="$thevalue[orderid]"<!--{if !empty($thevalue[orderid])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;">商品数</th><td><input size="40" type="text" name="set[goodscount]" value="$thevalue[goodscount]"<!--{if !empty($thevalue[goodscount])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;">付款金额</th><td><input size="60" type="text" name="set[payamount]" value="$thevalue[payamount]"<!--{if !empty($thevalue[payamount])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;">返利金额</th><td><input size="20" type="text" name="set[returnamount]" value="$thevalue[returnamount]"<!--{if !empty($thevalue[returnamount])}--> readonly="readonly"<!--{/if}-->></td></tr>
+                    <tr><th style="width:12em;">商品平台</th><td><input type="text" name="set[platform]" value="$thevalue[platform]" <!--{if !empty($thevalue[platform])}--> readonly="readonly"<!--{/if}-->></td></tr>
+
+                    <tr>
+                        <th>订单状态</th>
+                        <td>
+                            <!--{if $thevalue[available]==2}-->
+                            <input type="radio" name="set[available]" value="2" <!--{if $thevalue[available]==2}--> checked<!--{/if}-->> 订单结算
+                            <!--{elseif $thevalue[available]==3}-->
+                            <input type="radio" name="set[available]" value="3" <!--{if $thevalue[available]==3}--> checked<!--{/if}-->> 订单失效
+                            <!--{else}-->
+                            <input type="radio" name="set[available]" value="1" <!--{if $thevalue[available]==1}--> checked<!--{/if}-->> 订单付款
+                            <input type="radio" name="set[available]" value="3" <!--{if $thevalue[available]==3}--> checked<!--{/if}-->> 订单失效
+                            <input type="radio" name="set[available]" value="2" <!--{if $thevalue[available]==2}--> checked<!--{/if}-->> 订单结算
+                            <!--{/if}-->
+                        </td>
+                    </tr>
+                </table>
+                <!--{if $thevalue[system]}-->
+                <br />
+                <div class="title">
+                    <h3>$thevalue[grouptitle] 管理权限</h3>
+                    <!--{/if}-->
+
+                </div>
+
+                <div class="footactions">
+                    <input type="hidden" name="set[dateline]" value="$thevalue[dateline]">
+                    <input type="hidden" name="set[id]" value="$thevalue[id]">
+                    <input type="hidden" name="set[moneylogid]" value="$thevalue[moneylogid]">
+                    <input type="submit" name="thevaluesubmit" value="提交" class="submit">
+                </div>
+
+        </form>
+
+        <!--{/if}-->
+
+    </div>
+</div>
+
+<div class="side">
+    <!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

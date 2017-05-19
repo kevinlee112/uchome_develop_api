@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+        <meta name="wap-font-scale" content="no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>一元夺宝</title>
+		<link rel="stylesheet" type="text/css" href="admin/tpl/treasure_1.css" />
+		<link rel="stylesheet" type="text/css" href="admin/tpl/treasure_2.css" />
+		<style>.w-backToTop{bottom: 55px;}</style>
+		<script type="text/javascript" src="source/script_common.js"></script>
+		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=47778673" charset="UTF-8"></script>
+	</head>
+	<body class="wap f-hasActionBar f-hasTransparentActionBar">
+		<div class="m-detail" id="pro-view-0" module-id="module-1" module-launched="true">
+		    <div class="g-body">
+		        <div class="g-wrap">
+		            <div class="g-wrap-hd" id="detailHeader">
+		                <div class="w-slideShow m-detail-gallery" id="gallery">
+		                    <ul class="w-slideShow-wrap" pro="wrap" style="width: 500%; left: 0px; top: 0px; height: 640px;">
+		                        <li pro="item" class="w-slideShow-wrap-item selected" style="width: 20%;">
+		                                <img src="$treasure[image]" />
+		                        </li>
+		                    </ul>
+		                </div>
+		                <p class="m-detail-goods-title">
+							<span class="m-detail-goods-name">$treasure[title]</span>
+						</p>
+            		</div>
+            		<div class="g-wrap-bd">
+                		<div class="m-detail-goods-info" id="goodsInfo">
+                    		<div class="m-detail-published">
+                    			<!--{if $status==1}-->
+		                        <div class="m-detail-published-winner" style="padding:25px 15px 15px;height:10%;">
+		                            <i class="w-ico w-ico-winner"></i>
+		                            <div class="w-record">
+		                                <div class="w-record-avatar"><!--{avatar($trueGoodUser[moneyloguid],small)}--></div>
+		                                <div class="w-record-detail">
+		                                    <p class="w-record-detail-winner f-breakword">获得者：$trueGoodUser[name]($trueGoodUser[resideprovince].$trueGoodUser[residecity])</p>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <!--{else}-->
+		                        <div class="m-detail-type-cnt f-clear">
+                                    <div class="m-detail-type-info">
+                                        <div class="m-detail-type-hd">
+                                            <h2>一元夺宝</h2>
+                                        </div>
+                                        <div class="m-detail-type-bd">
+                                            <p class="m-detail-type-tip">只需要一元就有机会获得商品！</p>
+                                            <p class="m-detail-buyTip">1元=1夺宝号</p>
+                                            <div class="m-detail-one-period">$treasure[gid]期</div>
+                                            <div class="w-progressBar">
+                                                <p class="w-progressBar-txt">揭晓进度 <span class="txt-blue">$schedule%</span></p>
+                                                <p class="w-progressBar-wrap">
+                                                    <span class="bar" style="width:$schedule%"></span>
+                                                </p>
+                                                <p class="w-progressBar-times txt-gray">
+                                                    <span class="w-progressBar-times-l">总需<i class="txt-blue">$goodCounts</i>人次</span>
+                                                    <span class="w-progressBar-times-r">剩余<i class="txt-blue">$counted</i>人次</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--{if $status==0}-->
+	                                    <div class="m-detail-type-opt" id="oneBtnBuyWithMall">
+	                                    	<a id="btnOneQuickBuy" class="w-button">立即购买</a><!--  href="javascript:buygood('$code',$treasure[gid],'$fileName');" -->
+	                                    </div>
+	                                    <script>
+	                                    	button=document.getElementById("btnOneQuickBuy");
+   											button.onclick=function(){
+   												if(confirm("确定要一元夺宝吗？")){
+   													window.location.href="treasure.php?code=$code&gid=$treasure[gid]&num=1";
+   												}
+   											}
+                                    	</script>
+	                                <!--{elseif $status==2}-->
+	                                	<div class="m-detail-type-opt">
+	                                		<div class="m-detail-type-hd">
+                                            	<h2>您的夺宝号码：</h2>
+                                        	</div>
+                                        	<div style="padding:0 30%;font-size:3em;">
+	                                			$buyGoodID
+	                                		</div>
+	                                	</div>
+	                                <!--{elseif $status==3}-->
+	                                	<div class="m-detail-type-opt">
+	                                		<div class="m-detail-type-hd">
+                                            	<h2>参与人数已满</h2>
+                                        	</div>
+	                                	</div>
+	                                <!--{elseif $status==4}-->
+	                                	<div class="m-detail-type-opt">
+	                                		<div class="m-detail-type-hd">
+                                            	<h2>您的余额不足</h2>
+                                        	</div>
+	                                	</div>
+	                                <!--{/if}-->
+                                </div>
+		                        <!--{/if}-->
+		                        <p class="m-detail-published-result">
+		                            <span class="luckyCode">$treasure[maintitle]</span>
+		                        </p>
+		                        <div class="m-detail-more">
+			                        <div class="w-bar-text w-bar">商品详情 </div>
+			                        <div class="m-detail-type-cnt f-clear">$treasure[note]</div>
+				                </div>
+                    		</div>
+                		</div>
+                		<div class="m-detail-record" module="detail/main/records/Records" module-id="module-5" module-launched="true">
+                			<div id="pro-view-3">
+                				<!--{if $moneylogStatus==1}-->
+	                				<div class="w-bar" pro="header">
+	                					所有参与记录<!-- <span class="w-bar-hint" id="pro-view-4">( 自<i class="txt-blue">$time</i>开始 )</span> -->
+	                				</div>
+	                				<!--{loop $moneylog $value}-->
+	                				<div class="m-detail-record-wrap" id="pro-view-9">
+										<ul class="m-detail-record-list" pro="entry">
+											<li id="pro-view-10">
+												<div class="f-clear">
+													<div class="avatar">
+														<img width="35" height="35" src="$value[moneyloguserphoto]" />
+													</div>
+													<div class="info">
+														<p class="meta1 f-breakword">
+															<a href="javascript:void(0);" class="nickname">$value[name]</a><span class="address">($value[resideprovince].$value[residecity])</span>
+														</p>
+														<p class="meta2">$value[date]</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!--{/loop}-->
+									<div style="float:right;padding-right:10%;"><span style="margin-right:8px;">共<b>$totalPage</b>页</span>$multi</div>
+								<!--{else}-->
+									<div class="w-bar" pro="header">
+	                					所有参与记录<span class="w-bar-hint" id="pro-view-4">( 无)</span>
+	                				</div>
+                				<!--{/if}-->
+							</div>
+						</div>
+            		</div>
+        		</div>
+    		</div>
+    	</div>
+	</body>
+</html>

@@ -1,0 +1,284 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+	<div class="maininner">
+
+		<div class="tabs_header">
+			<ul class="tabs">
+				<li $actives[view]><a href="admincp.php?ac=goodsstore"><span>商品库</span></a></li>
+				<li class="null"><a href="admincp.php?ac=goodsstore&op=add">添加新商品</a></li>
+				<li style="padding-left: 10px">
+					<form action="admincp.php?ac=goodsstore&op=upload" method="post" enctype="multipart/form-data">
+						<input type="file" name="file" id="file" class="t_input"/>
+						<input type="submit" name="uploadsubmit" value="导入商品表" class="submit">
+					</form>
+				</li>
+			</ul>
+		</div>
+		<!--{if $list }-->
+
+		<!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群'
+                );
+        }-->
+		<form method="get" action="admincp.php" name="searchcondition">
+			<div class="block style4">
+				<table cellspacing="3" cellpadding="2">
+					<tr><th>商品ＩＤ</th><td><input type="text" name="goodsid" value="$_GET[goodsid]"></td>
+						　　　　<th>平台ＩＤ</th><td><input type="text" name="id" value="$_GET[id]"></td>
+						　　<th>平台类型</th><td><input type="text" name="platformname" value="$_GET[platformname]"></td>
+					</tr>
+					<tr><th>店铺名称</th><td><input type="text" name="shopname" value="$_GET[shopname]"></td>
+						　　　　<th>商品名称</th><td><input type="text" name="goodsname" value="$_GET[goodsname]"></td>
+						　　<th>商品分类</th><td><input type="text" name="goodscategoryid" value="$_GET[goodscategoryid]"></td>
+					</tr>
+					<tr><th>商品价格</th>
+						<td colspan="3">
+							<input type="text" name="goodsamount1" value="$_GET[goodsamount1]" size="10"> ~
+							<input type="text" name="goodsamount2" value="$_GET[goodsamount2]" size="10"> (元)
+						</td>
+						<th>精选</th><td >
+							<select name="fine">
+								<option value="" selected="selected">不限制</option>
+								<option value="0"<!--{if $_GET[fine]==='0'}--> selected<!--{/if}-->>否</option>
+								<option value="1"<!--{if $_GET[fine]==1}--> selected<!--{/if}-->>是</option>
+							</select>
+						</td>
+					</tr>
+					<tr><th>月销量</th>
+						<td colspan="3">
+							<input type="text" name="goodsmonthcount1" value="$_GET[goodsmonthcount1]" size="10"> ~
+							<input type="text" name="goodsmonthcount2" value="$_GET[goodsmonthcount2]" size="10"> (件)
+						</td>
+						<th>置顶</th><td >
+							<select name="top">
+								<option value="" selected="selected">不限制</option>
+								<option value="0"<!--{if $_GET[top]==='0'}--> selected<!--{/if}-->>否</option>
+								<option value="1"<!--{if $_GET[top]==1}--> selected<!--{/if}-->>是</option>
+							</select>
+						</td>
+					</tr>
+					<tr><th>优惠券金额</th>
+						<td colspan="3">
+							<input type="text" name="coupontamountvalue1" value="$_GET[coupontamountvalue1]" size="10"> ~
+							<input type="text" name="coupontamountvalue2" value="$_GET[coupontamountvalue2]" size="10">
+						</td>
+						<th>优惠券可用</th><td >
+							<select name="coupon">
+								<option value="" selected="selected">不限制</option>
+								<option value="1"<!--{if $_GET[coupon]==1}--> selected<!--{/if}-->>否</option>
+								<option value="2"<!--{if $_GET[coupon]==2}--> selected<!--{/if}-->>是</option>
+							</select>
+						</td>
+					</tr>
+					<tr><th>佣金</th>
+						<td colspan="3">
+							<input type="text" name="goodscommission1" value="$_GET[goodscommission1]" size="10"> ~
+							<input type="text" name="goodscommission2" value="$_GET[goodscommission2]" size="10">
+						</td>
+						<th>是否上架</th><td >
+							<select name="status">
+								<option value="" selected="selected">不限制</option>
+								<option value="0"<!--{if $_GET[status]==='0'}--> selected<!--{/if}-->>否</option>
+								<option value="1"<!--{if $_GET[status]==1}--> selected<!--{/if}-->>是</option>
+							</select>
+						</td>
+					</tr>
+					<tr><th>收入比率</th>
+						<td colspan="3">
+							<input type="text" name="goodsrate1" value="$_GET[goodsrate1]" size="10"> ~
+							<input type="text" name="goodsrate2" value="$_GET[goodsrate2]" size="10">
+						</td>
+					</tr>
+					<tr><th>自销量</th>
+						<td colspan="3">
+							<input type="text" name="sellcount1" value="$_GET[sellcount1]" size="10"> ~
+							<input type="text" name="sellcount2" value="$_GET[sellcount2]" size="10">
+						</td>
+					</tr>
+					<tr><th>结果排序</th>
+						<td colspan="3">
+							<select name="orderby">
+								<option value="">默认排序</option>
+								<option value="goodsamount"$orderby[goodsamount]>商品价格</option>
+								<option value="coupontamountvalue"$orderby[coupontamountvalue]>优惠券面额</option>
+								<option value="goodscommission"$orderby[goodscommission]>佣金</option>
+								<option value="goodsrate"$orderby[goodsrate]>收入比率</option>
+								<option value="goodsmonthcount"$orderby[goodsmonthcount]>月销量</option>
+							</select>
+							<select name="ordersc">
+								<option value="desc"$ordersc[desc]>递减</option>
+								<option value="asc"$ordersc[asc]>递增</option>
+							</select>
+							<select name="perpage">
+								<option value="20"$perpages[20]>每页显示20个</option>
+								<option value="50"$perpages[50]>每页显示50个</option>
+								<option value="100"$perpages[100]>每页显示100个</option>
+								<option value="200"$perpages[200]>每页显示200个</option>
+								<!--<option value="2000"$perpages[2000]>每页显示2000个</option>-->
+							</select>
+							<input type="hidden" name="ac" value="goodsstore" />
+							<input type="submit" name="searchsubmit" value="搜索" class="submit" />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+
+		<form method="post" action="admincp.php?ac=goodsstore">
+			<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+			<div class="footactions" style="border-top:1px solid #ff8e00;">
+				<div class="pages">$multi</div>
+			</div>
+			<div class="bdrcontent">
+
+				<div class="title">
+					<h3>商品库</h3>
+				</div>
+
+				<table cellspacing="0" cellpadding="0" class="formtable">
+					<tr>
+						<th width="40" style="text-align:center">平台ID</th>
+						<th width="120">商品信息</th>
+						<th width="30">商品ID</th>
+						<th width="20"  style="text-align:center">单价</th>
+					    <th width="20"  style="text-align:center">佣金</th>
+					    <th width="30"  style="text-align:center">收入比率</th>
+					    <th width="30"  style="text-align:center">优惠券</th>
+						<th width="30"  style="text-align:center">月销量</th>
+					    <th width="20"  style="text-align:center">自销量</th>
+					    <th width="40"  style="text-align:center">标签</th>
+						<th width="40"  style="text-align:center">操作</th>
+					</tr>
+					<!--{loop $list $value}-->
+					<tr>
+						<td  style="text-align:center"><input type="<!--{if $allowbatch}-->checkbox<!--{else}-->radio<!--{/if}-->" name="ids[]" value="$value[id]">$value[id]</td>
+					<td>
+						<a href="javascript:;" data-original-title="" title="" style="float: left">
+							<img src="$value[goodsimgurl]" style="width:80px; height:80px">
+						</a>
+						<div class="col-md-2 col-sm-4 col-xs-12" style="width:70%; text-align:left; float: left;padding-left: 10px;margin: 0;">
+							<li style="list-style-type:none;"><small>$value[goodsname]</small></li>
+							<li style="list-style-type:none; font-style:oblique;"><h5>$value[goodscategoryid]</h5></li>
+							<li style="list-style-type:none; font-style:oblique;"><h6> <small>$value[shopname]</small></h6><small style="float: right;font-style:normal">$value[platformname]</small></li>
+						</div>
+					</td>
+						<td> $value[goodsid]</td>
+					<td  style="text-align:center">￥  $value[goodsamount]</td>
+						<td style="color: #db3652;text-align:center;">￥  <small style="font-size: large">$value[goodscommission][0]</small>.<small>$value[goodscommission][1]</small></td>
+					<td  style="text-align:center"> $value[goodsrate] %</td>
+					    <td style="text-align:center"> $value[coupontamount]</td>
+					<td  style="text-align:center"> $value[goodsmonthcount]</td>
+					    <td  style="text-align:center"> $value[sellcount]</td>
+					<td  style="text-align:center">
+						<!--{if $value['fine'] == 1}-->精选 <!--{/if}-->
+						<!--{if $value['top'] == 1}-->| 置顶<!--{/if}-->
+					</td>
+						<td style="text-align:center">
+							<a href="admincp.php?ac=goodsstore&op=edit&id=$value[id]">管理</a>
+							<!--{if $value['status'] == 1}-->
+							<a href="admincp.php?ac=goodsstore&op=editdisavailable&id=$value[id]">下架</a>
+							<!--{else}-->
+							<a href="admincp.php?ac=goodsstore&op=editavailable&id=$value[id]">上架</a>
+							<!--{/if}-->
+						</td>
+					</tr>
+					<!--{/loop}-->
+				</table>
+			</div>
+			<div class="footactions">
+				<input type="hidden" name="set[id]" value="$thevalue[id]">
+				<input type="hidden" name="mpurl" value="$mpurl">
+				<input type="hidden" name="page" value="$_GET[page]">
+				<input type="checkbox" id="chkall" name="chkall" onclick="checkAll(this.form, 'ids')">全选
+				<input type="radio"  name="optype" value="fine">精选
+				<input type="radio"  name="optype" value="top">置顶
+				<input type="radio"  name="optype" value="available">上架
+				&nbsp;&nbsp;
+				<input type="radio"  name="optype" value="nofine">取消精选
+				<input type="radio"  name="optype" value="notop">取消置顶
+				<input type="radio"  name="optype" value="unavailable">下架
+
+				<input type="submit" name="opsubmit" value="提交" class="submit">
+				<span name="tips" style="color:red;font-weight:bold;"></span>
+				<div class="pages">$multi</div>
+			</div>
+		</form>
+		<!--{else}-->
+		<div class="bdrcontent">
+			<p>指定条件下还没有数据</p>
+		</div>
+		<!--{/if}-->
+
+		<!--{if $thevalue}-->
+		<script type="text/javascript">
+            function credisshow(value) {
+				/*if(value=='0') {
+				 document.getElementById('tr_credit').style.display = 'none';
+				 } else {
+				 document.getElementById('tr_credit').style.display = '';
+				 }*/
+            }
+		</script>
+
+		<!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群',
+                );
+        }-->
+
+		<form method="post" action="admincp.php?ac=goodsstore&id=$thevalue[id]">
+			<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+			<div class="bdrcontent">
+
+				<div class="title">
+					<h3>$thevalue[title] 商品信息</h3>
+					<p>在这里编辑商品库中商品具体信息</p>
+				</div>
+
+				<table cellspacing="0" cellpadding="0" class="formtable">
+					<tr><th style="width:12em;">商品ＩＤ</th><td><input  size="20" type="text" name="set[goodsid]" value="$thevalue[goodsid]"></td></tr>
+					<tr><th style="width:12em;" >商品名称</th><td><input size="60" type="text" name="set[goodsname]" value="$thevalue[goodsname]"></td></tr>
+					<tr><th style="width:12em;">商品主图</th><td><input size="60" type="text" name="set[goodsimgurl]" value="$thevalue[goodsimgurl]"></td></tr>
+					<tr><th style="width:12em;">商品详情</th><td><input size="60" type="text" name="set[goodsdefaulturl]" value="$thevalue[goodsdefaulturl]"></td></tr>
+					<tr><th style="width:12em;">商品一级分类</th><td><input size="40" type="text" name="set[goodscategoryid]" value="$thevalue[goodscategoryid]"></td></tr>
+					<tr><th style="width:12em;">淘宝客链接</th><td><input size="60" type="text" name="set[goodstaobaokeurl]" value="$thevalue[goodstaobaokeurl]"></td></tr>
+					<tr><th style="width:12em;">商品价格(单位：元)</th><td><input size="20" type="text" name="set[goodsamount]" value="$thevalue[goodsamount]"></td></tr>
+					<tr><th style="width:12em;">商品月销量</th><td><input type="text" name="set[goodsmonthcount]" value="$thevalue[goodsmonthcount]"></td></tr>
+					<tr><th style="width:12em;">收入比率(%)</th><td><input type="text" name="set[goodsrate]" value="$thevalue[goodsrate]"></td></tr>
+					<tr><th style="width:12em;">佣金</th><td><input type="text" name="set[goodscommission]" value="$thevalue[goodscommission]"></td></tr>
+					<tr><th style="width:12em;">卖家旺旺</th><td><input type="text" name="set[sellerwangid]" value="$thevalue[sellerwangid]"></td></tr>
+					<tr><th style="width:12em;">卖家ID</th><td><input type="text" name="set[sellerid]" value="$thevalue[sellerid]"></td></tr>
+					<tr><th style="width:12em;">店铺名称</th><td><input type="text" name="set[shopname]" value="$thevalue[shopname]"></td></tr>
+					<tr><th style="width:12em;">平台类型</th><td><input type="text" name="set[platformname]" value="$thevalue[platformname]"></td></tr>
+					<tr><th style="width:12em;">优惠券ID</th><td><input type="text" name="set[couponid]" value="$thevalue[couponid]"></td></tr>
+					<tr><th style="width:12em;">优惠券剩余</th><td><input type="text" name="set[couponcountuse]" value="$thevalue[couponcountuse]"></td></tr>
+					<tr><th style="width:12em;">优惠券面额</th><td><input type="text" name="set[coupontamount]" value="$thevalue[coupontamount]"></td></tr>
+					<tr><th style="width:12em;">优惠券开始时间</th><td><input type="text" name="set[couponstarttime]" value="$thevalue[couponstarttime]"></td></tr>
+					<tr><th style="width:12em;">优惠券结束时间</th><td><input type="text" name="set[couponendtime]" value="$thevalue[couponendtime]"></td></tr>
+					<tr><th style="width:12em;">优惠券链接</th><td><input size="60" type="text" name="set[couponurl]" value="$thevalue[couponurl]"></td></tr>
+					<tr><th style="width:12em;">优惠券推广链接</th><td><input size="60" type="text" name="set[coupontuiguangurl]" value="$thevalue[coupontuiguangurl]"></td></tr>
+				</table>
+				<div class="footactions">
+					<input type="hidden" name="id" value="$thevalue[id]">
+					<input type="submit" name="thevaluesubmit" value="提交" class="submit">
+				</div>
+			</div>
+		</form>
+		<!--{/if}-->
+	</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

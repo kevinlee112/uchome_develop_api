@@ -1,0 +1,9 @@
+<?PHP exit;?>	2017-04-19 14:17:50		127.0.0.1	3214763	/home/admincp.php?ac=taskmanage	GET{ac=taskmanage;}
+<?PHP exit;?>	2017-04-19 14:17:54		127.0.0.1	3214763	/home/admincp.php?ac=productanalyze	GET{ac=productanalyze;}
+<?PHP exit;?>	2017-04-19 14:19:40		127.0.0.1	3214763	/home/admincp.php?ac=productanalyze	GET{ac=productanalyze;}
+<?PHP exit;?>	2017-04-19 14:19:56		127.0.0.1	3214763	/home/admincp.php?ac=moneylist	GET{ac=moneylist;}
+<?PHP exit;?>	2017-04-19 14:20:05		127.0.0.1	3214763	/home/admincp.php?ac=moneylist&op=edit&uid=663003	GET{ac=moneylist;op=edit;uid=663003;}
+<?PHP exit;?>	2017-04-19 14:20:08		127.0.0.1	3214763	/home/admincp.php?ac=moneylist	GET{ac=moneylist;}
+<?PHP exit;?>	2017-04-19 14:20:27		127.0.0.1	3214763	/home/admincp.php?ac=moneylist&op=edit&uid=862099	GET{ac=moneylist;op=edit;uid=862099;}
+<?PHP exit;?>	2017-04-19 14:22:04		127.0.0.1	3214763	/home/admincp.php?ac=creditstore&available=1	GET{ac=creditstore;available=1;}
+<?PHP exit;?>	2017-04-19 14:22:11		127.0.0.1	3214763	/home/admincp.php?ac=creditstore&op=edit&gid=26&available=1	GET{ac=creditstore;op=edit;gid=26;available=1;}

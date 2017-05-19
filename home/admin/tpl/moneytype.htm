@@ -1,0 +1,202 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+<div class="maininner">
+
+<div class="tabs_header">
+	<ul class="tabs">
+		<li$actives[view]><a href="admincp.php?ac=moneytype"><span>浏览福利方式</span></a></li>
+		<li class="null"><a href="admincp.php?ac=moneytype&op=add">添加新福利</a></li>
+	</ul>
+</div>
+
+<!--{if $list }-->
+	<div class="bdrcontent">
+
+	<div class="title">
+	<h3>福利列表</h3>
+	<p>客户端会根据福利列表的更新时间来显示列表顺序</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+	<th width="100">名称</th>
+	<td width="30">种类</td>
+	<td width="60">描述</td>
+	<td width="60">过滤</td>
+	<th width="30">按钮</th>
+        <td width="30">图标</td>
+        <td width="40">最小金额</td>
+        <td width="20">次数</td>
+        <th width="30">间隔</th>
+        <td width="30">概率</td>
+        <td width="50">是否上架</td>
+
+		
+	<td width="100">操作</td>
+	</tr>
+	<!--{loop $list $value}-->
+	<tr>
+	<th><span>$value[moneytypename]</span></th>
+	<!--{if $value['moneytypecategory'] == 1}-->
+	<td>邀请</td>
+	<!--{elseif $value['moneytypecategory'] == 2}-->
+        <td>任务</td>
+        <!--{elseif $value['moneytypecategory'] == 3}-->
+        <td>一次性红包</td>
+	<!--{else}-->
+	<td>每日</td>
+	<!--{/if}-->
+	<td>$value[moneytypedes]</td>
+	<td>$value[moneytypefilter]</td>
+        <td>$value[moneytypebtn]</td>
+        <td><img src="$value[moneytypeiconurl]" width="40" height="40" /></td>
+        <td>$value[moneytypemin]</td>
+        <td>$value[moneytypeloop]</td>
+        <td>$value[moneytypeinterval]</td>
+        <td>$value[moneytypechance]</td>
+        <!--{if $value['moneytypeavailable'] == 1}-->
+        <td>上架中</td>
+        <!--{else}-->
+        <td>已下架</td>
+        <!--{/if}-->
+
+	<td width="100">
+	<a href="admincp.php?ac=moneytype&op=edit&moneytypeid=$value[moneytypeid]">编辑</a>
+	<!--{if $value['moneytypeavailable'] == 1}-->
+	<a href="admincp.php?ac=moneytype&op=editdisavailable&moneytypeid=$value[moneytypeid]">下架</a>
+	<!--{else}-->
+	<a href="admincp.php?ac=moneytype&op=editavailable&moneytypeid=$value[moneytypeid]">上架</a>
+	<!--{/if}-->
+	</td>
+	</tr>
+	<!--{/loop}-->
+	</table>
+	</div>
+<!--{/if}-->
+<!--{if $thevalue}-->
+<!--{eval
+	$_TPL['discount'] = array(
+		'0' => '不打折',
+		'1' => '1折',
+		'2' => '2折',
+		'3' => '3折',
+		'4' => '4折',
+		'5' => '5折',
+		'6' => '6折',
+		'7' => '7折',
+		'8' => '8折',
+		'9' => '9折',
+		'-1' => '免费'
+	);
+}-->
+	<form method="post" action="admincp.php?ac=moneytype&moneytypeid=$thevalue[moneytypeid]">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+	<div class="bdrcontent">
+
+	<div class="title">
+		<h3>$thevalue[moneytypename] 福利方式</h3>
+		<p>这里设置福利方式列表当中的福利属性</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr><th style="width:12em;">福利名称</th><td><input type="text" name="set[moneytypename]" value="$thevalue[moneytypename]"></td></tr>
+
+	<tr>
+		<th>福利类别</th>
+		<td>
+			<input type="radio" name="set[moneytypecategory]" value="0" onclick="removeTask();" <!--{if $thevalue['moneytypecategory']==0}--> checked<!--{/if}-->> 每日领取
+			<input type="radio" name="set[moneytypecategory]" value="1" onclick="removeTask();" <!--{if $thevalue['moneytypecategory']==1}--> checked<!--{/if}-->> 邀请
+            <input type="radio" name="set[moneytypecategory]" value="2" onclick="appendTask();" <!--{if $thevalue['moneytypecategory']==2}--> checked<!--{/if}-->> 做任务
+            <select name="set[taskcategory]" style="display:none;">
+            	<option value="0"></option>
+            	<option value="1" <!--{if $thevalue['taskcategory']==1}--> checked<!--{/if}-->>应用安装</option>
+            	<option value="2" <!--{if $thevalue['taskcategory']==2}--> checked<!--{/if}-->>注册访问</option>
+            	<option value="3" <!--{if $thevalue['taskcategory']==3}--> checked<!--{/if}-->>问卷调查</option>
+            	<option value="4" <!--{if $thevalue['taskcategory']==4}--> checked<!--{/if}-->>有奖答题</option>
+            	<option value="5" <!--{if $thevalue['taskcategory']==5}--> checked<!--{/if}-->>分享推广</option>
+            </select>
+            <script>
+            	window.onload=getTaskCategoryValue($thevalue['taskcategory']);
+            </script>
+			<input type="radio" name="set[moneytypecategory]" value="3" onclick="removeTask();" <!--{if $thevalue['moneytypecategory']==3}--> checked<!--{/if}-->> 红包专辑
+			<input type="radio" name="set[moneytypecategory]" value="4" onclick="removeTask();" <!--{if $thevalue['moneytypecategory']==4}--> checked<!--{/if}-->> 每日领取封面
+		</td>
+	</tr>
+	<tr>
+		<th>显示金额范围</th>
+		<td>
+			<select name="set[moneyrange]">
+				<option value="">-----</option>
+				<!--{loop $rangeValue $value}-->
+					<option value="$value[mrid]" <!--{if $thevalue['moneyrange']==$value['mrid']}-->selected<!--{/if}-->><!--{$value[firstrange]}-->--<!--{$value[secondrange]}--></option>
+				<!--{/loop}-->
+			</select>
+		</td>
+	</tr>
+	<tr id="tr_credit"><th>福利描述</th><td>
+	<input type="text" name="set[moneytypedes]" value="$thevalue[moneytypedes]" size="50">
+	最高0.1元</td></tr>
+        <tr><th>过滤渠道</th><td>
+        <input type="text" name="set[moneytypefilter]" value="$thevalue[moneytypefilter]" size="60">
+        如：1001,1002或1001|1002或1001&1002等</td></tr>
+	<tr><th>福利Button文案</th><td><input type="text" name="set[moneytypebtn]" value="$thevalue[moneytypebtn]" size="10"> 例如：签到或邀请</td></tr>
+	
+	<tr><th>福利图标</th><td><input type="text" name="set[moneytypeiconurl]" value="$thevalue[moneytypeiconurl]" size="60"> 填写URL地址，大小 50*50 最佳</td></tr>
+
+	<tr><th>福利最小金额</th><td><input type="text" name="set[moneytypemin]" value="$thevalue[moneytypemin]" size="20"> 单位：分 例如：10</td></tr>
+
+	<tr><th>商品随机次数</th><td>
+        <input type="text" name="set[moneytypeloop]" value="$thevalue[moneytypeloop]" size="10">不解释</td></tr>
+        <tr><th>商品概率累加间隔</th><td>
+        <input type="text" name="set[moneytypeinterval]" value="$thevalue[moneytypeinterval]" size="20">10　(每次递增的金额)</td></tr>
+
+        <tr><th>商品概率</th><td>
+        <input type="text" name="set[moneytypechance]" value="$thevalue[moneytypechance]" size="20">例如90，小于100</td></tr>
+
+
+        <tr><th>开始时间</th><td>
+        <input type="text" name="set[moneytypestarttime]" value="$thevalue[moneytypestarttime]" size="20">例如13:10</td></tr>
+        <tr><th>结束时间</th><td>
+        <input type="text" name="set[moneytypeendtime]" value="$thevalue[moneytypeendtime]" size="20">例如14:20</td></tr>
+        <tr><th>每日限量</th><td>
+        <input type="text" name="set[moneytypedaylimit]" value="$thevalue[moneytypedaylimit]" size="20">例如100</td></tr>
+
+        <tr><th>绑定任务ID 原来内容：$thevalue['moneytypetaskid']</th><td>
+        <input type="text" name="set[moneytypetaskids]" value="$thevalue[moneytypetaskids]" size="60">例如100或者100|200</td></tr>
+
+	<tr>
+		<th>是否上架</th>
+		<td>
+			<input type="radio" name="set[moneytypeavailable]" value="1"<!--{if $thevalue['moneytypeavailable']==1}--> checked<!--{/if}-->> 上架
+			<input type="radio" name="set[moneytypeavailable]" value="0"<!--{if $thevalue['moneytypeavailable']!=1}--> checked<!--{/if}-->> 下架
+		</td>
+	</tr>
+	</table>
+
+	<!--{if $thevalue[system]}-->
+	<br />
+	<div class="title">
+	<h3>$thevalue[grouptitle] 管理权限</h3>
+	<!--{/if}-->
+
+	</div>
+
+	<div class="footactions">
+	<input type="hidden" name="set[gid]" value="$thevalue[gid]">
+	<input type="submit" name="thevaluesubmit" value="提交" class="submit">
+	</div>
+
+	</form>
+
+<!--{/if}-->
+
+</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

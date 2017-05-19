@@ -1,0 +1,10 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+<div class="maininner">
+
+	<form method="get" action="admincp.php">
+	<div class="block style4">
+		
+		<table cellspacing="3" cellpadding="3">
+		<tr><th>鏍囩

@@ -1,0 +1,125 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+    <div class="maininner">
+
+        <div class="tabs_header">
+            <ul class="tabs">
+                <li$actives[view]><a href="admincp.php?ac=goodsplatform"><span>浏览商品平台</span></a></li>
+                <li class="null"><a href="admincp.php?ac=goodsplatform&op=add">添加新平台</a></li>
+            </ul>
+        </div>
+
+        <!--{if $list }-->
+
+        <!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群'
+                );
+        }-->
+
+        <form method="post" action="admincp.php?ac=goodsplatform">
+            <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+            <div class="bdrcontent">
+
+                <div class="title">
+                    <h3>商品平台管理</h3>
+                    <p>在这里管理商品平台信息</p>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" class="formtable">
+                    <tr>
+                        <th width="20">平台名称</th>
+                        <td width="50">返现比例</td>
+                        <td width="100">目标地址</td>
+                        <td width="100">参数截取地址</td>
+                        <td width="40">订单参数</td>
+                        <td width="100">操作</td>
+                    </tr>
+                    <!--{loop $list $value}-->
+                    <tr>
+                        <th><span>$value[platformname]</span></th>
+                        <th><span>$value[returnrate]</span></th>
+                        <th><span>$value[returnurl]</span></th>
+                        <th><span>$value[paramsurl]</span></th>
+                        <th><span>$value[params]</span></th>
+                        <td width="100">
+                            <a href="admincp.php?ac=goodsplatform&op=edit&id=$value[id]">编辑</a>
+                        </td>
+                    </tr>
+                    <!--{/loop}-->
+                </table>
+            </div>
+            <!--<div class="footactions">
+                <input type="submit" name="updatesubmit" value="提交更新" class="submit">
+            </div> -->
+        </form>
+
+
+        <!--{/if}-->
+
+        <!--{if $thevalue}-->
+        <script type="text/javascript">
+            function credisshow(value) {
+                /*if(value=='0') {
+                 document.getElementById('tr_credit').style.display = 'none';
+                 } else {
+                 document.getElementById('tr_credit').style.display = '';
+                 }*/
+            }
+        </script>
+
+        <!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群',
+                );
+        }-->
+
+        <form method="post" action="admincp.php?ac=goodsplatform">
+            <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+            <div class="bdrcontent">
+
+                <div class="title">
+                    <h3>$thevalue[title] 商品平台编辑</h3>
+                    <p>这里设置商品平台编辑信息</p>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" class="formtable">
+                    <tr><th style="width:12em;">平台名称</th><td><input type="text" name="set[platformname]" value="$thevalue[platformname]"></td></tr>
+                    <tr><th style="width:12em;">返现比例</th><td><input size="10" type="text" name="set[returnrate]" value="$thevalue[returnrate]"></td></tr>
+                    <tr><th style="width:12em;">目标地址</th><td><input type="text" name="set[returnurl]" value="$thevalue[returnurl]"></td></tr>
+                    <tr><th style="width:12em;">参数截取地址</th><td><input type="text" name="set[paramsurl]" value="$thevalue[paramsurl]"></td></tr>
+                    <tr><th style="width:12em;">订单参数</th><td><input type="text" name="set[params]" value="$thevalue[params]"></td></tr>
+                </table>
+                <!--{if $thevalue[system]}-->
+                <br />
+                <div class="title">
+                    <h3>$thevalue[grouptitle] 管理权限</h3>
+                    <!--{/if}-->
+
+                </div>
+
+                <div class="footactions">
+                    <input type="hidden" name="id" value="$thevalue[id]">
+                    <input type="submit" name="thevaluesubmit" value="提交" class="submit">
+                </div>
+
+        </form>
+
+        <!--{/if}-->
+
+    </div>
+</div>
+
+<div class="side">
+    <!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

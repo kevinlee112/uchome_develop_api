@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="admin/tpl/treasurelist_1.css" rel="stylesheet">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="wap-font-scale" content="no">
+		<title>一元夺宝</title>
+        <link rel="stylesheet" type="text/css" href="admin/tpl/treasurelist_2.css">
+        <link rel="stylesheet" type="text/css" href="admin/tpl/treasurelist_3.css">
+        <link rel="stylesheet" type="text/css" href="admin/tpl/treasurelist_4.css">
+        <link rel="stylesheet" type="text/css" href="admin/tpl/treasurelist_5.css">
+        <link rel="stylesheet" type="text/css" href="admin/tpl/treasurelist_6.css">
+        <link rel="stylesheet" type="text/css" href="admin/tpl/treasure_3.css" />
+        <style>
+			.w-actionBar{
+				background:#fc4160 none repeat scroll 0 0;
+				color:#ffffff;
+			}
+		</style>
+    </head>
+	<body class="wap f-hasActionBar">
+   		<div class="m-user" id="pro-view-0" module-id="module-1" module-launched="true">
+        	<div class="m-user-frameHeader" pro="userFrameHeader"></div>
+        	<!--{if $status!=4}-->
+			<div id="pro-view-1" module-id="module-2" module-launched="true">
+				<div class="w-actionBar" id="pro-view-2">
+					<h2 class="w-actionBar-title">夺宝</h2>
+				</div>
+			    <div class="w-tabs">
+			        <div class="w-tabs-tab">
+				        <div class="w-tabs-tab-item$active1">
+			                <div class="w-tabs-tab-item-txt" id="treasurelist">夺宝商品</div>
+			            </div>
+			            <div class="w-tabs-tab-item$active2" pro="tabs-ing">
+			                <div class="w-tabs-tab-item-txt" id="record">开奖纪录</div>
+			            </div>
+			            <div class="w-tabs-tab-item$active3" pro="tabs-end">
+			                <div class="w-tabs-tab-item-txt" id="myrecord">我的夺宝</div>
+			            </div>
+			        </div>
+			        <script>
+			        	var treasurelist=document.getElementById("treasurelist");
+			        	treasurelist.onclick=function(){
+			        		location.href="treasurelistnew.php?op=treasurelist&code=$code";
+			        	}
+			        	var record=document.getElementById("record");
+			        	record.onclick=function(){
+			        		location.href="treasurelistnew.php?op=record&code=$code";
+			        	}
+			        	var myrecord=document.getElementById("myrecord");
+			        	myrecord.onclick=function(){
+			        		location.href="treasurelistnew.php?op=myrecord&code=$code";
+			        	}
+			        </script>
+			        <!--{if $status==1}-->
+			        <div class="m-list" id="pro-view-0" module-id="module-1" module-launched="true">
+   						<div class="g-wrap" pro="entry">
+   							<ul class="w-goodsList" id="pro-view-7">
+   								<!--{if $treasureStatus==0}-->
+			            		<div class="f-blank f-blank-noDuobaoRecord" id="pro-view-6">
+			            			<p>还没有夺宝商品</p>
+			            		</div>
+			            		<!--{else}-->
+	   								<!--{loop $treasureList $value}-->
+	   								<li class="w-goodsList-item" id="pro-view-8">
+	   									<div class="w-goods w-goods-ing" id="jump$value['gid']">
+	   										<script>
+	   											var jumpContent=document.getElementById("jump$value['gid']");
+	   											jumpContent.onclick=function(){
+	   												window.location.href="http://app.sihemob.com/home/treasurenew.php?code=$code&gid=$value['gid']";
+	   											}
+	   										</script>
+	   										<div class="w-goods-pic">
+	   											<a data-invoke="detail?gid=1850">
+	   												<img alt="$value['title']" src="$value['icon']" />
+	   											</a>
+	   										</div>
+	   										<div class="w-goods-info">
+	   											<p class="w-goods-title" data-invoke="detail?gid=1850">$value['title']</p>
+	   											<div class="w-progressBar txt-gray">
+	   												<p class="w-progressBar-txt">揭晓进度 <span class="txt-blue"><!--{$value['progress']}-->%</span></p>
+	   												<p class="w-progressBar-wrap"><span class="bar" style="width:<!--{$value['progress']}-->%"></span></p>
+	   												<p class="w-progressBar-times">
+	   													<span class="w-progressBar-times-l">总需$value['price']</span>
+	   													<span class="w-progressBar-times-r">剩余<i class="txt-blue">$value['uncounted']</i></span>
+	   												</p>
+	   											</div>
+	   										</div>
+	   									</div>
+	   								</li>
+	   								<!--{/loop}-->
+	   							<!--{/if}-->
+   							</ul>
+   						</div>
+					</div>
+				    <!--{elseif $status==2}-->
+				    <div class="w-tabs-panel">
+			            <div class="w-tabs-panel-item" pro="allList">
+			            	<div pro="list" id="pro-view-4">
+			            		<!--{if $recordStatus==0}-->
+			            		<div class="f-blank f-blank-noDuobaoRecord" id="pro-view-6">
+			            			<p>还没有开奖纪录</p>
+			            		</div>
+			            		<!--{else}-->
+			            		<!--{loop $recordList $value}-->
+			            		<div class="m-recordsList-item" id="pro-view-8">
+			            			<div class="info" id="jump$value['gid']">
+			            				<div class="cont">
+			            					<div class="gname">$value['title']</div>
+			            					<div class="period">中奖号码：$value['number']</div>
+			            					<div class="total">我已参与： <span class="w-txt-red">$value['mycounted']</span>人次</div>
+			            				</div>
+			            				<div class="gimg" style="padding-top:15px;">
+			            					<img src="$value['icon']" alt="$value['title']">
+			            				</div>
+			            			</div>
+			            			<script>
+										var jumpContent=document.getElementById("jump$value['gid']");
+										jumpContent.onclick=function(){
+											window.location.href="http://app.sihemob.com/home/treasurenew.php?code=$code&gid=$value['gid']";
+										}
+									</script>
+			            			<div class="buyAgain">
+			            				<div class="winInfo">
+			            					<div class="winner">获得者：
+			            						<span class="w-txt-blue">$value['moneylogusername']</span>
+			            					</div>
+			            					<div class="total">
+			            						<span class="w-txt-red">$value['wincounted']</span>人次
+			            					</div>
+			            				</div>
+			            				<div class="total">开奖时间：$value['time']</div>
+			            			</div>
+			            			<!--{if $value['imgStatus']==1}-->
+			            				<div class="abbr">
+											<div class="title">$value['fileurl']</div>
+											<div class="pic">
+												<a style="margin-right:5px;" href="http://app.sihemob.com/home/treasurenew.php?code=$code&gid=$value['gid']">
+													<img src="$value['pkgname']" alt="" width="20%" height="20%">
+												</a>
+												<a style="margin-right:5px;" href="http://app.sihemob.com/home/treasurenew.php?code=$code&gid=$value['gid']">
+													<img src="$value['subtips']" alt="" width="20%" height="20%">
+												</a>
+												<a style="margin-right:5px;" href="http://app.sihemob.com/home/treasurenew.php?code=$code&gid=$value['gid']">
+													<img src="$value['thirdtips']" alt="" width="20%" height="20%">
+												</a>
+											</div>
+										</div>
+			            			<!--{/if}-->
+			            		</div>
+			            		<!--{/loop}-->
+			            		<!--{/if}-->
+			            	</div>
+			            </div>
+			        </div>
+					<!--{else}-->
+					<div class="w-tabs-panel">
+			            <div class="w-tabs-panel-item" pro="allList">
+			            	<div pro="list" id="pro-view-4">
+			            		<!--{if $myrecordStatus==0}-->
+			            		<div class="f-blank f-blank-noDuobaoRecord" id="pro-view-6">
+			            			<p>还没有夺宝纪录</p>
+			            		</div>
+			            		<!--{else}-->
+			            		<!--{loop $myrecordList $value}-->
+			            		<div class="m-recordsList-item" id="pro-view-8">
+			            			<div class="info">
+			            				<div class="cont">
+			            					<div class="gname">$value['title']</div>
+			            					<div class="total">我已参与： 
+			            						<span class="w-txt-red">$value['mycounted']</span>人次
+			            					</div>
+			            					<div class="detail buyAgain" style="margin-bottom:10px;">
+					            				<div class="buyBtn" id="mylist$value['gid']">夺宝号码</div>
+					            			</div>
+			            					<script>
+				            					var mylist=document.getElementById("mylist$value['gid']");
+				        			        	mylist.onclick=function(){
+				        			        		location.href="treasurelistnew.php?op=mylist&code=$code&gid=$value['gid']";
+				        			        	}
+			            					</script>
+			            					<!--{if $value['treasureStatus']==0}-->
+			            					<div class="detail w-txt-blue" id="button$value['gid']">再次购买</div>
+					            			<script>
+	   											button=document.getElementById("button$value['gid']");
+	   											button.onclick=function(){
+	   												location.href="treasurenew.php?code=$code&gid=$value['gid']";		
+	   											}
+	   										</script>
+					            			<!--{elseif $value['treasureStatus']==1}-->
+					            			<div class="detail w-txt-blue">等待开奖</div>
+					            			<!--{else}-->
+					            			
+					            			<!--{/if}-->
+			            				</div>
+			            				<div class="gimg">
+			            					<img src="$value['icon']" alt="$value['title']">
+			            				</div>
+			            			</div>
+			            		</div>
+			            		<!--{/loop}-->
+			            		<!--{/if}-->
+			            	</div>
+			            </div>
+			        </div>	
+				    <!--{/if}-->
+			    </div>
+			</div>
+			<!--{elseif $status==4}-->
+	        <div class="m-duobaoCode" id="pro-view-5">
+	        	<div class="w-actionBar" id="pro-view-6">
+	        		<div pro="cancel" class="w-actionBar-cancel" id="jumplist">
+	        			<b class="w-ico w-ico-back"></b>夺宝详情
+	        		</div>
+	        		<script>
+	        			var jumplist=document.getElementById("jumplist");
+	        			jumplist.onclick=function(){
+	        				location.href="treasurelistnew.php?op=myrecord&code=$code";
+	        			}
+	        		</script>
+	        		<h2 class="w-actionBar-title">夺宝</h2>
+	        	</div>
+				<div class="myduobao">本期参与<span class="total w-txt-red">$mycounted</span>人次，以下是所有夺宝号码</div>
+				<div class="list" pro="list">
+					<div>
+						<span style="margin:0px 10px;text-align:center;font-size:14px;"> 夺宝号码 </span>
+						<span style="margin:0px 10px;text-align:center;font-size:14px;"> 夺宝日期 </span>
+						<span style="margin:0px 10px;text-align:center;font-size:14px;"> 开奖状态 </span>
+					</div>
+					<!--{loop $mylistArr $value}-->
+					<div>
+						<span style="margin:0px 10px;text-align:center;font-size:14px;"> <b>$value['moneylogid']</b> </span>
+						<span style="margin:0px 10px;text-align:center;font-size:14px;"> $value['dateline'] </span>
+						<!--{if $treasureTrueStatus==1}-->
+							<!--{if $value['moneylogstatus']==0}-->
+							<span style="margin:0px 10px;text-align:center;font-size:14px;"><b>已中奖</b> </span>
+							<!--{else}-->
+							<span style="margin:0px 10px;text-align:center;font-size:14px;"><b>未中奖</b> </span>
+							<!--{/if}-->
+						<!--{else}-->
+							<span style="margin:0px 10px;text-align:center;font-size:14px;"><b>待开奖</b> </span>
+						<!--{/if}-->
+					</div>
+					<!--{/loop}-->
+				</div>
+    		</div>
+    		<!--{/if}-->
+       		<div class="m-user-frameFooter" pro="userFrameFooter"></div>
+   		</div>
+   	</body>
+</html>

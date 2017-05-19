@@ -1,0 +1,231 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+    <div class="maininner">
+
+        <div class="tabs_header">
+            <ul class="tabs">
+                <li$actives[view]><a href="admincp.php?ac=goodscategory"><span>浏览分类方式</span></a></li>
+                <li class="null"><a href="admincp.php?ac=goodscategory&op=add">添加新分类</a></li>
+            </ul>
+        </div>
+
+        <!--{if $list }-->
+
+        <!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群'
+                );
+        }-->
+
+        <form method="post" action="admincp.php?ac=goodscategory">
+            <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+            <div class="bdrcontent">
+
+                <div class="title">
+                    <h3>分类列表</h3>
+                    <p>客户端会根据分类列表的更新时间来显示列表顺序</p>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" class="formtable">
+                    <tr>
+                        <th width="100">名称</th>
+                        <td width="50">类型</td>
+                        <td width="60">过滤</td>
+                        <td width="40">图标</td>
+                        <td width="100">状态</td>
+                        <td width="100">排序</td>
+                        <td width="100">操作</td>
+                    </tr>
+                    <!--{loop $list $value}-->
+                    <tr>
+                        <th><span>$value[categoryname]</span></th>
+                        <th><span>$value[categorytype]</span></th>
+                        <th><span>$value[categorychannel]</span></th>
+                        <th><a href="$value[moneyloguserphoto]" target="_blank"><img name="img" style="display:block;" src="$value[categoryimg]"  width="50" height="50"></a></th>
+                        <!--{if $value['available'] == 1}-->
+                        <td>上架中</td>
+                        <!--{else}-->
+                        <td>下架中</td>
+                        <!--{/if}-->
+                        <td><input type="text" name="$value[categoryid]" value="$value[sort]" size="5"></td>
+                        <td width="100">
+                            <a href="admincp.php?ac=goodscategory&op=edit&categoryid=$value[categoryid]">管理</a>
+                            <!--{if $value['available'] == 1}-->
+                            <a href="admincp.php?ac=goodscategory&op=editdisavailable&categoryid=$value[categoryid]">下架</a>
+                            <!--{else}-->
+                            <a href="admincp.php?ac=goodscategory&op=editavailable&categoryid=$value[categoryid]">上架</a>
+                            <!--{/if}-->
+                            <a href="admincp.php?ac=goodscategory&op=delete&categoryid=$value[categoryid]">删除</a>
+                        </td>
+                    </tr>
+                    <!--{/loop}-->
+                </table>
+            </div>
+            <div class="footactions">
+                <input type="submit" name="updatesubmit" value="提交更新顺序" class="submit">
+            </div>
+        </form>
+
+
+        <!--{/if}-->
+
+        <!--{if $thevalue}-->
+        <script type="text/javascript">
+//            window.onload = function () {
+//                var categorychoose = document.getElementById("categorychoose");
+//                window.onclick = function (e) {
+//                    categorychoose.style.display = "categorychoose";
+//                };
+//            }
+                function categoryShow() {
+                    var goodscategory = document.getElementById('goodscategory');
+                    var categorychoose = document.getElementById('categorychoose');
+                    var category = document.getElementsByName('category');
+                    var val = goodscategory.value.split(",");
+                    for (var i = 0; i < category.length; i++) {
+                        for (var j = 0; j < val.length; j++) {
+                            if (category[i].value == val[j]) {
+                                category[i].checked = true;
+                            }
+                        }
+                    }
+                    if (categorychoose.style.display != "block")
+                    {
+                        categorychoose.style.display = "block"
+                    }
+                    else
+                    {
+                        categorychoose.style.display = "none"
+                    }
+                }
+
+                function subminCategoryValue() {
+                    var goodscategory = document.getElementById('goodscategory');
+                    var category = document.getElementsByName('category');
+                    var categorychecked = [];
+                    for (var i = 0; i < category.length; i++) {
+                        if (category[i].checked) {
+                            categorychecked.push(category[i].value);
+                        }
+                    }
+                    goodscategory.value = categorychecked;
+                    var categorychoose = document.getElementById('categorychoose');
+                    categorychoose.style.display = "none"
+                    //alert(categorychecked);
+                }
+        </script>
+
+        <!--{eval
+                $_TPL['type'] = array(
+                        '0' => '无动作',
+                        '1' => '指定页面',
+                        '2' => '指定网页',
+                '3' => 'QQ群',
+                );
+        }-->
+
+        <form method="post" action="admincp.php?ac=goodscategory">
+            <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+            <div class="bdrcontent">
+
+                <div class="title">
+                    <h3>$thevalue[title] 分类方式</h3>
+                    <p>这里设置分类方式属性</p>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" class="formtable">
+                    <tr><th style="width:12em;">分类名称</th><td><input type="text" name="set[categoryname]" value="$thevalue[categoryname]"></td></tr>
+
+                    <tr>
+                        <th>分类类别</th>
+                        <td>
+                            <input type="radio" name="set[categorytype]" value="1" <!--{if $thevalue[categorytype]==1}--> checked<!--{/if}-->> 自有商品
+                            <input type="radio" name="set[categorytype]" value="2" <!--{if $thevalue[categorytype]==2}--> checked<!--{/if}-->>外部商城
+                        </td>
+                    </tr>
+                    <tr><th>过滤渠道</th><td><input type="text" name="set[categorychannel]" value="$thevalue[categorychannel]" size="40"></td></tr>
+                    <tr><th>分类图标</th><td><input type="text" name="set[categoryimg]" value="$thevalue[categoryimg]" size="40"> 填写URL地址</td></tr>
+                            <tr><th>商品价格</th>
+                                <td>
+                                    <input type="text" name="set[goodsamount1]" value="$thevalue[goodsamount1]" size="10"> ~
+                                    <input type="text" name="set[goodsamount2]" value="$thevalue[goodsamount2]" size="10"> (元)
+                                </td>
+                            <th>月销量</th>
+                                <td>
+                                    <input type="text" name="set[goodsmonthcount1]" value="$thevalue[goodsmonthcount1]" size="10"> ~
+                                    <input type="text" name="set[goodsmonthcount2]" value="$thevalue[goodsmonthcount2]" size="10"> (件)
+                                </td>
+                            </tr>
+                            <tr>
+                        <th>商品类别</th>
+                                <td><input type="text" id="goodscategory" name="set[goodscategory]" value="$thevalue[goodscategory]" size="40" onclick="categoryShow()">
+                                <div  class="bdrcontent" id="categorychoose" style="display: none">
+                                    <!--{loop $thevalue[category] $value}-->
+                                    <input type="checkbox" name="category" value="$value"><span>$value</span>
+                                    <!--{/loop}-->
+                                    <hr style="height:3px;border:none;border-top:3px;" />
+                                    <input type="button" name="thevaluesubmit" value="确定" class="submit" onclick=subminCategoryValue()>
+                                </div>
+
+
+                                </td>
+                                <th>优惠券金额</th>
+                                <td>
+                                    <input type="text" name="set[coupontamount1]" value="$thevalue[coupontamount1]" size="10"> ~
+                                    <input type="text" name="set[coupontamount2]" value="$thevalue[coupontamount2]" size="10">
+                                </td>
+
+                            </tr>
+                            <tr><th>佣金</th>
+                                <td>
+                                    <input type="text" name="set[goodscommission1]" value="$thevalue[goodscommission1]" size="10"> ~
+                                    <input type="text" name="set[goodscommission2]" value="$thevalue[goodscommission2]" size="10">
+                                </td>
+                            <th>收入比率</th>
+                                <td>
+                                    <input type="text" name="set[goodsrate1]" value="$thevalue[goodsrate1]" size="10"> ~
+                                    <input type="text" name="set[goodsrate2]" value="$thevalue[goodsrate2]" size="10">
+                                </td>
+                            </tr>
+                    <tr>
+                        <th>选择展示</th>
+                        <td>
+                            <input type="radio" name="set[showtype]" value="1"<!--{if $thevalue['showtype']==1}--> checked<!--{/if}-->> 月销量
+                            <input type="radio" name="set[showtype]" value="2"<!--{if $thevalue['showtype']==2}--> checked<!--{/if}-->> 返利比率
+                            <input type="radio" name="set[showtype]" value="3"<!--{if $thevalue['showtype']==3}--> checked<!--{/if}-->> 返利金额
+                            <input type="radio" name="set[showtype]" value="4"<!--{if $thevalue['showtype']==4}--> checked<!--{/if}-->> 优惠券面额
+                            <input type="radio" name="set[showtype]" value="5"<!--{if $thevalue['showtype']==5}--> checked<!--{/if}-->> 店铺名称
+                        </td>
+                    </tr>
+                    <tr><th>商城地址</th><td><input type="text" name="set[shopurl]" value="$thevalue[shopurl]" size="40"> 填写URL地址</td></tr>
+                </table>
+                <!--{if $thevalue[system]}-->
+                <br />
+                <div class="title">
+                    <h3>$thevalue[grouptitle] 管理权限</h3>
+                    <!--{/if}-->
+
+                </div>
+
+                <div class="footactions">
+                    <input type="hidden" name="categoryid" value="$thevalue[categoryid]">
+                    <input type="submit" name="thevaluesubmit" value="提交" class="submit">
+                </div>
+
+        </form>
+
+        <!--{/if}-->
+
+    </div>
+</div>
+
+<div class="side">
+    <!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

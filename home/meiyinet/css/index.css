@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+#advantages{
+	width:100%;
+	overflow:hidden;
+	position:absolute;
+	top:28%;
+	text-align:center;
+	}
+#advantages #title{
+	color:#000;
+	}
+#advantages #advantages-list #advantages-listOne{
+	width:50%;
+	float:left;
+	}
+#advantages #advantages-list #advantagesText{
+	font-size:0.7em;
+	}
+#advantages #advantages-list #advantages-listOne #one{
+	margin:10px 5px 5px 10px;
+	}
+#advantages #advantages-list #advantages-listOne #two{
+	margin:5px 5px 10px 10px;
+	}
+#advantages #advantages-list #advantages-listTwo #one{
+	margin:10px 10px 5px 5px;
+	}
+#advantages #advantages-list #advantages-listTwo #two{
+	margin:5px 10px 10px 5px;
+	}
+#advantages #advantages-list #advantages-listTwo{
+	width:50%;
+	float:left;
+	}
+#advantages #advantages-list #advantages-listOne img{
+	max-width:100%;
+	}
+#advantages #advantages-list #advantages-listTwo img{
+	max-width:100%;
+	}
+#advantages #miaoyiAdvantages{
+	width:100%;
+	padding:10px;
+	font-size:0.7em;
+	}
+#advantages #miaoyiAdvantages td{
+	width:50%;
+	padding:5px;
+	}
+#advantages #miaoyiAdvantages img{
+	max-width:100%;}
+#advantages #liucheng img{
+	max-width:100%}
+#advantages  #titleview{
+	width:100%;
+	height:2em;
+	}
+#advantages  #titleview #left{
+	background-color:#e173a9;
+	width:2px;
+	height:100%;
+	float:left;
+	}
+#advantages #titleview #text{
+	color:#e173a9;
+	font-size:1em;
+	height: 2em; 
+    line-height: 2em;
+	margin-left:2em;
+	text-align:left;
+	}
+#advantages #viewFoot{
+	width:100%;
+	height:2px;
+	background-color:#e173a9;
+	}
+#advantages #wentiChoose{
+	width:100%;
+	height:5em;
+	}
+#advantages #wentiChoose #choose{
+	margin-top:30px;
+	width:25%;
+	float:left;
+	}
+#advantages #wentiChoose #choose input{
+	margin-right:1em;
+	vertical-align:bottom;
+	height:1.5em; 
+	vertical-align:bottom; 
+	margin-bottom:3px; 
+	margin-top:-1px;
+	}
+#advantages #queChoose #choose{
+	margin-top:10px;
+	text-align:left;
+	margin-left:10px;
+	margin-bottom:10px;
+	}
+#advantages #queChoose #choose input{
+	margin-right:1em;
+	vertical-align:bottom;
+	height:1.5em; 
+	vertical-align:bottom; 
+	margin-bottom:1px; 
+	margin-top:-1px;
+	}
+#advantages #userinfo{
+	width:100%;
+	text-align:center;
+	margin-bottom:20px;
+	}
+#advantages #userinfo #submitButton{
+	width:60px;
+	height:30px;
+	font-size:1em;
+	background-color:#e173a9;
+	border:none;
+	color:#FFF;
+	border-radius: 6px;
+	}
+#advantages #callButton{
+	margin:0 auto;
+	margin-bottom:50px;
+	width:50%;
+	height:60px;
+	line-height:60px;
+	font-size:1.5em;
+	background-color:#e173a9;
+	border:none;
+	color:#FFF;
+	border-radius: 6px;
+	}
+#advantages #callButton a:link{
+	color: #FFF; 
+	text-decoration: none;
+	}
+#advantages #callButton a:visited{
+	color: #FFF; 
+	text-decoration: none;
+	}
+#advantages #callButton a:hover{
+	color: #FFF; 
+	text-decoration: none;
+	}
+#advantages #callButton a:active{
+	color: #FFF; 
+	text-decoration: none;
+	}

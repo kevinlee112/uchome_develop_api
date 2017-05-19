@@ -1,0 +1,20 @@
+<?PHP exit;?>	2017-04-18 10:46:42		127.0.0.1	3214763	/home/admincp.php	
+<?PHP exit;?>	2017-04-18 10:47:03		127.0.0.1	3214763	/home/admincp.php?ac=moneylog	GET{ac=moneylog;}
+<?PHP exit;?>	2017-04-18 10:51:44		127.0.0.1	3214763	/home/admincp.php?ac=messagelog	GET{ac=messagelog;}
+<?PHP exit;?>	2017-04-18 10:51:48		127.0.0.1	3214763	/home/admincp.php?ac=messagerule	GET{ac=messagerule;}
+<?PHP exit;?>	2017-04-18 10:51:50		127.0.0.1	3214763	/home/admincp.php?ac=banner	GET{ac=banner;}
+<?PHP exit;?>	2017-04-18 10:51:53		127.0.0.1	3214763	/home/admincp.php?ac=subject	GET{ac=subject;}
+<?PHP exit;?>	2017-04-18 10:51:55		127.0.0.1	3214763	/home/admincp.php?ac=dashenbang	GET{ac=dashenbang;}
+<?PHP exit;?>	2017-04-18 10:52:00		127.0.0.1	3214763	/home/admincp.php?ac=moneytype	GET{ac=moneytype;}
+<?PHP exit;?>	2017-04-18 10:52:05		127.0.0.1	3214763	/home/admincp.php?ac=moneylog	GET{ac=moneylog;}
+<?PHP exit;?>	2017-04-18 10:52:08		127.0.0.1	3214763	/home/admincp.php?ac=moneylog	GET{ac=moneylog;}
+<?PHP exit;?>	2017-04-18 10:52:11		127.0.0.1	3214763	/home/admincp.php?ac=moneytype	GET{ac=moneytype;}
+<?PHP exit;?>	2017-04-18 10:52:14		127.0.0.1	3214763	/home/admincp.php?ac=moneylogb	GET{ac=moneylogb;}
+<?PHP exit;?>	2017-04-18 10:52:16		127.0.0.1	3214763	/home/admincp.php?ac=creditstore&available=1	GET{ac=creditstore;available=1;}
+<?PHP exit;?>	2017-04-18 10:52:19		127.0.0.1	3214763	/home/admincp.php?ac=creditlist	GET{ac=creditlist;}
+<?PHP exit;?>	2017-04-18 10:52:24		127.0.0.1	3214763	/home/admincp.php?ac=moneylist	GET{ac=moneylist;}
+<?PHP exit;?>	2017-04-18 10:52:28		127.0.0.1	3214763	/home/admincp.php?ac=autoaward	GET{ac=autoaward;}
+<?PHP exit;?>	2017-04-18 10:56:22		127.0.0.1	3214763	/home/admincp.php?ac=moneylist	GET{ac=moneylist;}
+<?PHP exit;?>	2017-04-18 10:56:30		127.0.0.1	3214763	/home/admincp.php?ac=taskmanage	GET{ac=taskmanage;}
+<?PHP exit;?>	2017-04-18 10:56:33		127.0.0.1	3214763	/home/admincp.php?ac=channel	GET{ac=channel;}
+<?PHP exit;?>	2017-04-18 10:56:35		127.0.0.1	3214763	/home/admincp.php?ac=productanalyze	GET{ac=productanalyze;}

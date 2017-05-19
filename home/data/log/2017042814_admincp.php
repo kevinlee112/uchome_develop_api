@@ -1,0 +1,12 @@
+<?PHP exit;?>	2017-04-28 14:48:11		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogmonthtable	GET{ac=createmoneylogmonthtable;}
+<?PHP exit;?>	2017-04-28 14:49:42		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogmonthtable	GET{ac=createmoneylogmonthtable;}
+<?PHP exit;?>	2017-04-28 14:51:18		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:56:52		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:56:55		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:56:55		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:57:50		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:57:53		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:57:53		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:58:52		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:59:16		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}
+<?PHP exit;?>	2017-04-28 14:59:44		127.0.0.1	3214763	/home/admincp.php?ac=createmoneylogtable	GET{ac=createmoneylogtable;}

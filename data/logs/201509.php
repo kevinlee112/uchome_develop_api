@@ -1,0 +1,16 @@
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1441529417	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1441960696	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1441960721	user_delete	uid=35379
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1441960771	user_delete	uid=40027
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1442372717	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1442376248	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1442387231	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1442391074	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1442571262	login	succeed
+<?PHP exit;?>	UCenterAdministrator	223.21.132.140	1442644385	login	succeed
+<?PHP exit;?>	UCenterAdministrator	223.21.205.28	1442669617	login	succeed
+<?PHP exit;?>	UCenterAdministrator	223.21.205.28	1442720600	login	succeed
+<?PHP exit;?>	UCenterAdministrator	106.38.204.226	1442783035	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	106.38.204.226	1442784069	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1442827266	login	succeed
+<?PHP exit;?>	UCenterAdministrator	111.206.11.11	1443424576	login	succeed

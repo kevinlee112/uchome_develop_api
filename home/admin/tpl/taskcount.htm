@@ -1,0 +1,140 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+	<div class="maininner">
+	
+		<div class="tabs_header">
+			<ul class="tabs">
+				<li$actives[1]><a href="admincp.php?ac=taskmanage&perpage=20&status=1&searchsubmit=1"><span>数据管理</span></a></li>
+				<li$actives[0]><a href="admincp.php?ac=taskcount&perpage=20&status=0&searchsubmit=1"><span>数据统计</span></a></li>
+			</ul>
+		</div>
+		<form method="get" action="admincp.php">
+			<div class="block style4">
+				<table cellspacing="3" cellpadding="3">
+					<tr>
+						<th>统计渠道</th>
+						<td>
+							<select name="channelid">
+                            	<option value="">请选择渠道</option>
+                                <!--{loop $channellist $key $value}-->
+                                    <option value="$value[channelid]" <!--{if $_GET[channelid] == $value[channelid]}--> selected<!--{/if}-->>$value[channelname]</option>
+                                <!--{/loop}-->
+                            </select>					
+
+
+						</td>
+						<th></th>
+						<td></td>
+					</tr>
+				
+			                <tr><th>日期</th><td colspan="3">
+                        			<input type="text" name="taskmanagedaytime1" value="$_GET[taskmanagedaytime1]" size="10"> ~
+                        			<input type="text" name="taskmanagedaytime2" value="$_GET[taskmanagedaytime2]" size="10"> (YYYY-MM-DD)
+                			</td></tr>	
+		
+				<tr><th>结果排序</th>
+				<td colspan="3">
+				<select name="perpage">
+				<option value="20"$perpages[20]>每页显示20个</option>
+				<option value="50"$perpages[50]>每页显示50个</option>
+				<option value="100"$perpages[100]>每页显示100个</option>
+				<option value="1000"$perpages[1000]>一次处理1000个</option>
+				</select>
+				<input type="hidden" name="ac" value="taskcount">
+				<input type="submit" name="searchsubmit" value="搜索" class="submit">
+				</td>
+				</tr>
+				</table>
+		
+			</div>
+		</form>
+			<!--{if $list}-->
+	
+		<form method="post" action="admincp.php?ac=taskcount" name="taskcount">
+		<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+		<input type="hidden" name="checkupdate" value="checkupdate"/>
+		<div class="bdrcontent">
+
+		<!--{if $perpage>100}-->
+			<p>总共有满足条件的数据 <strong>$count</strong> 个</p>
+			<!--{loop $list $value}-->
+			<input type="hidden" name="ids[]" value="$value[rid]">
+			<!--{/loop}-->
+		
+		<!--{else}-->
+			<table cellspacing="0" cellpadding="0" class="formtable" border="0">
+			<tr>
+				<td width="25">&nbsp;</td>
+				<th width="50">日期</th>
+				<th width="50">产品名称</a></th>
+				<th width="50">下载次数</th>
+				<th width="50">成功次数</th>
+				<th width="50">反馈次数</th>
+				<th width="50">未反馈天数</th>
+				<th width="50">结算次数</th>
+				<th width="50">发放奖金</th>
+				<th width="50">渠道</th>
+				<th width="50">转化率</th>
+                                <th width="50">结算率</th>
+			</tr>
+
+			<!--{loop $list $key=>$task}-->		
+                        <tr>
+                                <td width="25">&nbsp;</td>
+                                <td width="50">$task[taskmanagedaytime]</td>
+                                <td width="50">$task[taskmanagename]</td>
+                                <td width="50">$task[taskmanagedownload]</td>
+                                <td width="50">$task[taskmanagesucce]</td>
+                                <td width="50">$task[taskmanagefeed]</td>
+                                <td width="50"><a href="admincp.php?ac=taskmanage&taskmanagegid=$task[taskmanagegid]&taskmanagedaytime1=$task[taskmanagedaytime1]&taskmanagedaytime2=$task[taskmanagedaytime2]&perpage=100" target="_blank">$task[taskmanageday]</a></td>
+                                <td width="50">$task[taskmanagecount]</td>
+                                <td width="50">$task[taskmanagemoney]</td>
+								<td width="50">$task[channelname]</td>
+								<td width="50">$task[taskmanagefeedsucce]</td>
+                                <td width="50">$task[taskmanagecountsucce]</td>
+                        </tr>
+
+			<!--{/loop}-->
+			<tr>
+				<td width="25">&nbsp;</td>
+                <td width="50">总计</td>
+                <td width="50"></td>
+                <td width="50">$taskmanagecount[download]</td>
+                <td width="50">$taskmanagecount[succe]</td>
+                <td width="50">$taskmanagecount[feed]</td>
+                <td width="50"></td>
+                <td width="50">$taskmanagecount[count]</td>
+                <td width="50">$taskmanagecount[money]</td>
+                <td width="50"></td>
+                <td width="50">$taskmanagecount[feedsucce]</td>
+                <td width="50">$taskmanagecount[countsucce]</td>
+			</tr>
+			</table>
+		<!--{/if}-->
+		</div>
+		
+		<div class="footactions">
+			<div class="pages">$multi</div>
+		</div>
+		</form>
+	<!--{else}-->
+		<div class="bdrcontent">
+			<div class="title" id="base">
+				<h3>
+					<a href="admincp.php?ac=taskmanage&perpage=20&status=1&searchsubmit=1">数据统计</a> | 
+					<a href="admincp.php?ac=taskmanage&perpage=20&status=0&searchsubmit=1">数据管理</a>
+				</h3>
+			</div>
+			<p>指定条件下还没有数据</p>
+		</div>
+	<!--{/if}-->
+	</div>
+</div>
+
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

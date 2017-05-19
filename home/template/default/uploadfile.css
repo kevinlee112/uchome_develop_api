@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+._box 
+{ 
+position: relative; 
+width: 119px; 
+height: 24px;
+background-image: url(image/upload.gif); 
+background-position: 0 0; 
+background-attachment: scroll; 
+line-height: 20px; 
+text-align: center; 
+color: white; 
+cursor: pointer; 
+overflow: hidden; 
+z-index: 1; 
+margin-right:30px;
+} 
+._box input 
+{ 
+position: absolute;
+width:100px;  
+height: 24px; 
+line-height: 20px; 
+font-size: 23px; 
+opacity: 0; 
+filter: "alpha(opacity=0)"; 
+filter: alpha(opacity=0); 
+-moz-opacity: 0; 
+left: -5px; 
+top: -2px; 
+cursor: pointer; 
+z-index: 2; 
+}

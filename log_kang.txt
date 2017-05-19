@@ -1,0 +1,1306 @@
+
+466567287 || -------- random: 541  |    deviceid:1BC79571C3AA2182D3FC58E38D8D088B   |    isfront:1
+1466567287 || -------- random: 315  |    deviceid:379E27685235BE17E50A2F173652446C   |    isfront:1
+1466567287 || -------- random: 76  |    deviceid:EC2DED4C62629EC0142BFE45A9E053E9   |    isfront:1
+1466567287 || -------- random: 187  |    deviceid:561B9ABBB09F60F37F9E3BC790C7F439   |    isfront:1
+1466567288 || -------- random: 222  |    deviceid:C62EDC23D9AE23C42B3EE072DBD637C3   |    isfront:1
+1466567288 || -------- random: 453  |    deviceid:7B291F5F5E2C067B6963734C08FD547E   |    isfront:1
+1466567288 || -------- random: 163  |    deviceid:8F0F226F80743D98F32D76876C99F9C7   |    isfront:1
+1466567288 || -------- random: 116  |    deviceid:8F41049B3B93E9CF744B872486690702   |    isfront:1
+1466567288 || -------- random: 999  |    deviceid:B2E6C3B2AFF7D0B62BDE09EE66D3B29F   |    isfront:1
+1466567289 || -------- random: 625  |    deviceid:   |    isfront:1
+1466567289 || -------- random: 757  |    deviceid:   |    isfront:1
+1466567289 || -------- random: 508  |    deviceid:0A49C95EAAB63CE2825116BB85C66816   |    isfront:2
+1466567289 || -------- random: 57  |    deviceid:0C6CF7B2F4F7EE6641AA6BBFC2800DCE   |    isfront:1
+1466567289 || -------- random: 467  |    deviceid:88FED0EE9C620263A3AA6E4354F69753   |    isfront:1
+1466567289 || -------- random: 805  |    deviceid:F206CE405D71277F4249F66AE01DC8C8   |    isfront:1
+1466567289 || -------- random: 723  |    deviceid:ABF47138811863EFEE4D1F568CF9D9BC   |    isfront:1
+1466567290 || -------- random: 70  |    deviceid:1BCC9D73E8CF5362AAEE20E6D672D7E9   |    isfront:1
+1466567290 || -------- random: 705  |    deviceid:   |    isfront:1
+1466567290 || 1098898+++++++++++++++op:getuserlist
+1466567290 || 1098898+++++++++++++++op:getuserlist  query spaefield start
+1466567290 || 1098898+++++++++++++++op:getuserlist  query spaefield end
+1466567290 || 1098898+++++++++++++++op:getuserlist ....... prepare sql 
+1466567290 || 1098898+++++++++++++++op:getuserlist ....... query sql 
+1466567290 || -------- random: 187  |    deviceid:C8F5B1C8E95E5694240205A7EC956F2A   |    isfront:1
+1466567290 || 385773+++++++++++++++op:getuserlist
+1466567290 || 385773+++++++++++++++op:getuserlist  query spaefield start
+1466567290 || 385773+++++++++++++++op:getuserlist  query spaefield end
+1466567290 || 385773+++++++++++++++op:getuserlist ....... prepare sql 
+1466567290 || -------- random: 242  |    deviceid:AF4E380B15D99EE2F7EAF4A35EC98102   |    isfront:1
+1466567290 || -------- random: 169  |    deviceid:8CA1B74AD8CED50D72501F372AAF79BF   |    isfront:1
+1466567291 || -------- random: 570  |    deviceid:5CCB52CB19E540C214FB89C55D6C5CFF   |    isfront:1
+1466567291 || -------- random: 351  |    deviceid:32F220208104571FCC0F5354E778F7F1   |    isfront:1
+1466567291 || -------- random: 577  |    deviceid:   |    isfront:1
+1466567291 || -------- random: 55  |    deviceid:A06094B3CBC0589CB9E0C513A131DE4F   |    isfront:1
+1466567291 || 385773+++++++++++++++op:getuserlist ....... query sql 
+1466567291 || 1098898+++++++++++++++op:getuserlist ....... end 
+1466567291 || 385773+++++++++++++++op:getuserlist ....... end 
+1466567291 || -------- random: 9  |    deviceid:80EE329D1F40FF08DBEE10E91910BD30   |    isfront:1
+1466567292 || -------- random: 799  |    deviceid:5DB913BF9E2E25070CA88EA3BAED8729   |    isfront:1
+1466567292 || -------- random: 808  |    deviceid:B7247F2182C4CEC2CA4FE33304F97715   |    isfront:1
+1466567292 || -------- random: 319  |    deviceid:BD755AC41CD6741005810C4E90128E84   |    isfront:1
+1466567292 || -------- random: 294  |    deviceid:F86B40215E3F2FFDFEA53B618BAF51AE   |    isfront:1
+1466567292 || -------- random: 565  |    deviceid:18183DF0422814F084D05AAD57FE2972   |    isfront:1
+1466567292 || -------- random: 124  |    deviceid:CD95A33BA7CDEB196FBADF537664C501   |    isfront:1
+1466567292 || -------- random: 33  |    deviceid:7667AAA5419C097D12C0E90F2976AAF3   |    isfront:1
+1466567292 || -------- random: 30  |    deviceid:B6859B8F3B5141727EC01AAD63029424   |    isfront:1
+1466567292 || -------- random: 107  |    deviceid:5802B2419EA5985048A73287EF521B2B   |    isfront:1
+1466567293 || -------- random: 318  |    deviceid:   |    isfront:1
+1466567293 || -------- random: 78  |    deviceid:F461CB933D9D8E975D3B84ED496B883B   |    isfront:1
+1466567293 || -------- random: 490  |    deviceid:DDAD18DD9C57BB7F55B3D5A48A857846   |    isfront:1
+1466567293 || -------- random: 907  |    deviceid:D436DEEFBB972E90F9E1D244C66B2E47   |    isfront:1
+1466567294 || -------- random: 613  |    deviceid:4D1BC76241FC9EDEF08EDEA0C76B4638   |    isfront:1
+1466567294 || -------- random: 705  |    deviceid:   |    isfront:1
+1466567294 || -------- random: 252  |    deviceid:ADA2CC4F54EA48D2FDC295E7B445B28E   |    isfront:1
+1466567294 || -------- random: 270  |    deviceid:4D2C9650BD76732274F5B57346D3E2DD   |    isfront:1
+1466567294 || -------- random: 96  |    deviceid:F95E80A9386ECA218EF8270A91AD9BD9   |    isfront:1
+1466567294 || -------- random: 909  |    deviceid:BA935B7862A1C474F290BF260065BE8F   |    isfront:1
+1466567295 || -------- random: 462  |    deviceid:0BD9FC1995CFA4D3668F7D14F471F70B   |    isfront:1
+1466567295 || -------- random: 583  |    deviceid:   |    isfront:1
+1466567295 || 1098938+++++++++++++++op:getuserlist
+1466567295 || 1098938+++++++++++++++op:getuserlist  query spaefield start
+1466567295 || -------- random: 761  |    deviceid:78E33F430527DE3BA23AA24A2327BF9F   |    isfront:1
+1466567295 || -------- random: 366  |    deviceid:55AF3A7C74B396CF0528DCD89BD00AEF   |    isfront:1
+1466567295 || -------- random: 911  |    deviceid:78F022716858D8767807D8584AEAEF32   |    isfront:1
+1466567295 || -------- random: 476  |    deviceid:40654B058D33ABF5FC399E09C555F2EF   |    isfront:1
+1466567296 || -------- random: 12  |    deviceid:5CD71A5588753861984FB65668C3B1A9   |    isfront:1
+1466567296 || -------- random: 389  |    deviceid:   |    isfront:1
+1466567296 || 1098938+++++++++++++++op:getuserlist  query spaefield end
+1466567296 || 1098938+++++++++++++++op:getuserlist ....... prepare sql 
+1466567296 || 1098938+++++++++++++++op:getuserlist ....... query sql 
+1466567296 || -------- random: 215  |    deviceid:FD75000DAB002D31BCCD645DB89EC580   |    isfront:1
+1466567296 || -------- random: 104  |    deviceid:ACDC0D7204C1E08F6AE35E88503D3590   |    isfront:1
+1466567296 || -------- random: 759  |    deviceid:44AFE26412A6C82C1B657B7B46F491D0   |    isfront:1
+1466567297 || -------- random: 475  |    deviceid:059EF792DBB8CE247280388C14E4DD2B   |    isfront:2
+1466567297 || -------- random: 859  |    deviceid:AF2829558F6C91528A459C751B699AD0   |    isfront:1
+1466567297 || -------- random: 905  |    deviceid:CB1C6BDAFA400484B5FEED9EEDA32F67   |    isfront:1
+1466567297 || -------- random: 445  |    deviceid:4955D9E86D6AB47DD03A96721513EB57   |    isfront:1
+1466567297 || 1098898+++++++++++++++op:getuserlist
+1466567297 || 1098898+++++++++++++++op:getuserlist  query spaefield start
+1466567298 || -------- random: 977  |    deviceid:C05C3E8B19FBE8A877B32180BD6D1AE1   |    isfront:1
+1466567298 || -------- random: 662  |    deviceid:   |    isfront:1
+1466567298 || 1098938+++++++++++++++op:getuserlist ....... end 
+1466567298 || 1098898+++++++++++++++op:getuserlist  query spaefield end
+1466567298 || 1098898+++++++++++++++op:getuserlist ....... prepare sql 
+1466567298 || 1098898+++++++++++++++op:getuserlist ....... query sql 
+1466567298 || 1098898+++++++++++++++op:getuserlist ....... end 
+1466567299 || -------- random: 711  |    deviceid:28F9557A4FA0A50973097363602D5399   |    isfront:1
+1466567299 || -------- random: 348  |    deviceid:51545B3314C68E6C64F77A98CAE3B7F6   |    isfront:1
+1466567299 || -------- random: 348  |    deviceid:98F273B641ECAD5ED607CCD33D2ED164   |    isfront:1
+1466567300 || -------- random: 119  |    deviceid:3A8487A0F324FCF58103C90D94E87543   |    isfront:1
+1466567300 || -------- random: 809  |    deviceid:   |    isfront:1
+1466567301 || -------- random: 339  |    deviceid:C2928FC238D0C30CEE3B46BED0EC8721   |    isfront:1
+1466567301 || -------- random: 260  |    deviceid:A10A9E0FA3F33941F8032EE0AFED9930   |    isfront:1
+1466567301 || -------- random: 821  |    deviceid:068AE7A5C647F5DB50C5C0DED15EF812   |    isfront:1
+1466567301 || -------- random: 875  |    deviceid:8596DA2F40D56395F791A5A782C26241   |    isfront:2
+1466567301 || -------- random: 468  |    deviceid:   |    isfront:1
+1466567301 || -------- random: 314  |    deviceid:   |    isfront:1
+1466567301 || -------- random: 653  |    deviceid:813308CA1B98B9EF40088C7F4BA78679   |    isfront:1
+1466567302 || -------- random: 69  |    deviceid:038C484D4775CABF8A516699D1A6C608   |    isfront:1
+1466567302 || -------- random: 15  |    deviceid:EC04F380A92F6A3DDCD5C0A038DAE7E0   |    isfront:1
+1466567302 || -------- random: 978  |    deviceid:   |    isfront:1
+1466567303 || 1098926+++++++++++++++op:getuserlist
+1466567303 || 1098926+++++++++++++++op:getuserlist  query spaefield start
+1466567303 || 1098926+++++++++++++++op:getuserlist  query spaefield end
+1466567303 || -------- random: 658  |    deviceid:255E1B470597F0C892B061369F938943   |    isfront:1
+1466567303 || 1098926+++++++++++++++op:getuserlist ....... prepare sql 
+1466567303 || 1098926+++++++++++++++op:getuserlist ....... query sql 
+1466567303 || 1098926+++++++++++++++op:getuserlist ....... end 
+1466567303 || -------- random: 708  |    deviceid:5A2ACC9BDCB3E71BD19E5D7723B799CC   |    isfront:1
+1466567303 || -------- random: 150  |    deviceid:9D0DB974540C9F208ABB80B50978BEE0   |    isfront:1
+1466567304 || -------- random: 20  |    deviceid:B4862EDADA97EF53D7C553D48BB0E734   |    isfront:1
+1466567304 || -------- random: 705  |    deviceid:722FE947DD9957A794780C8798E86C74   |    isfront:1
+1466567304 || -------- random: 682  |    deviceid:53EBEBC5267251664876693403EF56DA   |    isfront:1
+1466567304 || -------- random: 357  |    deviceid:C6C7198014F2AE664DF32CD22A7DC986   |    isfront:1
+1466567305 || -------- random: 487  |    deviceid:F206CE405D71277F4249F66AE01DC8C8   |    isfront:1
+1466567305 || -------- random: 398  |    deviceid:E1D0956AFCDF3DF48AB9DF79084E8DD7   |    isfront:1
+1466567305 || -------- random: 816  |    deviceid:770F0328B07E0C5CF6AF70A1767CE774   |    isfront:2
+1466567305 || -------- random: 509  |    deviceid:1F37A1C4D7965469875C4E01380E9C01   |    isfront:1
+1466567305 || 1098164+++++++++++++++op:getuserlist
+1466567305 || 1098164+++++++++++++++op:getuserlist  query spaefield start
+1466567305 || 1098164+++++++++++++++op:getuserlist  query spaefield end
+1466567305 || 1098164+++++++++++++++op:getuserlist ....... prepare sql 
+1466567305 || 1098164+++++++++++++++op:getuserlist ....... query sql 
+1466567305 || 1098164+++++++++++++++op:getuserlist ....... end 
+1466567305 || -------- random: 770  |    deviceid:62A6F0DDCF6792CF7EE59FF9577C124E   |    isfront:1
+1466567305 || -------- random: 475  |    deviceid:   |    isfront:1
+1466567305 || -------- random: 670  |    deviceid:D980BCA16EDB27CE756F2E13AA1D0503   |    isfront:1
+1466567306 || -------- random: 909  |    deviceid:   |    isfront:1
+1466567306 || -------- random: 217  |    deviceid:98433957860A6A6D493578439391E915   |    isfront:1
+1466567306 || -------- random: 911  |    deviceid:9FC8D1F394670195D3136B2CB21DE6B5   |    isfront:1
+1466567306 || -------- random: 912  |    deviceid:   |    isfront:1
+1466567306 || -------- random: 144  |    deviceid:9D72D6E9CEC93D5309CB368B18EE19C2   |    isfront:1
+1466567306 || -------- random: 507  |    deviceid:FEF64F92D997509DFE1724DD42C35B4E   |    isfront:1
+1466567306 || -------- random: 164  |    deviceid:10C26BB6BB06868629F14334C363952A   |    isfront:1
+1466567307 || -------- random: 366  |    deviceid:2854C0F7F1B187C594D915D8FE8714F9   |    isfront:1
+1466567307 || -------- random: 399  |    deviceid:3A8487A0F324FCF58103C90D94E87543   |    isfront:1
+1466567307 || -------- random: 243  |    deviceid:AB301028E6E5C35FD8B005B53FD3FA93   |    isfront:1
+1466567307 || -------- random: 172  |    deviceid:2490D4A0C9E4300FFBF31D32308DC197   |    isfront:1
+1466567307 || -------- random: 354  |    deviceid:1A47AE01155FB68192EA75FE948E05A8   |    isfront:1
+1466567307 || -------- random: 584  |    deviceid:2C59ED21D4C0B87D74AF92AC8A216085   |    isfront:1
+1466567308 || -------- random: 421  |    deviceid:C6A1B29BD7941DDAB8B758941E95844C   |    isfront:1
+1466567308 || -------- random: 625  |    deviceid:D5844F2AE1A44060741885F44587CAC7   |    isfront:1
+1466567308 || -------- random: 582  |    deviceid:7F0FE478020295A51CC7589CAD9689D0   |    isfront:1
+1466567308 || 1098911+++++++++++++++op:getuserlist
+1466567308 || 1098911+++++++++++++++op:getuserlist  query spaefield start
+1466567308 || 1098911+++++++++++++++op:getuserlist  query spaefield end
+1466567308 || 1098911+++++++++++++++op:getuserlist ....... prepare sql 
+1466567309 || -------- random: 954  |    deviceid:D5ECD3F840C0ECA633AEF45AD04F304D   |    isfront:1
+1466567309 || -------- random: 773  |    deviceid:4C121C3C3F98EDAA8BAEF3BA22D0925C   |    isfront:1
+1466567309 || 1098911+++++++++++++++op:getuserlist ....... query sql 
+1466567309 || 1098911+++++++++++++++op:getuserlist ....... end 
+1466567309 || -------- random: 728  |    deviceid:92C2CF98FB1CF46DB15064B588434159   |    isfront:1
+1466567309 || -------- random: 516  |    deviceid:C5006DBA01AE0C5E34B5448898A27889   |    isfront:2
+1466567310 || -------- random: 122  |    deviceid:DD4AA6FDF88BF3B2DD4236FE0BCE7432   |    isfront:1
+1466567310 || -------- random: 62  |    deviceid:9F68788BE9927AEC96207DEFE93D2261   |    isfront:1
+1466567310 || -------- random: 46  |    deviceid:95FAF836EB8B7F6995031FA81AF7595A   |    isfront:1
+1466567310 || -------- random: 146  |    deviceid:9A1D8CA7E03CD2B7041B0F2880C22C13   |    isfront:1
+1466567310 || -------- random: 963  |    deviceid:AF8DA6499EE29B15A7687177E4E4C959   |    isfront:1
+1466567310 || -------- random: 595  |    deviceid:E922DC9BAD6125EE4AC9FBE156702432   |    isfront:2
+1466567310 || -------- random: 656  |    deviceid:695A899A832DEC68231F506EC4B2D3FB   |    isfront:1
+1466567310 || 641058+++++++++++++++op:getuserlist
+1466567310 || 641058+++++++++++++++op:getuserlist  query spaefield start
+1466567310 || -------- random: 932  |    deviceid:   |    isfront:1
+1466567311 || -------- random: 881  |    deviceid:098AE7E5B938DB395175AB5375382549   |    isfront:1
+1466567311 || -------- random: 633  |    deviceid:7B5E0FFF2BC21866CBEB467F28D95FD4   |    isfront:1
+1466567311 || -------- random: 747  |    deviceid:   |    isfront:1
+1466567311 || -------- random: 20  |    deviceid:   |    isfront:2
+1466567311 || -------- random: 81  |    deviceid:7FC6539A844EA38C96BB7BE4DB46363F   |    isfront:1
+1466567311 || -------- random: 175  |    deviceid:AD3BD60EACDC2618ED3B3047A57CDD77   |    isfront:1
+1466567311 || -------- random: 669  |    deviceid:2B5D6A12FF54863B4205192346D616A2   |    isfront:1
+1466567311 || -------- random: 4  |    deviceid:2675796ABA1B33E24384D757BCA26BCA   |    isfront:1
+1466567311 || -------- random: 620  |    deviceid:96E0165C2285F562D0DD17EBE5630382   |    isfront:1
+1466567311 || 641058+++++++++++++++op:getuserlist  query spaefield end
+1466567311 || 641058+++++++++++++++op:getuserlist ....... prepare sql 
+1466567311 || 641058+++++++++++++++op:getuserlist ....... query sql 
+1466567311 || -------- random: 749  |    deviceid:045222F363DD9743862CC474B5D9AFA9   |    isfront:1
+1466567312 || -------- random: 623  |    deviceid:AC0F291B8B411A8C7BF0D2C01F0B3354   |    isfront:1
+1466567312 || -------- random: 635  |    deviceid:B266E27F8F67C277886B80A3C483BDF9   |    isfront:1
+1466567312 || -------- random: 861  |    deviceid:7FB923DBB57902DC3A3A73FD63F19476   |    isfront:2
+1466567312 || -------- random: 842  |    deviceid:2FB39A3ECADABEE7E028ED721A9E3263   |    isfront:1
+1466567312 || -------- random: 845  |    deviceid:D68E5CAFE61EB3A6E7C21C09DDA529D0   |    isfront:1
+1466567312 || -------- random: 654  |    deviceid:   |    isfront:1
+1466567312 || -------- random: 376  |    deviceid:037BF17E2E0ADDDC0A711EC9F15E7DBC   |    isfront:1
+1466567312 || -------- random: 891  |    deviceid:33ECCE3A0ED822F0C0938DA7C7025E80   |    isfront:1
+1466567312 || -------- random: 380  |    deviceid:   |    isfront:1
+1466567312 || 641058+++++++++++++++op:getuserlist ....... end 
+1466567312 || -------- random: 916  |    deviceid:   |    isfront:1
+1466567313 || -------- random: 512  |    deviceid:   |    isfront:1
+1466567313 || -------- random: 788  |    deviceid:EA8E3042310092AA1D5181375996825F   |    isfront:1
+1466567313 || -------- random: 786  |    deviceid:DFFAE8152BF8DCF4ADC62E985C172CA9   |    isfront:1
+1466567313 || 701366+++++++++++++++op:getuserlist
+1466567313 || 701366+++++++++++++++op:getuserlist  query spaefield start
+1466567313 || 701366+++++++++++++++op:getuserlist  query spaefield end
+1466567313 || -------- random: 737  |    deviceid:45B53D0F6992DA3F16B93D9BD8AC4404   |    isfront:1
+1466567313 || -------- random: 976  |    deviceid:1794CBE3D8218555DA57E101BF0FA06A   |    isfront:1
+1466567313 || -------- random: 992  |    deviceid:   |    isfront:1
+1466567313 || -------- random: 970  |    deviceid:500563331CB2B7EE11AFCF23F2255B4C   |    isfront:1
+1466567313 || -------- random: 619  |    deviceid:2B2E126B4884B869A2D8E2EA5E49026B   |    isfront:1
+1466567313 || -------- random: 217  |    deviceid:65F759922D8D39E3C8536D108CAF5995   |    isfront:1
+1466567313 || -------- random: 965  |    deviceid:FAACF5C31D1274E961CF46A11A04446D   |    isfront:1
+1466567314 || 701366+++++++++++++++op:getuserlist ....... prepare sql 
+1466567314 || 701366+++++++++++++++op:getuserlist ....... query sql 
+1466567314 || -------- random: 948  |    deviceid:DA9BEDCD0BBE2D9FC3847D8A7F86BD21   |    isfront:1
+1466567314 || -------- random: 93  |    deviceid:34E80FCD452C130648CC26E9B8EF17C4   |    isfront:1
+1466567314 || -------- random: 542  |    deviceid:   |    isfront:1
+1466567314 || -------- random: 902  |    deviceid:801917244DE7F6EE9CF3A156EA426A8A   |    isfront:1
+1466567314 || -------- random: 694  |    deviceid:69EF358D4D79924C9D7DA27DA89BD97E   |    isfront:1
+1466567315 || -------- random: 475  |    deviceid:038C484D4775CABF8A516699D1A6C608   |    isfront:1
+1466567315 || -------- random: 663  |    deviceid:1F6F39932595C4E0F396BC1580887DD0   |    isfront:1
+1466567315 || -------- random: 54  |    deviceid:045F8F5ED9C51379659C44DF09EFD0A7   |    isfront:2
+1466567315 || -------- random: 457  |    deviceid:E0963B5BC028DBBE4A1B8BFCD94341A6   |    isfront:1
+1466567315 || -------- random: 806  |    deviceid:CD3ADCE1F4C27BF28D1A04A7A58ED720   |    isfront:2
+1466567315 || -------- random: 505  |    deviceid:5B2987A311471BA0EF8D363D5B44FCBC   |    isfront:1
+1466567315 || -------- random: 176  |    deviceid:3902C4A98A4E66DF776DE31097F28B78   |    isfront:1
+1466567316 || -------- random: 91  |    deviceid:   |    isfront:1
+1466567316 || -------- random: 52  |    deviceid:188F7413154973DAD3C3C3B8C387F4A6   |    isfront:1
+1466567316 || -------- random: 705  |    deviceid:571B452E90F2F1FD61DA0DD29A360092   |    isfront:1
+1466567316 || -------- random: 685  |    deviceid:   |    isfront:1
+1466567316 || -------- random: 383  |    deviceid:C3B3565CF9B754946B0F47FFD3E9C958   |    isfront:1
+1466567316 || -------- random: 460  |    deviceid:35DECD0651C0B2EC92ADAA96CC0F8894   |    isfront:1
+1466567316 || -------- random: 823  |    deviceid:2AAABD9423C022021F47E68DD9456526   |    isfront:1
+1466567316 || -------- random: 819  |    deviceid:55AF61B1006A7C95D13406A333A8E6E6   |    isfront:1
+1466567316 || -------- random: 695  |    deviceid:   |    isfront:1
+1466567317 || -------- random: 564  |    deviceid:   |    isfront:2
+1466567317 || -------- random: 999  |    deviceid:1F37A1C4D7965469875C4E01380E9C01   |    isfront:1
+1466567317 || -------- random: 464  |    deviceid:E3D978733F011EF42DF6CC493FBC47A1   |    isfront:1
+1466567317 || -------- random: 321  |    deviceid:9681CF7801DB473D8DFAF9339565F635   |    isfront:1
+1466567317 || -------- random: 132  |    deviceid:9681CF7801DB473D8DFAF9339565F635   |    isfront:1
+1466567317 || 701366+++++++++++++++op:getuserlist ....... end 
+1466567317 || -------- random: 528  |    deviceid:D887E89F95C77280A39EE76E70477051   |    isfront:1
+1466567317 || -------- random: 207  |    deviceid:99F277D925F09A9B8191EDE6FCFD5B4D   |    isfront:2
+1466567317 || -------- random: 510  |    deviceid:45D3BEF93881DAA76283571A47E452D6   |    isfront:1
+1466567317 || -------- random: 967  |    deviceid:A044550266566485B85152794EACEBE8   |    isfront:1
+1466567318 || -------- random: 610  |    deviceid:6A241CA3E90B81B19D74FF9ECBCC4105   |    isfront:1
+1466567318 || -------- random: 139  |    deviceid:   |    isfront:1
+1466567318 || 1089485+++++++++++++++op:getuserlist
+1466567318 || 1089485+++++++++++++++op:getuserlist  query spaefield start
+1466567318 || 1089485+++++++++++++++op:getuserlist  query spaefield end
+1466567318 || 1089485+++++++++++++++op:getuserlist ....... prepare sql 
+1466567318 || 1089485+++++++++++++++op:getuserlist ....... query sql 
+1466567318 || 1089485+++++++++++++++op:getuserlist ....... end 
+1466567318 || -------- random: 582  |    deviceid:0CB9B79DEA9E764AF49520128B1ECAA1   |    isfront:1
+1466567318 || -------- random: 69  |    deviceid:40E8B776F93EE488F8AC922DA6ECD35D   |    isfront:1
+1466567318 || -------- random: 486  |    deviceid:   |    isfront:1
+1466567319 || -------- random: 394  |    deviceid:4180CFD8A55817E1DAF010CFB6B0BB15   |    isfront:1
+1466567319 || -------- random: 470  |    deviceid:9027E1F7ACA1D9B481DF50F746BD162A   |    isfront:1
+1466567319 || -------- random: 748  |    deviceid:771DBC45BFCC9EF855980F7861B45319   |    isfront:2
+1466567319 || -------- random: 230  |    deviceid:3EABD6F5EA7D3C5BF0FBB283656D62ED   |    isfront:1
+1466567319 || -------- random: 316  |    deviceid:   |    isfront:1
+1466567320 || -------- random: 396  |    deviceid:B94F98E2E2482A474051D0EC24D982B5   |    isfront:1
+1466567320 || -------- random: 478  |    deviceid:   |    isfront:1
+1466567320 || -------- random: 6  |    deviceid:7D8852C1B2B374FFF01C532AE07DA39A   |    isfront:1
+1466567321 || -------- random: 277  |    deviceid:D980BCA16EDB27CE756F2E13AA1D0503   |    isfront:1
+1466567321 || -------- random: 15  |    deviceid:F8672F35694E833688F6EE55BAA1B34D   |    isfront:1
+1466567321 || -------- random: 799  |    deviceid:355778837836CC44568D81C7E161A30A   |    isfront:1
+1466567321 || 1097763+++++++++++++++op:getuserlist
+1466567321 || 1097763+++++++++++++++op:getuserlist  query spaefield start
+1466567321 || 1097763+++++++++++++++op:getuserlist  query spaefield end
+1466567321 || 1097763+++++++++++++++op:getuserlist ....... prepare sql 
+1466567321 || -------- random: 138  |    deviceid:14742406F823F363859A48B597AE543D   |    isfront:1
+1466567322 || 1097763+++++++++++++++op:getuserlist ....... query sql 
+1466567322 || -------- random: 177  |    deviceid:CF4DE95F8FCC1799696D7ED2FB6D4BB4   |    isfront:1
+1466567322 || -------- random: 808  |    deviceid:724B8B443035E2ACF379C68F4CE0C18B   |    isfront:1
+1466567322 || -------- random: 526  |    deviceid:6A00DCF76C988C060EDCE1B164F0EABA   |    isfront:1
+1466567322 || -------- random: 432  |    deviceid:393A7F2280CD063D1DC97A416AE92D82   |    isfront:1
+1466567322 || -------- random: 848  |    deviceid:9FF7F1F713445B5C471CE770A8C03797   |    isfront:1
+1466567322 || -------- random: 268  |    deviceid:   |    isfront:1
+1466567322 || -------- random: 297  |    deviceid:23E885B918B61F192867ADC210E5DD07   |    isfront:1
+1466567323 || -------- random: 557  |    deviceid:149E3FDA903AD6FD57514855A1960C4A   |    isfront:1
+1466567323 || 1097763+++++++++++++++op:getuserlist ....... end 
+1466567323 || -------- random: 921  |    deviceid:A6B998A4515D2CF89A31ABCCC0A7F248   |    isfront:1
+1466567323 || -------- random: 424  |    deviceid:03EF36A2F513981D96336373B12F0C88   |    isfront:1
+1466567323 || -------- random: 10  |    deviceid:EAF30E275D4E5DA88F64627B8CDAA04D   |    isfront:1
+1466567323 || -------- random: 733  |    deviceid:081EF650FFFAB54531DB5721632FA544   |    isfront:1
+1466567323 || -------- random: 41  |    deviceid:B6859B8F3B5141727EC01AAD63029424   |    isfront:1
+1466567323 || -------- random: 742  |    deviceid:A5F3FB34B8289FD629C60C7F7709B7A0   |    isfront:1
+1466567323 || -------- random: 165  |    deviceid:E25E2442714AD0D98C981CF47F601C98   |    isfront:1
+1466567324 || -------- random: 787  |    deviceid:EF7BC9DA554442158EF4213E28033704   |    isfront:1
+1466567324 || -------- random: 178  |    deviceid:0200A3EC5FAAA998D8A6004220D9B6C0   |    isfront:1
+1466567324 || -------- random: 352  |    deviceid:1CBD0BE7499E4D67B0565F171E051A9D   |    isfront:1
+1466567324 || -------- random: 614  |    deviceid:F206CE405D71277F4249F66AE01DC8C8   |    isfront:1
+1466567325 || -------- random: 504  |    deviceid:555A9F84DE10984B02A097A881540D82   |    isfront:1
+1466567325 || -------- random: 773  |    deviceid:088AB1F91B712604C4A80B89562AB095   |    isfront:1
+1466567325 || -------- random: 552  |    deviceid:B400F0F1631E1C5C3B879F5F22627A12   |    isfront:1
+1466567325 || -------- random: 613  |    deviceid:5B1F5115906EDE03D987983CEF51F5B3   |    isfront:1
+1466567325 || 1098937+++++++++++++++op:getuserlist
+1466567325 || 1098937+++++++++++++++op:getuserlist  query spaefield start
+1466567325 || 1098937+++++++++++++++op:getuserlist  query spaefield end
+1466567325 || -------- random: 168  |    deviceid:37A6259CC0C1DAE299A7866489DFF0BD   |    isfront:1
+1466567326 || -------- random: 866  |    deviceid:17FFD897ABF72050001FE0525FA467D2   |    isfront:1
+1466567326 || -------- random: 531  |    deviceid:49329538132B0A053DF15AD669E5659B   |    isfront:1
+1466567326 || -------- random: 53  |    deviceid:C5E57EC932F640DA35080F6098B603A8   |    isfront:1
+1466567326 || -------- random: 376  |    deviceid:4EC33254F1E6D17364AEF7E9E2ABAE8D   |    isfront:1
+1466567326 || -------- random: 22  |    deviceid:   |    isfront:1
+1466567326 || -------- random: 383  |    deviceid:760874FF7F25B9334154C59D5BB73DD6   |    isfront:1
+1466567326 || -------- random: 66  |    deviceid:6E9B4B61BB4C69B56AA48E3837FFFCCD   |    isfront:1
+1466567326 || 1098937+++++++++++++++op:getuserlist ....... prepare sql 
+1466567326 || 1098937+++++++++++++++op:getuserlist ....... query sql 
+1466567326 || -------- random: 744  |    deviceid:CC9027308A1A238AFE749D195ADDB256   |    isfront:1
+1466567326 || -------- random: 456  |    deviceid:B355DEC630EAF0EF81AD164DCFFA1FC5   |    isfront:1
+1466567326 || -------- random: 672  |    deviceid:8D8A60DD7C40CE1B05363D0C55FA7DBD   |    isfront:1
+1466567327 || 1098910+++++++++++++++op:getuserlist
+1466567327 || 1098910+++++++++++++++op:getuserlist  query spaefield start
+1466567327 || 1098910+++++++++++++++op:getuserlist  query spaefield end
+1466567327 || 1098910+++++++++++++++op:getuserlist ....... prepare sql 
+1466567327 || -------- random: 904  |    deviceid:405A8F751002DC28DC75E794284F4262   |    isfront:2
+1466567327 || 1098910+++++++++++++++op:getuserlist ....... query sql 
+1466567327 || 1098937+++++++++++++++op:getuserlist ....... end 
+1466567327 || 1098910+++++++++++++++op:getuserlist ....... end 
+1466567327 || -------- random: 664  |    deviceid:BAF8F97F350404649BB90520F72E1274   |    isfront:1
+1466567327 || -------- random: 66  |    deviceid:95FB5F92168FB198AB908A7CD76C2026   |    isfront:1
+1466567327 || 979341+++++++++++++++op:getuserlist
+1466567327 || 979341+++++++++++++++op:getuserlist  query spaefield start
+1466567327 || 979341+++++++++++++++op:getuserlist  query spaefield end
+1466567328 || -------- random: 106  |    deviceid:D97D94CD3294F0E79F65E15C7C1D11A6   |    isfront:1
+1466567328 || -------- random: 705  |    deviceid:5DA9DB8CF231116380D69F6B27D6BAA2   |    isfront:1
+1466567328 || -------- random: 431  |    deviceid:A7B081BC7E769BFB4BA71F521E56B1E9   |    isfront:1
+1466567328 || 735272+++++++++++++++op:getuserlist
+1466567328 || 735272+++++++++++++++op:getuserlist  query spaefield start
+1466567328 || 735272+++++++++++++++op:getuserlist  query spaefield end
+1466567328 || 979341+++++++++++++++op:getuserlist ....... prepare sql 
+1466567328 || 735272+++++++++++++++op:getuserlist ....... prepare sql 
+1466567328 || 735272+++++++++++++++op:getuserlist ....... query sql 
+1466567328 || 979341+++++++++++++++op:getuserlist ....... query sql 
+1466567328 || -------- random: 852  |    deviceid:40FCA53E11DD9F3BC3CA6046EA58831F   |    isfront:1
+1466567329 || -------- random: 462  |    deviceid:1D89512D52105E518E2E37A0AC43B1B7   |    isfront:1
+1466567329 || -------- random: 229  |    deviceid:99D0687DE2D3FEB98282A160FF89CAFC   |    isfront:1
+1466567329 || -------- random: 628  |    deviceid:E282A07546DA6342AB242CF72FEEB434   |    isfront:1
+1466567329 || -------- random: 471  |    deviceid:   |    isfront:1
+1466567329 || -------- random: 863  |    deviceid:95D9176277027F7E3C700816CF431390   |    isfront:1
+1466567330 || -------- random: 521  |    deviceid:96BC9B8C60EDC937779650ABF9E53DD8   |    isfront:1
+1466567330 || -------- random: 32  |    deviceid:53EBEBC5267251664876693403EF56DA   |    isfront:1
+1466567330 || -------- random: 436  |    deviceid:E12535926D5D9DCE0AE5D0E09977C1F3   |    isfront:1
+1466567330 || -------- random: 264  |    deviceid:   |    isfront:1
+1466567330 || -------- random: 905  |    deviceid:B199BFFBCE2CB09463BBD273D951089A   |    isfront:1
+1466567330 || -------- random: 136  |    deviceid:1DF6789358DE3A6CB1A25E93B1622D2E   |    isfront:1
+1466567331 || -------- random: 340  |    deviceid:143711F392F78D7D0D159B7B6520B3E9   |    isfront:2
+1466567331 || -------- random: 805  |    deviceid:143711F392F78D7D0D159B7B6520B3E9   |    isfront:2
+1466567331 || -------- random: 548  |    deviceid:143711F392F78D7D0D159B7B6520B3E9   |    isfront:2
+1466567331 || -------- random: 174  |    deviceid:07CBF9CA7C3E97542581AFC67A88BD53   |    isfront:1
+1466567331 || -------- random: 86  |    deviceid:882507A1BCD47AF68AF228B7CEB7AFAC   |    isfront:1
+1466567331 || -------- random: 556  |    deviceid:DBFF042C2ABF879180BB11704CB38E71   |    isfront:1
+1466567331 || -------- random: 62  |    deviceid:AE9EAB3CB72C6102E0545C0647EA3B68   |    isfront:1
+1466567332 || -------- random: 783  |    deviceid:6F9F040ADA644AAEF510E84344749F71   |    isfront:1
+1466567332 || -------- random: 198  |    deviceid:47AB8428D6146A79068869C17377BB4F   |    isfront:1
+1466567332 || -------- random: 280  |    deviceid:0E7A2CC5EFAE81C0E5CC40D5FA98E065   |    isfront:1
+1466567333 || -------- random: 369  |    deviceid:   |    isfront:1
+1466567333 || -------- random: 478  |    deviceid:C6DB4D86CA73D525BB038FF10055F054   |    isfront:1
+1466567333 || -------- random: 333  |    deviceid:3A585B9FB8C206697406B154A0B39104   |    isfront:1
+1466567333 || -------- random: 864  |    deviceid:94F67072FCE862E2E4A4257DA15BEC48   |    isfront:1
+1466567333 || -------- random: 706  |    deviceid:0F617E2D3B3853096BD6C4CAF06B3957   |    isfront:1
+1466567333 || -------- random: 86  |    deviceid:9857D870EA35A947E661993D19281809   |    isfront:1
+1466567333 || -------- random: 521  |    deviceid:D2929E9146DB44582CE61A8744C2A80C   |    isfront:1
+1466567334 || -------- random: 955  |    deviceid:ACB3EF5EF657BD82E53BDFDD67FD48A8   |    isfront:1
+1466567334 || -------- random: 309  |    deviceid:0A78937955FC5623F1B09CBD6B71A429   |    isfront:1
+1466567334 || -------- random: 692  |    deviceid:C4742DE94CA0B6D97CAD9B841651B68C   |    isfront:1
+1466567334 || 979341+++++++++++++++op:getuserlist ....... end 
+1466567334 || 735272+++++++++++++++op:getuserlist ....... end 
+1466567334 || -------- random: 483  |    deviceid:   |    isfront:1
+1466567334 || -------- random: 264  |    deviceid:BF80E9E0A65B1E894E0D33BCECD96FCA   |    isfront:1
+1466567334 || -------- random: 717  |    deviceid:E9E11DA27B3DC7AF4F7C2B32E9C671D6   |    isfront:1
+1466567334 || -------- random: 714  |    deviceid:5515F3EBB941F729AB41200CD5BC8A5D   |    isfront:1
+1466567335 || -------- random: 408  |    deviceid:BC0A72C0BD8288CA94ABE728099A2555   |    isfront:1
+1466567335 || -------- random: 924  |    deviceid:AF5961D81303187B4EDF8C9B4DFA9505   |    isfront:1
+1466567336 || -------- random: 689  |    deviceid:2F39620884C6323C98CD6EDA13EDA448   |    isfront:1
+1466567336 || -------- random: 667  |    deviceid:   |    isfront:1
+1466567336 || -------- random: 203  |    deviceid:5A46D23F594551869B678264FC823AE5   |    isfront:1
+1466567336 || -------- random: 918  |    deviceid:D854F551D9BFBF8D6C2AA1F6BF0541F4   |    isfront:1
+1466567337 || -------- random: 915  |    deviceid:   |    isfront:1
+1466567337 || -------- random: 274  |    deviceid:55AF3A7C74B396CF0528DCD89BD00AEF   |    isfront:1
+1466567337 || -------- random: 702  |    deviceid:257634D5860754620B99ADDEC79BA171   |    isfront:1
+1466567337 || -------- random: 517  |    deviceid:F86B40215E3F2FFDFEA53B618BAF51AE   |    isfront:1
+1466567337 || -------- random: 837  |    deviceid:BA4B3C0101B0989DF4D1A754D3850F2F   |    isfront:1
+1466567338 || -------- random: 703  |    deviceid:AFE4B1D87D853802381B35F402242049   |    isfront:1
+1466567338 || -------- random: 638  |    deviceid:AFF11DBA1454AB15789ADD650448462E   |    isfront:1
+1466567338 || -------- random: 437  |    deviceid:071EB117FE31ECE826F148FE6084E789   |    isfront:1
+1466567338 || -------- random: 727  |    deviceid:   |    isfront:1
+1466567338 || -------- random: 714  |    deviceid:806FE816445FCDA40A8FA7EE37BC7A84   |    isfront:1
+1466567338 || -------- random: 588  |    deviceid:5551F064FA446934444552991247032A   |    isfront:1
+1466567338 || -------- random: 304  |    deviceid:82D3970384C6731954D78905BCAA5EA2   |    isfront:1
+1466567338 || 963144+++++++++++++++op:getuserlist
+1466567338 || 963144+++++++++++++++op:getuserlist  query spaefield start
+1466567338 || 963144+++++++++++++++op:getuserlist  query spaefield end
+1466567338 || 963144+++++++++++++++op:getuserlist ....... prepare sql 
+1466567338 || -------- random: 180  |    deviceid:1EAEDF2DD82E5058C4D25D5499E0A83F   |    isfront:1
+1466567338 || -------- random: 37  |    deviceid:CC3119E2011112E1597F02F8176D8F56   |    isfront:2
+1466567338 || -------- random: 218  |    deviceid:764717ABB7D705411288F0897D7CE7BD   |    isfront:1
+1466567339 || -------- random: 867  |    deviceid:CEC26E9A1872D54114DCA816461D448A   |    isfront:1
+1466567339 || -------- random: 634  |    deviceid:143711F392F78D7D0D159B7B6520B3E9   |    isfront:2
+1466567339 || -------- random: 339  |    deviceid:71FD9523ED6885B39D1E6253939E974E   |    isfront:1
+1466567339 || -------- random: 903  |    deviceid:   |    isfront:1
+1466567339 || 1088398+++++++++++++++op:getuserlist
+1466567339 || 1088398+++++++++++++++op:getuserlist  query spaefield start
+1466567339 || -------- random: 676  |    deviceid:B6C150991F7FC74426FA77B41BD65478   |    isfront:1
+1466567339 || 1088398+++++++++++++++op:getuserlist
+1466567339 || 1088398+++++++++++++++op:getuserlist  query spaefield start
+1466567339 || -------- random: 101  |    deviceid:23E75CB4DD7867422B9FC6FFF029C996   |    isfront:1
+1466567340 || -------- random: 322  |    deviceid:DD3D81244D092D6B0560EDE496CACD7B   |    isfront:1
+1466567340 || -------- random: 148  |    deviceid:39A44359C8FE42928FD6BC65CF8BC8A7   |    isfront:1
+1466567340 || -------- random: 131  |    deviceid:B81113E9AEF4A50E447605F2BB7C5634   |    isfront:1
+1466567340 || -------- random: 397  |    deviceid:064F0556DB02E422398997FE7ECEB2CE   |    isfront:1
+1466567340 || -------- random: 612  |    deviceid:1E94F4C6837092B31A9B80164C0C404D   |    isfront:2
+1466567341 || -------- random: 745  |    deviceid:   |    isfront:1
+1466567341 || -------- random: 435  |    deviceid:   |    isfront:1
+1466567341 || -------- random: 716  |    deviceid:EE6EFC3986D22117150A050FE409AC21   |    isfront:1
+1466567341 || -------- random: 619  |    deviceid:26CF547FD22053D2D24B69525A036C7E   |    isfront:1
+1466567341 || -------- random: 126  |    deviceid:7C9C13C97BF349C5FBA57B73455A5CA5   |    isfront:1
+1466567341 || -------- random: 492  |    deviceid:2562C030DF2670FAC59B18ACE1687697   |    isfront:1
+1466567341 || 963144+++++++++++++++op:getuserlist ....... query sql 
+1466567341 || 1088398+++++++++++++++op:getuserlist  query spaefield end
+1466567341 || 1088398+++++++++++++++op:getuserlist  query spaefield end
+1466567341 || -------- random: 592  |    deviceid:E4B6C1AF9EB568EABD7D412354DC406C   |    isfront:2
+1466567342 || -------- random: 420  |    deviceid:0E5ECFFB4206B92F3861B04B7365CFD6   |    isfront:1
+1466567342 || -------- random: 174  |    deviceid:B2E6C3B2AFF7D0B62BDE09EE66D3B29F   |    isfront:1
+1466567342 || -------- random: 315  |    deviceid:   |    isfront:1
+1466567342 || -------- random: 85  |    deviceid:CEB0D7099C3787536B92C34990C1EBAC   |    isfront:1
+1466567342 || -------- random: 17  |    deviceid:1605BC1EB6CEE5A9EB1A8DF37A629F8D   |    isfront:1
+1466567342 || 1098928+++++++++++++++op:getuserlist
+1466567342 || 1098928+++++++++++++++op:getuserlist  query spaefield start
+1466567343 || 1088398+++++++++++++++op:getuserlist
+1466567343 || 1088398+++++++++++++++op:getuserlist  query spaefield start
+1466567343 || 1088398+++++++++++++++op:getuserlist  query spaefield end
+1466567343 || 1088398+++++++++++++++op:getuserlist ....... prepare sql 
+1466567343 || -------- random: 843  |    deviceid:C304C7516DD77E25C212E866CE41781E   |    isfront:1
+1466567343 || -------- random: 528  |    deviceid:5A85E927271BD88665423BA92C58C73A   |    isfront:2
+1466567343 || -------- random: 753  |    deviceid:CEC26E9A1872D54114DCA816461D448A   |    isfront:1
+1466567343 || 1087118+++++++++++++++op:getuserlist
+1466567343 || 1087118+++++++++++++++op:getuserlist  query spaefield start
+1466567343 || 1087118+++++++++++++++op:getuserlist  query spaefield end
+1466567343 || 1088398+++++++++++++++op:getuserlist ....... prepare sql 
+1466567343 || 1088398+++++++++++++++op:getuserlist ....... prepare sql 
+1466567343 || 1087118+++++++++++++++op:getuserlist ....... prepare sql 
+1466567343 || 1098928+++++++++++++++op:getuserlist  query spaefield end
+1466567343 || -------- random: 387  |    deviceid:   |    isfront:1
+1466567343 || -------- random: 618  |    deviceid:   |    isfront:1
+1466567343 || -------- random: 422  |    deviceid:67A4BC41271FFA62E11CEA9F2F5A9B35   |    isfront:1
+1466567344 || -------- random: 782  |    deviceid:AF5961D81303187B4EDF8C9B4DFA9505   |    isfront:1
+1466567344 || -------- random: 254  |    deviceid:BA935B7862A1C474F290BF260065BE8F   |    isfront:1
+1466567344 || -------- random: 729  |    deviceid:38FDAF41B6F7FD9B3AFAF9602F966934   |    isfront:1
+1466567344 || -------- random: 388  |    deviceid:B9B1A549CEC511E13AEBB721A5F4884B   |    isfront:1
+1466567344 || -------- random: 406  |    deviceid:DE42044597C53E316EC3723575B41B73   |    isfront:1
+1466567344 || -------- random: 253  |    deviceid:4645C348F00CFEF10CEECAA85435265A   |    isfront:1
+1466567344 || 1098928+++++++++++++++op:getuserlist ....... prepare sql 
+1466567344 || 1088398+++++++++++++++op:getuserlist ....... query sql 
+1466567344 || 1088398+++++++++++++++op:getuserlist ....... query sql 
+1466567344 || 1087118+++++++++++++++op:getuserlist ....... query sql 
+1466567344 || 1088398+++++++++++++++op:getuserlist ....... query sql 
+1466567344 || -------- random: 934  |    deviceid:E0963B5BC028DBBE4A1B8BFCD94341A6   |    isfront:1
+1466567344 || -------- random: 2  |    deviceid:52861FFA48A247C723B4FEAA6F046175   |    isfront:1
+1466567344 || -------- random: 366  |    deviceid:6CB630590DE653E5919AE93B22145862   |    isfront:1
+1466567344 || -------- random: 621  |    deviceid:70EE98D38F221F60DA2A25914550B770   |    isfront:1
+1466567345 || -------- random: 673  |    deviceid:E566B796A913CA76CAE91E0D885B52BE   |    isfront:1
+1466567345 || -------- random: 449  |    deviceid:41A6A6ECDD2ABA01E04FFF61634F897D   |    isfront:1
+1466567345 || -------- random: 351  |    deviceid:9545A16BC199451908C1982D3705005C   |    isfront:1
+1466567345 || -------- random: 695  |    deviceid:00C4F1FF33A8A40D12651C10E5F8C5FE   |    isfront:1
+1466567345 || -------- random: 7  |    deviceid:6D8126CEDBECCB530A20E484A39F0746   |    isfront:1
+1466567345 || -------- random: 523  |    deviceid:   |    isfront:1
+1466567345 || 963144+++++++++++++++op:getuserlist ....... end 
+1466567345 || 1098928+++++++++++++++op:getuserlist ....... query sql 
+1466567345 || -------- random: 121  |    deviceid:D5D8B1A293B342EF0675214A2FDD972C   |    isfront:1
+1466567346 || -------- random: 955  |    deviceid:   |    isfront:1
+1466567346 || -------- random: 721  |    deviceid:   |    isfront:1
+1466567346 || -------- random: 722  |    deviceid:7E6A21565BAD666E0BBFF387F265E764   |    isfront:1
+1466567346 || -------- random: 68  |    deviceid:   |    isfront:1
+1466567346 || -------- random: 435  |    deviceid:   |    isfront:1
+1466567346 || -------- random: 742  |    deviceid:   |    isfront:1
+1466567346 || -------- random: 520  |    deviceid:38209CC152861583454A60C6A829404B   |    isfront:2
+1466567346 || -------- random: 291  |    deviceid:140E028D17B5915EA9A036EAA2D7F6B1   |    isfront:1
+1466567347 || -------- random: 551  |    deviceid:A06094B3CBC0589CB9E0C513A131DE4F   |    isfront:1
+1466567347 || 1087118+++++++++++++++op:getuserlist ....... end 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... end 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... end 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... end 
+1466567347 || 1098928+++++++++++++++op:getuserlist ....... end 
+1466567347 || -------- random: 618  |    deviceid:06E4ED09C411A5AA11B5377C6750DE8F   |    isfront:1
+1466567347 || 1097763+++++++++++++++op:getuserlist
+1466567347 || 1097763+++++++++++++++op:getuserlist  query spaefield start
+1466567347 || 1097763+++++++++++++++op:getuserlist  query spaefield end
+1466567347 || 1097763+++++++++++++++op:getuserlist ....... prepare sql 
+1466567347 || 1097763+++++++++++++++op:getuserlist ....... query sql 
+1466567347 || -------- random: 633  |    deviceid:6E9B4B61BB4C69B56AA48E3837FFFCCD   |    isfront:1
+1466567347 || 1097763+++++++++++++++op:getuserlist ....... end 
+1466567347 || -------- random: 853  |    deviceid:188F7413154973DAD3C3C3B8C387F4A6   |    isfront:1
+1466567347 || -------- random: 829  |    deviceid:78D2B7DF54D6EB191D573FD506BE597F   |    isfront:1
+1466567347 || 1088398+++++++++++++++op:getuserlist
+1466567347 || 1088398+++++++++++++++op:getuserlist  query spaefield start
+1466567347 || 1088398+++++++++++++++op:getuserlist  query spaefield end
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... prepare sql 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... query sql 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... end 
+1466567347 || 1088398+++++++++++++++op:getuserlist
+1466567347 || 1088398+++++++++++++++op:getuserlist  query spaefield start
+1466567347 || 1088398+++++++++++++++op:getuserlist  query spaefield end
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... prepare sql 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... query sql 
+1466567347 || 1088398+++++++++++++++op:getuserlist ....... end 
+1466567347 || -------- random: 178  |    deviceid:55994AD9A2FA0AED056CC72F08756102   |    isfront:2
+1466567347 || -------- random: 573  |    deviceid:DDCFA8713CF6ACBC454BB285E2A34023   |    isfront:1
+1466567347 || -------- random: 357  |    deviceid:D93CE206D46A19AC1CAEF06FBCF2EF18   |    isfront:1
+1466567348 || -------- random: 932  |    deviceid:D5D8B1A293B342EF0675214A2FDD972C   |    isfront:1
+1466567348 || -------- random: 445  |    deviceid:4F00B7BA64FE9D43C51205829AD9BB9A   |    isfront:1
+1466567348 || -------- random: 338  |    deviceid:B780FC4EC764CE291CF5ABE26A6C9B67   |    isfront:1
+1466567348 || -------- random: 646  |    deviceid:A001FA9EC5C5DA38B498A762CA73546A   |    isfront:1
+1466567348 || -------- random: 299  |    deviceid:36AF23319C1B306EB03C8839385A4B96   |    isfront:1
+1466567349 || 1089485+++++++++++++++op:getuserlist
+1466567349 || 1089485+++++++++++++++op:getuserlist  query spaefield start
+1466567349 || 1089485+++++++++++++++op:getuserlist  query spaefield end
+1466567349 || 1089485+++++++++++++++op:getuserlist ....... prepare sql 
+1466567349 || -------- random: 150  |    deviceid:   |    isfront:1
+1466567349 || -------- random: 383  |    deviceid:B8B91CBB01DE00EDCDCDF8ADCC905464   |    isfront:1
+1466567349 || -------- random: 539  |    deviceid:F315D9F085441771064F59F090D5B41F   |    isfront:1
+1466567349 || 1089485+++++++++++++++op:getuserlist ....... query sql 
+1466567349 || 1089485+++++++++++++++op:getuserlist ....... end 
+1466567350 || -------- random: 440  |    deviceid:0588D83DF9DB8E6AD4B5891186784D46   |    isfront:1
+1466567350 || -------- random: 571  |    deviceid:E652973A0F214CD86C60D50F896AE64F   |    isfront:1
+1466567350 || -------- random: 382  |    deviceid:5CCB52CB19E540C214FB89C55D6C5CFF   |    isfront:1
+1466567350 || -------- random: 245  |    deviceid:   |    isfront:2
+1466567350 || -------- random: 840  |    deviceid:387109F5B959CAB44B1863436A0B201F   |    isfront:1
+1466567351 || -------- random: 692  |    deviceid:6516B4E2FD90E61A050F17B654D32473   |    isfront:1
+1466567351 || -------- random: 751  |    deviceid:   |    isfront:1
+1466567351 || -------- random: 784  |    deviceid:B1B58070C01C5CB03681EEAFF57B494A   |    isfront:1
+1466567351 || -------- random: 679  |    deviceid:   |    isfront:1
+1466567352 || -------- random: 300  |    deviceid:8429AE2495CA55C650148A7FAAD1F52E   |    isfront:1
+1466567352 || -------- random: 224  |    deviceid:C5952E7B17B79CA65988A24C93DB28BF   |    isfront:1
+1466567352 || -------- random: 580  |    deviceid:   |    isfront:1
+1466567353 || 1089485+++++++++++++++op:getuserlist
+1466567353 || 1089485+++++++++++++++op:getuserlist  query spaefield start
+1466567353 || 1089485+++++++++++++++op:getuserlist  query spaefield end
+1466567353 || 1089485+++++++++++++++op:getuserlist ....... prepare sql 
+1466567353 || -------- random: 148  |    deviceid:8A9B182D5C064FA9C6283D277299C730   |    isfront:1
+1466567353 || -------- random: 999  |    deviceid:13F12ACEEAD6A033C0459B3F063DF14B   |    isfront:1
+1466567353 || -------- random: 244  |    deviceid:081EF650FFFAB54531DB5721632FA544   |    isfront:1
+1466567353 || -------- random: 327  |    deviceid:014D66960A5E4B18F6BF2348EC88AC66   |    isfront:1
+1466567353 || -------- random: 688  |    deviceid:0B5F3C3ADB47BA184D60C5675D2A8B9F   |    isfront:1
+1466567353 || -------- random: 107  |    deviceid:5F5603082677760D4E2C4D6354F6B675   |    isfront:1
+1466567353 || -------- random: 66  |    deviceid:088AB1F91B712604C4A80B89562AB095   |    isfront:1
+1466567353 || -------- random: 578  |    deviceid:   |    isfront:1
+1466567353 || -------- random: 109  |    deviceid:46A27C229F9D3CE301704E223A30BD3B   |    isfront:1
+1466567353 || -------- random: 842  |    deviceid:48DFF1F08F21BE273CA05B79CC03063F   |    isfront:1
+1466567354 || -------- random: 478  |    deviceid:D1A45A6F201CFE45AE7960BC571AE056   |    isfront:2
+1466567354 || -------- random: 987  |    deviceid:C5E57EC932F640DA35080F6098B603A8   |    isfront:1
+1466567354 || -------- random: 532  |    deviceid:134F92ABA9E434F901551AE2AF76A111   |    isfront:1
+1466567355 || -------- random: 58  |    deviceid:C45E218315485DE336F37266A23C86B4   |    isfront:1
+1466567355 || 1089485+++++++++++++++op:getuserlist ....... query sql 
+1466567355 || 1097763+++++++++++++++op:getuserlist
+1466567355 || 1097763+++++++++++++++op:getuserlist  query spaefield start
+1466567355 || 1097763+++++++++++++++op:getuserlist  query spaefield end
+1466567355 || 1097763+++++++++++++++op:getuserlist ....... prepare sql 
+1466567355 || -------- random: 574  |    deviceid:7C97D62C39A036C3AFF4534F516D5ED8   |    isfront:1
+1466567355 || -------- random: 219  |    deviceid:A9B8558814F57CA8495E9851B2AB11CA   |    isfront:1
+1466567355 || -------- random: 776  |    deviceid:14E68DCDE459158C18A69C0DF21051E6   |    isfront:1
+1466567355 || -------- random: 816  |    deviceid:764717ABB7D705411288F0897D7CE7BD   |    isfront:1
+1466567355 || -------- random: 221  |    deviceid:D6731ACCFD6058A510578D2F449286FF   |    isfront:1
+1466567356 || -------- random: 27  |    deviceid:1030F5BBD6EFE815612A963A5CE556B8   |    isfront:1
+1466567356 || -------- random: 509  |    deviceid:   |    isfront:1
+1466567356 || -------- random: 228  |    deviceid:36EB5E78616650062D1BE2DF6BD75B1D   |    isfront:1
+1466567356 || -------- random: 636  |    deviceid:C34628DE55A5A0F6E32764FF898C7522   |    isfront:1
+1466567356 || -------- random: 967  |    deviceid:9E49A8C554DB2FF0A52ACE942A5C2E77   |    isfront:1
+1466567357 || -------- random: 807  |    deviceid:D887E89F95C77280A39EE76E70477051   |    isfront:1
+1466567357 || -------- random: 390  |    deviceid:AEBF3D5587027CC626BBA6B64197A666   |    isfront:1
+1466567357 || -------- random: 604  |    deviceid:44BED179644F319E9D5FB75C0BE414FB   |    isfront:1
+1466567357 || -------- random: 518  |    deviceid:38569220F2A1ACC24E10ABD08B387EF8   |    isfront:2
+1466567357 || -------- random: 125  |    deviceid:B3E6A5A97590FDD574E15C4B5C28675D   |    isfront:1
+1466567357 || 1098892+++++++++++++++op:getuserlist
+1466567357 || 1098892+++++++++++++++op:getuserlist  query spaefield start
+1466567357 || -------- random: 817  |    deviceid:1A844FEF98232C731BDC6CB4CB99D774   |    isfront:1
+1466567358 || -------- random: 221  |    deviceid:AF4E380B15D99EE2F7EAF4A35EC98102   |    isfront:1
+1466567358 || -------- random: 224  |    deviceid:FD13CCDD13405FA2CAA1CBEA8C4B482C   |    isfront:2
+1466567358 || -------- random: 317  |    deviceid:119A7E8B631855CD794CE2F7C7D5E265   |    isfront:1
+1466567358 || -------- random: 435  |    deviceid:   |    isfront:1
+1466567358 || -------- random: 868  |    deviceid:722FE947DD9957A794780C8798E86C74   |    isfront:1
+1466567359 || 1097763+++++++++++++++op:getuserlist ....... query sql 
+1466567359 || 1098892+++++++++++++++op:getuserlist  query spaefield end
+1466567359 || -------- random: 267  |    deviceid:E282A07546DA6342AB242CF72FEEB434   |    isfront:1
+1466567359 || -------- random: 495  |    deviceid:   |    isfront:1
+1466567360 || -------- random: 411  |    deviceid:0D8AA7301DC2AA7F29DE924A6F6E728E   |    isfront:1
+1466567360 || -------- random: 485  |    deviceid:BFB003C76AFD9A9D78F79000A3C4506D   |    isfront:1
+1466567360 || -------- random: 452  |    deviceid:   |    isfront:1
+1466567360 || -------- random: 144  |    deviceid:32770AA31D632887DEEE8317FCDE6938   |    isfront:1
+1466567360 || -------- random: 437  |    deviceid:   |    isfront:1
+1466567360 || -------- random: 908  |    deviceid:28F9557A4FA0A50973097363602D5399   |    isfront:1
+1466567360 || -------- random: 688  |    deviceid:95D9176277027F7E3C700816CF431390   |    isfront:1
+1466567361 || -------- random: 460  |    deviceid:   |    isfront:1
+1466567361 || -------- random: 389  |    deviceid:990EB78C89124D9AC1B7FF1C058CC2BF   |    isfront:1
+1466567361 || -------- random: 411  |    deviceid:   |    isfront:1
+1466567361 || -------- random: 520  |    deviceid:   |    isfront:2
+1466567361 || -------- random: 229  |    deviceid:5AF68C0A9735182C975EFA8932AF3860   |    isfront:1
+1466567361 || -------- random: 819  |    deviceid:5DA9DB8CF231116380D69F6B27D6BAA2   |    isfront:1
+1466567361 || 1098892+++++++++++++++op:getuserlist ....... prepare sql 
+1466567361 || -------- random: 529  |    deviceid:9545A16BC199451908C1982D3705005C   |    isfront:1
+1466567361 || -------- random: 359  |    deviceid:4FDE08F7D67FA650C46303CC68539870   |    isfront:1
+1466567361 || -------- random: 661  |    deviceid:9B43F0D66766DEFA53A4ECDAF33CAFAC   |    isfront:1
+1466567361 || -------- random: 123  |    deviceid:   |    isfront:1
+1466567362 || -------- random: 84  |    deviceid:52C1E4EB61972D259899D8C8E0BABB9B   |    isfront:1
+1466567362 || -------- random: 483  |    deviceid:B9B1A549CEC511E13AEBB721A5F4884B   |    isfront:1
+1466567362 || -------- random: 534  |    deviceid:1D68F5CB8E1E2F3B88F64B84B36BF816   |    isfront:1
+1466567362 || -------- random: 707  |    deviceid:   |    isfront:1
+1466567362 || -------- random: 541  |    deviceid:372CD24E679062F218BBE054DAD6CEB4   |    isfront:1
+1466567362 || -------- random: 739  |    deviceid:20E6EC5BCBDB21C273A3689295956540   |    isfront:1
+1466567362 || -------- random: 682  |    deviceid:263B5B11F5A1E811C6A4D3128605E0AD   |    isfront:1
+1466567362 || 1089485+++++++++++++++op:getuserlist ....... end 
+1466567362 || 1098892+++++++++++++++op:getuserlist ....... query sql 
+1466567362 || -------- random: 398  |    deviceid:5A14AC9159B207D13BFD7A1B59966DF9   |    isfront:1
+1466567363 || -------- random: 703  |    deviceid:E7E5677A2745733055C18AE3E94EB4CD   |    isfront:1
+1466567363 || -------- random: 586  |    deviceid:1EC78673922D927FEE46CFA56E858B35   |    isfront:1
+1466567363 || 721339+++++++++++++++op:getuserlist
+1466567363 || 721339+++++++++++++++op:getuserlist  query spaefield start
+1466567363 || -------- random: 51  |    deviceid:9C250BB3D6E4025AC78DDC1BF26CDC6D   |    isfront:1
+1466567363 || -------- random: 309  |    deviceid:   |    isfront:1
+1466567364 || -------- random: 434  |    deviceid:978AD95D4AF76BE5EA4ECE38ACABC744   |    isfront:1
+1466567364 || 721339+++++++++++++++op:getuserlist  query spaefield end
+1466567364 || 721339+++++++++++++++op:getuserlist ....... prepare sql 
+1466567364 || -------- random: 867  |    deviceid:5D82F3F95E7E2EBC32C471B9779FEE7D   |    isfront:1
+1466567364 || -------- random: 765  |    deviceid:668ADB31B1793C010D0D87A72715F7FC   |    isfront:2
+1466567364 || -------- random: 335  |    deviceid:0E8B8E3AC7A7B8185B06CF93995AF305   |    isfront:1
+1466567364 || -------- random: 709  |    deviceid:   |    isfront:1
+1466567365 || -------- random: 110  |    deviceid:5B60135CED56D9CD8CDF22188530AAB9   |    isfront:1
+1466567365 || -------- random: 409  |    deviceid:2FACAF74353421DB43B398EFDFC9A952   |    isfront:2
+1466567365 || -------- random: 98  |    deviceid:6C5AE622E0D38C7E53704AF90083FD96   |    isfront:1
+1466567365 || -------- random: 503  |    deviceid:F5238A15C994A2EDBDE1F2F1B90990B2   |    isfront:1
+1466567365 || -------- random: 335  |    deviceid:ACA9AE5B90B886F128121C46FE896930   |    isfront:1
+1466567365 || -------- random: 487  |    deviceid:8C774F00E43CC2A606C51991792549FD   |    isfront:1
+1466567365 || -------- random: 418  |    deviceid:   |    isfront:1
+1466567365 || -------- random: 170  |    deviceid:4A9562AF9DAA0CB311089A9DD28EB1F0   |    isfront:1
+1466567365 || -------- random: 300  |    deviceid:C64592FD796D3989EDD0E6DDCE0BEFD2   |    isfront:1
+1466567366 || -------- random: 518  |    deviceid:   |    isfront:1
+1466567366 || -------- random: 472  |    deviceid:DB8410EB8429E68981C70CAAF4C476BF   |    isfront:2
+1466567366 || -------- random: 10  |    deviceid:   |    isfront:1
+1466567366 || -------- random: 497  |    deviceid:   |    isfront:1
+1466567366 || 1097763+++++++++++++++op:getuserlist ....... end 
+1466567366 || 721339+++++++++++++++op:getuserlist ....... query sql 
+1466567366 || -------- random: 566  |    deviceid:A7A3C13824841939F804968D941944C9   |    isfront:1
+1466567366 || -------- random: 234  |    deviceid:   |    isfront:1
+1466567366 || -------- random: 189  |    deviceid:BB47566E236556A3E7E527BADC5F92DA   |    isfront:1
+1466567366 || -------- random: 247  |    deviceid:788F6A0098B2922A5322A0A7CA69B394   |    isfront:1
+1466567366 || -------- random: 914  |    deviceid:ED14629E10E0023A9EF5AA43E1BCA3C0   |    isfront:1
+1466567366 || -------- random: 631  |    deviceid:DBC97941CFB68F29C1971BAA5DBBA362   |    isfront:1
+1466567366 || -------- random: 777  |    deviceid:65C2676C15D84B132E877E576A398D83   |    isfront:1
+1466567366 || -------- random: 459  |    deviceid:2F0D592D7323E23E6FF9595D0AEF3221   |    isfront:1
+1466567366 || -------- random: 969  |    deviceid:A06094B3CBC0589CB9E0C513A131DE4F   |    isfront:1
+1466567366 || -------- random: 77  |    deviceid:D980BCA16EDB27CE756F2E13AA1D0503   |    isfront:1
+1466567366 || -------- random: 949  |    deviceid:4955D9E86D6AB47DD03A96721513EB57   |    isfront:1
+1466567367 || -------- random: 254  |    deviceid:CC6AC9E0E4739CA96D54569F5D41A572   |    isfront:1
+1466567367 || -------- random: 291  |    deviceid:712C9EA9C0239DD67777E36E64FA9ABE   |    isfront:1
+1466567367 || -------- random: 665  |    deviceid:609AD6BB948A74A15BD46F922B8B3A6D   |    isfront:1
+1466567367 || -------- random: 490  |    deviceid:9FAF645FAEADF0A9A1DE084FB0975972   |    isfront:1
+1466567367 || -------- random: 977  |    deviceid:F841ED6E89ECF17F756D8EF784CCC13D   |    isfront:1
+1466567367 || -------- random: 551  |    deviceid:DD15C284CD19AB58BEA2C55E6E519400   |    isfront:1
+1466567367 || -------- random: 15  |    deviceid:4492F80B55E9F42A562448700B4D1495   |    isfront:1
+1466567367 || -------- random: 880  |    deviceid:867E5EC7A25E5A962061657FC4ECEBB1   |    isfront:1
+1466567368 || -------- random: 959  |    deviceid:F0305092ECD06E778CF4C598A6EEE73A   |    isfront:1
+1466567368 || -------- random: 773  |    deviceid:   |    isfront:1
+1466567368 || -------- random: 764  |    deviceid:D5ECD3F840C0ECA633AEF45AD04F304D   |    isfront:1
+1466567368 || -------- random: 896  |    deviceid:25C853D8771F8DCF40CCCA8BBC714506   |    isfront:1
+1466567368 || -------- random: 619  |    deviceid:39791210959E5B1A47CD08452EC2EB85   |    isfront:1
+1466567368 || -------- random: 697  |    deviceid:978AD95D4AF76BE5EA4ECE38ACABC744   |    isfront:1
+1466567368 || -------- random: 651  |    deviceid:081EF650FFFAB54531DB5721632FA544   |    isfront:1
+1466567369 || -------- random: 939  |    deviceid:4AFA3F39D5EF117FD8A4D44634ED5262   |    isfront:1
+1466567369 || -------- random: 302  |    deviceid:   |    isfront:1
+1466567369 || -------- random: 817  |    deviceid:C2928FC238D0C30CEE3B46BED0EC8721   |    isfront:1
+1466567369 || 1098892+++++++++++++++op:getuserlist ....... end 
+1466567369 || -------- random: 117  |    deviceid:   |    isfront:1
+1466567369 || -------- random: 868  |    deviceid:69DD5E928F0C492CF51EA2D1D0C31305   |    isfront:1
+1466567369 || -------- random: 262  |    deviceid:D4D34DA0082ACDE3FD846E3441B6FA57   |    isfront:1
+1466567370 || -------- random: 615  |    deviceid:5AD2E148C70A28727DF3FBD6BE425719   |    isfront:1
+1466567370 || -------- random: 679  |    deviceid:AF1A5726689D5EBFA83D89A3DE585F8E   |    isfront:1
+1466567370 || -------- random: 736  |    deviceid:BC0A72C0BD8288CA94ABE728099A2555   |    isfront:1
+1466567370 || 1094031+++++++++++++++op:getuserlist
+1466567370 || 1094031+++++++++++++++op:getuserlist  query spaefield start
+1466567370 || -------- random: 491  |    deviceid:BE9DEACC448E0017846A1747B54CCF88   |    isfront:1
+1466567370 || -------- random: 23  |    deviceid:98433957860A6A6D493578439391E915   |    isfront:1
+1466567370 || 1094031+++++++++++++++op:getuserlist  query spaefield end
+1466567370 || -------- random: 818  |    deviceid:   |    isfront:1
+1466567370 || -------- random: 376  |    deviceid:566A6CA1A88B05296182069B2951E88E   |    isfront:1
+1466567370 || -------- random: 687  |    deviceid:088AB1F91B712604C4A80B89562AB095   |    isfront:1
+1466567370 || -------- random: 233  |    deviceid:02E3E5AD7EA8C32B3442445375F7883B   |    isfront:1
+1466567370 || -------- random: 984  |    deviceid:9EDC39ADE0C19A9484E90D8C4C0EB912   |    isfront:1
+1466567371 || -------- random: 728  |    deviceid:93AFB4BA6F22C22ADD6158D58360B49B   |    isfront:1
+1466567371 || -------- random: 115  |    deviceid:0A6D6DAD776A7C015054A39C2B3A22E2   |    isfront:1
+1466567371 || -------- random: 458  |    deviceid:E15725BFF2B7D7AD8608CFDD4BD00B05   |    isfront:1
+1466567371 || 1094031+++++++++++++++op:getuserlist ....... prepare sql 
+1466567371 || 721339+++++++++++++++op:getuserlist ....... end 
+1466567371 || -------- random: 110  |    deviceid:   |    isfront:2
+1466567371 || -------- random: 957  |    deviceid:D31D7F235387ADDA03E8FE8081F9BCBC   |    isfront:1
+1466567372 || 1098907+++++++++++++++op:getuserlist
+1466567372 || 1098907+++++++++++++++op:getuserlist  query spaefield start
+1466567372 || -------- random: 73  |    deviceid:387109F5B959CAB44B1863436A0B201F   |    isfront:1
+1466567372 || -------- random: 204  |    deviceid:B2E6C3B2AFF7D0B62BDE09EE66D3B29F   |    isfront:1
+1466567372 || -------- random: 173  |    deviceid:   |    isfront:1
+1466567372 || -------- random: 17  |    deviceid:59B8A763EBA2F215DC912531601ACBA5   |    isfront:1
+1466567372 || -------- random: 356  |    deviceid:3902C4A98A4E66DF776DE31097F28B78   |    isfront:1
+1466567372 || 1094031+++++++++++++++op:getuserlist ....... query sql 
+1466567372 || 1098907+++++++++++++++op:getuserlist  query spaefield end
+1466567372 || -------- random: 90  |    deviceid:D05F15C524916C59A618749D38685944   |    isfront:1
+1466567372 || 1098907+++++++++++++++op:getuserlist ....... prepare sql 
+1466567372 || -------- random: 866  |    deviceid:7428012C6D64BF9FFF23A0EBF23077F2   |    isfront:1
+1466567372 || 1098907+++++++++++++++op:getuserlist ....... query sql 
+1466567372 || 1094031+++++++++++++++op:getuserlist ....... end 
+1466567372 || 1098907+++++++++++++++op:getuserlist ....... end 
+1466567372 || -------- random: 417  |    deviceid:   |    isfront:1
+1466567372 || 244905+++++++++++++++op:getuserlist
+1466567372 || 244905+++++++++++++++op:getuserlist  query spaefield start
+1466567372 || 244905+++++++++++++++op:getuserlist  query spaefield end
+1466567372 || 244905+++++++++++++++op:getuserlist ....... prepare sql 
+1466567372 || 244905+++++++++++++++op:getuserlist ....... query sql 
+1466567372 || 244905+++++++++++++++op:getuserlist ....... end 
+1466567372 || -------- random: 379  |    deviceid:D38CD16C2E0E20590777146617427AEB   |    isfront:1
+1466567373 || -------- random: 957  |    deviceid:117A3CADA75B42220CE31D497D907C52   |    isfront:1
+1466567373 || -------- random: 130  |    deviceid:   |    isfront:1
+1466567373 || -------- random: 812  |    deviceid:FE9405C2750CF1E7C15BABFC8BC42EAB   |    isfront:1
+1466567373 || -------- random: 307  |    deviceid:BE9DEACC448E0017846A1747B54CCF88   |    isfront:1
+1466567373 || -------- random: 502  |    deviceid:   |    isfront:2
+1466567373 || -------- random: 76  |    deviceid:D3BD58A1D58036244EF2069FB79AEA1A   |    isfront:1
+1466567373 || -------- random: 594  |    deviceid:764717ABB7D705411288F0897D7CE7BD   |    isfront:1
+1466567373 || -------- random: 274  |    deviceid:F86B40215E3F2FFDFEA53B618BAF51AE   |    isfront:1
+1466567373 || -------- random: 260  |    deviceid:   |    isfront:1
+1466567374 || -------- random: 899  |    deviceid:DFE56C1EB8168C2309FB9F28E95A7EED   |    isfront:1
+1466567374 || -------- random: 684  |    deviceid:27D4AE0A819529EC11E8CEB26097B5B6   |    isfront:1
+1466567374 || -------- random: 584  |    deviceid:A8AAFD91E4ECBA3A86B349EF395B4650   |    isfront:1
+1466567374 || 1098941+++++++++++++++op:getuserlist
+1466567374 || 1098941+++++++++++++++op:getuserlist  query spaefield start
+1466567374 || 1098941+++++++++++++++op:getuserlist  query spaefield end
+1466567374 || 1098941+++++++++++++++op:getuserlist ....... prepare sql 
+1466567374 || -------- random: 771  |    deviceid:1DB6A7B815021B02E56707A50010B5FB   |    isfront:1
+1466567374 || 1098941+++++++++++++++op:getuserlist ....... query sql 
+1466567374 || 1098941+++++++++++++++op:getuserlist ....... end 
+1466567374 || -------- random: 269  |    deviceid:86DB1FADE7E4EFFD4514C0FB8F5B16A1   |    isfront:1
+1466567374 || -------- random: 268  |    deviceid:5672E1AAB0B3C8AEB8560A0D82937346   |    isfront:2
+1466567374 || -------- random: 751  |    deviceid:B633F32134EA24814701AB0F3F42B601   |    isfront:1
+1466567374 || -------- random: 200  |    deviceid:C0F2F8F30C2B5001ABD100CD24448C45   |    isfront:1
+1466567375 || -------- random: 250  |    deviceid:BC250B3084D5E84E280C88E97DA4D268   |    isfront:2
+1466567375 || -------- random: 268  |    deviceid:B6859B8F3B5141727EC01AAD63029424   |    isfront:1
+1466567375 || -------- random: 200  |    deviceid:0475A36DB8D2DC146765C043EEAC1FFF   |    isfront:1
+1466567375 || -------- random: 131  |    deviceid:8D4170460D1787BBDF8A76E7799A34DD   |    isfront:1
+1466567376 || -------- random: 607  |    deviceid:5226287B476B29161C7A102603A0918C   |    isfront:1
+1466567376 || -------- random: 891  |    deviceid:   |    isfront:1
+1466567376 || -------- random: 409  |    deviceid:AF5961D81303187B4EDF8C9B4DFA9505   |    isfront:1
+1466567376 || -------- random: 608  |    deviceid:AFE4B1D87D853802381B35F402242049   |    isfront:1
+1466567376 || -------- random: 69  |    deviceid:95D9176277027F7E3C700816CF431390   |    isfront:1
+1466567376 || -------- random: 547  |    deviceid:4A02CE66B99FBC90752E7816AC972D71   |    isfront:1
+1466567377 || -------- random: 918  |    deviceid:98ED2DFC3E90236EA8DFE76144A7E716   |    isfront:1
+1466567377 || 1097763+++++++++++++++op:getuserlist
+1466567377 || 1097763+++++++++++++++op:getuserlist  query spaefield start
+1466567377 || 1097763+++++++++++++++op:getuserlist  query spaefield end
+1466567377 || 1097763+++++++++++++++op:getuserlist ....... prepare sql 
+1466567377 || 1097763+++++++++++++++op:getuserlist ....... query sql 
+1466567377 || 1097763+++++++++++++++op:getuserlist ....... end 
+1466567377 || -------- random: 446  |    deviceid:36EB5E78616650062D1BE2DF6BD75B1D   |    isfront:1
+1466567377 || -------- random: 270  |    deviceid:FC8182BF5E15D4171A4F38E63B7EF262   |    isfront:1
+1466567377 || -------- random: 245  |    deviceid:947771F6ADBF63944789656612BE1D10   |    isfront:1
+1466567377 || -------- random: 692  |    deviceid:8A125DF901EBDAA6B4EBE5E776D88815   |    isfront:1
+1466567377 || -------- random: 607  |    deviceid:98566271CAF89F2B08589D290E0E80B4   |    isfront:1
+1466567378 || -------- random: 718  |    deviceid:   |    isfront:1
+1466567378 || -------- random: 547  |    deviceid:F89A9B4A9D6074CF45D257AD7F912CA1   |    isfront:2
+1466567378 || -------- random: 485  |    deviceid:7232AB89CBD04B1C892B98D98FF81088   |    isfront:1
+1466567378 || -------- random: 510  |    deviceid:678CC4C4977DD30E12AB0EC06505718D   |    isfront:1
+1466567378 || -------- random: 376  |    deviceid:F10BDB878EC7F07ABF04C70411AD4F3D   |    isfront:1
+1466567378 || -------- random: 198  |    deviceid:D2DC1920CAB317382712ECFA94005C70   |    isfront:1
+1466567378 || -------- random: 911  |    deviceid:603C85F79F128788C5935C7D01E77070   |    isfront:1
+1466567378 || -------- random: 819  |    deviceid:F39295A876AEE5541E34A21D862E1D64   |    isfront:1
+1466567378 || -------- random: 515  |    deviceid:F16A468C3E67D49B045A4F27664F0C76   |    isfront:1
+1466567378 || -------- random: 607  |    deviceid:667BD7E5C4E309BAB13E34613CB8E761   |    isfront:1
+1466567378 || -------- random: 792  |    deviceid:1761955685A300323C664F8E9A66D9EA   |    isfront:1
+1466567378 || -------- random: 477  |    deviceid:205EF9042497A0C118CB3A924AA2D9DB   |    isfront:1
+1466567379 || -------- random: 66  |    deviceid:1A9D5AA3BD794CDBC90CF82AEC305FA5   |    isfront:1
+1466567379 || -------- random: 161  |    deviceid:BE053579FFE42FBF95436A04D76F09A2   |    isfront:1
+1466567379 || -------- random: 55  |    deviceid:B49F1B0D1793714D0C5B41087B4BE6C5   |    isfront:1
+1466567379 || -------- random: 20  |    deviceid:4D1BC76241FC9EDEF08EDEA0C76B4638   |    isfront:1
+1466567379 || -------- random: 740  |    deviceid:D887E89F95C77280A39EE76E70477051   |    isfront:1
+1466567380 || -------- random: 873  |    deviceid:85C91FB63C3A9AF042A2DF486ED62F1A   |    isfront:1
+1466567380 || -------- random: 951  |    deviceid:5F5603082677760D4E2C4D6354F6B675   |    isfront:1
+1466567381 || -------- random: 846  |    deviceid:CD8310FEA89B8F6360BA88E3B701558C   |    isfront:1
+1466567381 || -------- random: 306  |    deviceid:A124A8ACAE189ACD020533306AB3C062   |    isfront:1
+1466567381 || -------- random: 881  |    deviceid:07F9F01D849E80B46BF3A1E358EA225F   |    isfront:1
+1466567381 || -------- random: 225  |    deviceid:   |    isfront:1
+1466567381 || -------- random: 40  |    deviceid:9468F6128E45A301A220BCC342150031   |    isfront:1
+1466567381 || -------- random: 13  |    deviceid:1C81D1653F247CF4121F0C369F141B2F   |    isfront:1
+1466567381 || 1097763+++++++++++++++op:getuserlist
+1466567381 || 1097763+++++++++++++++op:getuserlist  query spaefield start
+1466567381 || 1097763+++++++++++++++op:getuserlist  query spaefield end
+1466567381 || 1097763+++++++++++++++op:getuserlist ....... prepare sql 
+1466567382 || -------- random: 574  |    deviceid:EF7BC9DA554442158EF4213E28033704   |    isfront:1
+1466567382 || -------- random: 983  |    deviceid:FA5B87E4EE2B08500480755E90A2F867   |    isfront:1
+1466567382 || -------- random: 75  |    deviceid:62A6F0DDCF6792CF7EE59FF9577C124E   |    isfront:1
+1466567382 || -------- random: 783  |    deviceid:FEF64F92D997509DFE1724DD42C35B4E   |    isfront:1
+1466567382 || -------- random: 947  |    deviceid:D4EBB07B43A208F6A467E9D80366884F   |    isfront:1
+1466567382 || -------- random: 498  |    deviceid:609AD6BB948A74A15BD46F922B8B3A6D   |    isfront:1
+1466567382 || -------- random: 569  |    deviceid:1CBD0BE7499E4D67B0565F171E051A9D   |    isfront:1
+1466567382 || -------- random: 530  |    deviceid:CD11732D96192EB381458666A6A0F6C0   |    isfront:1
+1466567382 || -------- random: 201  |    deviceid:387109F5B959CAB44B1863436A0B201F   |    isfront:1
+1466567382 || 1097763+++++++++++++++op:getuserlist ....... query sql 
+1466567383 || -------- random: 850  |    deviceid:C6A1B29BD7941DDAB8B758941E95844C   |    isfront:1
+1466567383 || -------- random: 394  |    deviceid:1F0B90D1E81A1DA03F3ACE807C4DAC95   |    isfront:1
+1466567383 || -------- random: 36  |    deviceid:   |    isfront:1
+1466567383 || -------- random: 844  |    deviceid:8E1E630A8E23E2F84B14DED68E5BA23B   |    isfront:1
+1466567383 || -------- random: 737  |    deviceid:BDDDC05FACDD97FCBFA410F4BC50AC75   |    isfront:1
+1466567383 || -------- random: 909  |    deviceid:EC570BABF2A818ED2E99576F225E5621   |    isfront:1
+1466567383 || -------- random: 627  |    deviceid:26586C52C62FA932B8189939389B9686   |    isfront:1
+1466567383 || -------- random: 155  |    deviceid:13FE58AFBAEE88CF2C26555580540DFE   |    isfront:1
+1466567383 || -------- random: 715  |    deviceid:C0F2F8F30C2B5001ABD100CD24448C45   |    isfront:1
+1466567384 || 1097763+++++++++++++++op:getuserlist ....... end 
+1466567384 || -------- random: 796  |    deviceid:C38D51C61F1DF9ABBAADA7AAAFEBC1B6   |    isfront:1
+1466567384 || -------- random: 741  |    deviceid:755914FB05B444F731A79909A287B94E   |    isfront:1
+1466567384 || -------- random: 728  |    deviceid:C053048AFEAE1956499800887D98551A   |    isfront:1
+1466567384 || -------- random: 895  |    deviceid:168F2DA57A04402044344A1AEE32D3B2   |    isfront:1
+1466567384 || -------- random: 103  |    deviceid:AC40D345C59F57F3AB20B4319C0520AA   |    isfront:1
+1466567384 || -------- random: 261  |    deviceid:8A5D7A1BDB5934CA5BDA1210B9430936   |    isfront:1
+1466567385 || -------- random: 545  |    deviceid:FAACF5C31D1274E961CF46A11A04446D   |    isfront:1
+1466567385 || -------- random: 442  |    deviceid:   |    isfront:1
+1466567385 || -------- random: 12  |    deviceid:642E8BA2627588C380CDEFE86316E8F5   |    isfront:1
+1466567386 || -------- random: 375  |    deviceid:   |    isfront:1
+1466567386 || -------- random: 792  |    deviceid:1EAEDF2DD82E5058C4D25D5499E0A83F   |    isfront:1
+1466567386 || -------- random: 171  |    deviceid:D8E074777D4A4D756C4EBFDC8F4F4F7F   |    isfront:1
+1466567386 || -------- random: 713  |    deviceid:B633F32134EA24814701AB0F3F42B601   |    isfront:1
+1466567386 || -------- random: 496  |    deviceid:2FA37993D514A8F258544F38E569C4A1   |    isfront:1
+1466567387 || -------- random: 39  |    deviceid:C961EF5B9848E4F139F676093E5F6B79   |    isfront:1
+1466567387 || -------- random: 452  |    deviceid:DFE56C1EB8168C2309FB9F28E95A7EED   |    isfront:1
+1466567387 || -------- random: 222  |    deviceid:CC8C5A298E31578CF21AFBB7E2A6A4F5   |    isfront:1
+1466567387 || 938911+++++++++++++++op:getuserlist
+1466567387 || 938911+++++++++++++++op:getuserlist  query spaefield start
+1466567387 || 573525+++++++++++++++op:getuserlist
+1466567387 || 573525+++++++++++++++op:getuserlist  query spaefield start
+1466567387 || -------- random: 660  |    deviceid:256F104754809F68B1323C5F60231290   |    isfront:1
+1466567387 || 573525+++++++++++++++op:getuserlist  query spaefield end
+1466567387 || 938911+++++++++++++++op:getuserlist  query spaefield end
+1466567387 || -------- random: 892  |    deviceid:02CB2ABCB60A44ABBAA05B8503901201   |    isfront:1
+1466567387 || -------- random: 339  |    deviceid:   |    isfront:1
+1466567387 || -------- random: 670  |    deviceid:409358778E1B39FB2B406369536736E1   |    isfront:1
+1466567387 || -------- random: 720  |    deviceid:   |    isfront:1
+1466567387 || -------- random: 544  |    deviceid:BF5259F35528D616A8E4A1B465BA304D   |    isfront:1
+1466567388 || -------- random: 655  |    deviceid:868180D146EEF6E92645AD7A81488999   |    isfront:1
+1466567388 || 938911+++++++++++++++op:getuserlist ....... prepare sql 
+1466567388 || 573525+++++++++++++++op:getuserlist ....... prepare sql 
+1466567388 || 573525+++++++++++++++op:getuserlist ....... query sql 
+1466567388 || 938911+++++++++++++++op:getuserlist ....... query sql 
+1466567388 || 938911+++++++++++++++op:getuserlist ....... end 
+1466567388 || 573525+++++++++++++++op:getuserlist ....... end 
+1466567388 || -------- random: 598  |    deviceid:63505A529DD1BA609C13C243B7D5A325   |    isfront:1
+1466567388 || -------- random: 932  |    deviceid:9C250BB3D6E4025AC78DDC1BF26CDC6D   |    isfront:1
+1466567389 || -------- random: 44  |    deviceid:F41C3D2E19E804E08AE84AAFBBC4FB9F   |    isfront:1
+1466567389 || -------- random: 887  |    deviceid:955195F533BAE7383523E27BD1ADDA81   |    isfront:2
+1466567389 || -------- random: 507  |    deviceid:   |    isfront:1
+1466567389 || -------- random: 830  |    deviceid:9EDC39ADE0C19A9484E90D8C4C0EB912   |    isfront:1
+1466567389 || -------- random: 480  |    deviceid:34E39DB8B12BC9FF248259E15A471E1D   |    isfront:1
+1466567390 || -------- random: 568  |    deviceid:5259FBCB40A22CCC4A7F3E485E4EC03D   |    isfront:1
+1466567390 || -------- random: 314  |    deviceid:C0009395FD9F02FA5CE0577D9D8B5025   |    isfront:1
+1466567390 || -------- random: 107  |    deviceid:CD31E23BC088E6BCADDD6E54B5202FD2   |    isfront:1
+1466567390 || -------- random: 107  |    deviceid:091D1858AF0DCD3C048C91E9F46105BA   |    isfront:1
+1466567390 || -------- random: 191  |    deviceid:CC54E96F5C0E0908F3440AB3A410A07B   |    isfront:1
+1466567390 || -------- random: 579  |    deviceid:5A0FB52852C600FF9E5CE1F1338F8899   |    isfront:1
+1466567390 || -------- random: 326  |    deviceid:081EF650FFFAB54531DB5721632FA544   |    isfront:1
+1466567391 || -------- random: 715  |    deviceid:492BD892AA6E8FFBE06F479A4E00F18C   |    isfront:1
+1466567391 || -------- random: 24  |    deviceid:E7E5677A2745733055C18AE3E94EB4CD   |    isfront:1
+1466567391 || -------- random: 336  |    deviceid:6A6D32240CD036E44DA4FECB26EB92A6   |    isfront:1
+1466567391 || -------- random: 660  |    deviceid:544DC4553E2288E6DE5DB971CBC26044   |    isfront:1
+1466567392 || -------- random: 521  |    deviceid:77705DFCC19D6742A4C78F2978213FE1   |    isfront:1
+1466567392 || -------- random: 490  |    deviceid:573EC94A9BD1BC44BB33106D128BBA6A   |    isfront:1
+1466567392 || -------- random: 369  |    deviceid:0BA23F29774C0C164F3378B83F1DC43B   |    isfront:2
+1466567393 || -------- random: 704  |    deviceid:81867024C5901E222EED5A4D45AFF01F   |    isfront:1
+1466567393 || -------- random: 150  |    deviceid:44450259D5888AB89022D36F49F29DDD   |    isfront:1
+1466567393 || -------- random: 922  |    deviceid:97EA7F99168B2AF2A991E2FEC42AA61E   |    isfront:1
+1466567393 || -------- random: 216  |    deviceid:6F49E3288128EFEC566059DD260A9F71   |    isfront:1
+1466567393 || -------- random: 577  |    deviceid:E5FD45768EE0854152C17D1FB06DEE09   |    isfront:2
+1466567393 || -------- random: 786  |    deviceid:4EB8B89AA72E2834EA01FCC9DE6AE800   |    isfront:1
+1466567393 || -------- random: 827  |    deviceid:3C7014319E76FC748E687023F328852B   |    isfront:1
+1466567394 || -------- random: 940  |    deviceid:2E1C3067ADE5785B4A7AC3E97327B81D   |    isfront:2
+1466567394 || -------- random: 235  |    deviceid:A06094B3CBC0589CB9E0C513A131DE4F   |    isfront:1
+1466567394 || -------- random: 815  |    deviceid:F94F2DAA710009562F8F99A1176008B2   |    isfront:1
+1466567394 || -------- random: 847  |    deviceid:F8C8475C85540D75A8891130B0C5FB03   |    isfront:1
+1466567394 || -------- random: 531  |    deviceid:188F7413154973DAD3C3C3B8C387F4A6   |    isfront:1
+1466567395 || 1098921+++++++++++++++op:getuserlist
+1466567395 || 1098921+++++++++++++++op:getuserlist  query spaefield start
+1466567395 || 1098921+++++++++++++++op:getuserlist  query spaefield end
+1466567395 || -------- random: 837  |    deviceid:   |    isfront:1
+1466567395 || -------- random: 502  |    deviceid:   |    isfront:1
+1466567395 || -------- random: 480  |    deviceid:65F759922D8D39E3C8536D108CAF5995   |    isfront:1
+1466567395 || 1060895+++++++++++++++op:getuserlist
+1466567395 || 1060895+++++++++++++++op:getuserlist  query spaefield start
+1466567395 || 1060895+++++++++++++++op:getuserlist  query spaefield end
+1466567395 || -------- random: 804  |    deviceid:B8727BC4FDAD030CAA7FD8E92B4D2311   |    isfront:1
+1466567395 || 1098921+++++++++++++++op:getuserlist ....... prepare sql 
+1466567395 || 1060895+++++++++++++++op:getuserlist ....... prepare sql 
+1466567395 || 1060895+++++++++++++++op:getuserlist ....... query sql 
+1466567395 || 1098921+++++++++++++++op:getuserlist ....... query sql 
+1466567396 || -------- random: 487  |    deviceid:FAE2860EE0B666CAC4D8F2CEA4BD4854   |    isfront:1
+1466567396 || -------- random: 801  |    deviceid:48B36EAEA7AA27204EA8BA665D6ED373   |    isfront:1
+1466567396 || -------- random: 556  |    deviceid:   |    isfront:1
+1466567396 || -------- random: 756  |    deviceid:7F0FE478020295A51CC7589CAD9689D0   |    isfront:1
+1466567396 || -------- random: 837  |    deviceid:387109F5B959CAB44B1863436A0B201F   |    isfront:1
+1466567396 || -------- random: 851  |    deviceid:56778CD7368F5D414B6F766F6B133401   |    isfront:1
+1466567396 || -------- random: 878  |    deviceid:39791210959E5B1A47CD08452EC2EB85   |    isfront:1
+1466567396 || -------- random: 555  |    deviceid:   |    isfront:1
+1466567397 || -------- random: 728  |    deviceid:4955D9E86D6AB47DD03A96721513EB57   |    isfront:1
+1466567397 || -------- random: 835  |    deviceid:CC06972613E455C701AAD75F56862C21   |    isfront:1
+1466567397 || -------- random: 791  |    deviceid:   |    isfront:1
+1466567397 || -------- random: 280  |    deviceid:5E2FE4A52FEABBDB73007B3D44EE123F   |    isfront:1
+1466567397 || -------- random: 890  |    deviceid:642E8BA2627588C380CDEFE86316E8F5   |    isfront:1
+1466567397 || -------- random: 908  |    deviceid:36EB5E78616650062D1BE2DF6BD75B1D   |    isfront:1
+1466567398 || -------- random: 839  |    deviceid:CD11732D96192EB381458666A6A0F6C0   |    isfront:1
+1466567398 || -------- random: 299  |    deviceid:   |    isfront:1
+1466567398 || -------- random: 735  |    deviceid:764717ABB7D705411288F0897D7CE7BD   |    isfront:1
+1466567398 || -------- random: 209  |    deviceid:75D3AA04C65AD835817898556B39EFB3   |    isfront:1
+1466567398 || -------- random: 782  |    deviceid:856448DE2E95B604D946387FE70BCBCD   |    isfront:1
+1466567398 || -------- random: 724  |    deviceid:1B03A4345A632D96BC849191182BB54D   |    isfront:1
+1466567398 || 1098921+++++++++++++++op:getuserlist ....... end 
+1466567398 || 1060895+++++++++++++++op:getuserlist ....... end 
+1466567398 || -------- random: 646  |    deviceid:   |    isfront:1
+1466567398 || -------- random: 387  |    deviceid:FCB9A866E2571C9F9F2231F45F091321   |    isfront:1
+1466567398 || -------- random: 54  |    deviceid:081EF650FFFAB54531DB5721632FA544   |    isfront:1
+1466567399 || -------- random: 535  |    deviceid:3332C4A3BDF078978E11F40056FD03F2   |    isfront:2
+1466567399 || -------- random: 89  |    deviceid:74B585ACDF469F149BCA07484C558FF7   |    isfront:1
+1466567399 || -------- random: 738  |    deviceid:80D2D13436B470B86BCE49BE56C370C8   |    isfront:1
+1466567400 || -------- random: 719  |    deviceid:7D8852C1B2B374FFF01C532AE07DA39A   |    isfront:1
+1466567400 || -------- random: 48  |    deviceid:051EAC7E5BAB199AB9935FAB7354159C   |    isfront:1
+1466567400 || -------- random: 367  |    deviceid:9AC75BEE514A349AF15893B637DAFAF2   |    isfront:1
+1466567400 || -------- random: 368  |    deviceid:EC84B7263B38078F3301049EFF7137D0   |    isfront:1
+1466567400 || -------- random: 124  |    deviceid:62A6F0DDCF6792CF7EE59FF9577C124E   |    isfront:1
+1466567400 || -------- random: 464  |    deviceid:ACA9AE5B90B886F128121C46FE896930   |    isfront:1
+1466567401 || -------- random: 205  |    deviceid:2CACB23AFF20CDB9381DA7E0DFC83465   |    isfront:1
+1466567401 || -------- random: 402  |    deviceid:E0631226BE1BA2E1FB8C16259207F5F0   |    isfront:1
+1466567401 || -------- random: 544  |    deviceid:3FB63A7618DA80754BD2E8D4DFD0BE2F   |    isfront:1
+1466567401 || -------- random: 776  |    deviceid:AB989D1F5CA72B642C3739FDF8D8BC05   |    isfront:1
+1466567401 || -------- random: 260  |    deviceid:04C4FDC06737EF6999F6423B34AC24BE   |    isfront:1
+1466567401 || -------- random: 539  |    deviceid:C367F091EDAD3A3E952624A480971EFC   |    isfront:2
+1466567401 || -------- random: 770  |    deviceid:E72FBE4AF9B3F095B547D8A1FCBBFF19   |    isfront:1
+1466567401 || -------- random: 730  |    deviceid:01B70B75D32827BF0EB38ABE771C73FC   |    isfront:1
+1466567401 || -------- random: 381  |    deviceid:48C64ABE87064428F5672574096048AE   |    isfront:1
+1466567401 || -------- random: 481  |    deviceid:532D573E9CD07C0A35EDDFDC886F38E8   |    isfront:1
+1466567402 || -------- random: 702  |    deviceid:843F29673E9E9310894716E516618DD1   |    isfront:1
+1466567402 || -------- random: 600  |    deviceid:42A4391B79048EE8A7F10B3DA88B5CA1   |    isfront:1
+1466567402 || 1098894+++++++++++++++op:getuserlist
+1466567402 || 1098894+++++++++++++++op:getuserlist  query spaefield start
+1466567402 || 1098894+++++++++++++++op:getuserlist  query spaefield end
+1466567402 || -------- random: 656  |    deviceid:60881086C4A4F01E676C83227034CCDF   |    isfront:1
+1466567402 || -------- random: 866  |    deviceid:56DD5A8A70CE53C11DECDEE56850A3F1   |    isfront:1
+1466567402 || -------- random: 782  |    deviceid:   |    isfront:1
+1466567402 || -------- random: 538  |    deviceid:23E8294F9BCA833572C76E30B8B28CBA   |    isfront:1
+1466567402 || -------- random: 141  |    deviceid:64E7F64D5A1125356BEB0EE10999EF2F   |    isfront:1
+1466567403 || -------- random: 733  |    deviceid:014D66960A5E4B18F6BF2348EC88AC66   |    isfront:1
+1466567403 || -------- random: 188  |    deviceid:4858E0712E2DB147948163FB02F38F44   |    isfront:1
+1466567403 || 1055414+++++++++++++++op:getuserlist
+1466567403 || 1055414+++++++++++++++op:getuserlist  query spaefield start
+1466567403 || 1055414+++++++++++++++op:getuserlist  query spaefield end
+1466567403 || -------- random: 967  |    deviceid:   |    isfront:1
+1466567403 || -------- random: 686  |    deviceid:5614251ACD9147D93AF0FF9339B907C8   |    isfront:1
+1466567403 || -------- random: 827  |    deviceid:62578C4D51FCDF57383CBFB5974DAD20   |    isfront:1
+1466567403 || -------- random: 571  |    deviceid:   |    isfront:1
+1466567403 || -------- random: 914  |    deviceid:AF7A0171166023E02C99CB03DC63B172   |    isfront:1
+1466567403 || -------- random: 871  |    deviceid:D44FB6F6B71A20FB3240376D406F3A66   |    isfront:1
+1466567404 || -------- random: 593  |    deviceid:421D2586FC198E472AD9442138B48E62   |    isfront:1
+1466567404 || -------- random: 508  |    deviceid:522D63A7BFDE23799338B16EDE30BB80   |    isfront:1
+1466567404 || -------- random: 700  |    deviceid:52BDB5982E9531146C3DB23B393B86F0   |    isfront:1
+1466567404 || -------- random: 70  |    deviceid:EBB36038F707B381F8AA69133297188F   |    isfront:1
+1466567404 || -------- random: 785  |    deviceid:DF96BA04F643E7B7960F37B1CB650C0F   |    isfront:1
+1466567404 || -------- random: 77  |    deviceid:CFD00779F48899FF0C2A1CCF92EFD4D0   |    isfront:1
+1466567404 || 1098894+++++++++++++++op:getuserlist ....... prepare sql 
+1466567404 || 1055414+++++++++++++++op:getuserlist ....... prepare sql 
+1466567405 || -------- random: 500  |    deviceid:30B0951528DD79566BEB622FC9AACAA4   |    isfront:1
+1466567405 || -------- random: 834  |    deviceid:7B9706E5A8B118B0BF66AE1BDECEC3AA   |    isfront:1
+1466567405 || -------- random: 557  |    deviceid:9EDC39ADE0C19A9484E90D8C4C0EB912   |    isfront:1
+1466567405 || -------- random: 928  |    deviceid:1136784E468562C16327977AE9732C9D   |    isfront:1
+1466567405 || -------- random: 706  |    deviceid:DC7C9715F1114056A99AA79E289A03C3   |    isfront:1
+1466567405 || -------- random: 380  |    deviceid:7FD2477E82809BDB925E664E78C5F584   |    isfront:1
+1466567405 || -------- random: 836  |    deviceid:C79B2A028C905550A19AAD67DB9900B2   |    isfront:1
+1466567405 || -------- random: 746  |    deviceid:AE67B1CAA600B4D5A89D404720C8F6A2   |    isfront:1
+1466567406 || -------- random: 731  |    deviceid:724B8B443035E2ACF379C68F4CE0C18B   |    isfront:1
+1466567406 || -------- random: 768  |    deviceid:   |    isfront:1
+1466567406 || -------- random: 82  |    deviceid:5501780D42304DA7593FDB07DC6CF1C6   |    isfront:1
+1466567406 || -------- random: 697  |    deviceid:BDDDC05FACDD97FCBFA410F4BC50AC75   |    isfront:1
+1466567406 || -------- random: 567  |    deviceid:B2E6C3B2AFF7D0B62BDE09EE66D3B29F   |    isfront:1
+1466567407 || -------- random: 147  |    deviceid:468A9631940CD5A38B466FEF815152D3   |    isfront:1
+1466567407 || -------- random: 224  |    deviceid:7B330A1E96BBD2C8258241A1A3405C7C   |    isfront:1
+1466567407 || -------- random: 315  |    deviceid:C6A1B29BD7941DDAB8B758941E95844C   |    isfront:1
+1466567407 || -------- random: 385  |    deviceid:2237AE7B963CFB34FE9313DAC27D6350   |    isfront:1
+1466567407 || -------- random: 751  |    deviceid:A9A7ADB6F001521A877F47F341B0473D   |    isfront:1
+1466567407 || -------- random: 504  |    deviceid:E2F2A686764F9B22370DA41B227BA5A7   |    isfront:1
+1466567407 || -------- random: 997  |    deviceid:23E93B297C863C16EF5CE21180AB0213   |    isfront:1
+1466567407 || -------- random: 742  |    deviceid:D68E5CAFE61EB3A6E7C21C09DDA529D0   |    isfront:1
+1466567407 || -------- random: 310  |    deviceid:5729C6903CDF4C8A02C49FB9DF79EF26   |    isfront:1
+1466567408 || 1094031+++++++++++++++op:getuserlist
+1466567408 || 1094031+++++++++++++++op:getuserlist  query spaefield start
+1466567408 || 1094031+++++++++++++++op:getuserlist  query spaefield end
+1466567408 || 1094031+++++++++++++++op:getuserlist ....... prepare sql 
+1466567408 || -------- random: 377  |    deviceid:7AE27E8E489075965E778049BCB7FABE   |    isfront:1
+1466567408 || -------- random: 430  |    deviceid:E75C167E0DA7D23BDB28076D107F2437   |    isfront:1
+1466567408 || -------- random: 467  |    deviceid:9545A16BC199451908C1982D3705005C   |    isfront:1
+1466567408 || -------- random: 641  |    deviceid:12A9DF23BE1BCF96B48686538142251E   |    isfront:1
+1466567408 || 1098894+++++++++++++++op:getuserlist ....... query sql 
+1466567408 || 1055414+++++++++++++++op:getuserlist ....... query sql 
+1466567409 || -------- random: 998  |    deviceid:240791C0D3F23695AE8FD2DB8DFE971C   |    isfront:1
+1466567409 || -------- random: 572  |    deviceid:29CFE5C307A8C2D15186F39C1C29F1E2   |    isfront:1
+1466567409 || -------- random: 116  |    deviceid:645D60C291AA5E863A9933504033D6D0   |    isfront:1
+1466567409 || -------- random: 345  |    deviceid:3E270D1E9013B84D6B880FA6E531CDD0   |    isfront:1
+1466567410 || 1094031+++++++++++++++op:getuserlist ....... query sql 
+1466567410 || -------- random: 763  |    deviceid:1D8B3D0754356AA5C2D69C5B62D341EA   |    isfront:1
+1466567410 || -------- random: 191  |    deviceid:   |    isfront:2
+1466567410 || -------- random: 881  |    deviceid:6206CE418017361D1B0E750E7D342537   |    isfront:1
+1466567410 || -------- random: 324  |    deviceid:256F104754809F68B1323C5F60231290   |    isfront:1
+1466567410 || -------- random: 806  |    deviceid:   |    isfront:1
+1466567410 || -------- random: 293  |    deviceid:663D7E61250D760C466B64216B9E62E8   |    isfront:1
+1466567410 || -------- random: 995  |    deviceid:   |    isfront:1
+1466567411 || -------- random: 914  |    deviceid:EADBA3E988DDDB1C7A9775FCF4E3EFE4   |    isfront:1
+1466567411 || -------- random: 646  |    deviceid:8D0486E691E825CC9AC6B7DAFC4FE238   |    isfront:1
+1466567411 || -------- random: 407  |    deviceid:0A96DE4423A62C07B74039BAD836EBC9   |    isfront:1
+1466567411 || -------- random: 188  |    deviceid:EE4B588B2A750962E77AA7E003FC4BB0   |    isfront:1
+1466567411 || -------- random: 425  |    deviceid:B7299BCD1CC883E414FA52AEE96E7E15   |    isfront:1
+1466567411 || -------- random: 753  |    deviceid:F30DF63CB0672F6EEA043AE622F6DD4F   |    isfront:1
+1466567411 || -------- random: 938  |    deviceid:FEE79C31AA81430D88F9CFF448540819   |    isfront:1
+1466567412 || 287612+++++++++++++++op:getuserlist
+1466567412 || 287612+++++++++++++++op:getuserlist  query spaefield start
+1466567412 || -------- random: 443  |    deviceid:B607A1AFFAE218EDD711F0C20145B352   |    isfront:1
+1466567412 || -------- random: 402  |    deviceid:7CB07B067A20B9A5B9E92DF914FE4043   |    isfront:1
+1466567412 || 287612+++++++++++++++op:getuserlist  query spaefield end
+1466567412 || 287612+++++++++++++++op:getuserlist ....... prepare sql 
+1466567412 || -------- random: 761  |    deviceid:31D35F95CD66160B2BA4E5E573859D28   |    isfront:1
+1466567412 || -------- random: 413  |    deviceid:8C0E8F5AEC9FE98DD5A1D2FE051A30B3   |    isfront:1
+1466567412 || -------- random: 81  |    deviceid:9BC7B010328B1DF0C4C3B50E83C8885E   |    isfront:1
+1466567412 || -------- random: 67  |    deviceid:44259B488BDCDDB92D8F5C8C513EBA04   |    isfront:1
+1466567413 || 1055414+++++++++++++++op:getuserlist ....... end 
+1466567413 || 1098894+++++++++++++++op:getuserlist ....... end 
+1466567413 || 287612+++++++++++++++op:getuserlist ....... query sql 
+1466567413 || 1094031+++++++++++++++op:getuserlist ....... end 
+1466567413 || 287612+++++++++++++++op:getuserlist ....... end 
+1466567413 || -------- random: 404  |    deviceid:23E5E3C104A4564312547D02B25EE851   |    isfront:1
+1466567413 || -------- random: 492  |    deviceid:464E2D30CAE0404E813891154D034CCA   |    isfront:1
+1466567413 || 1089485+++++++++++++++op:getuserlist
+1466567413 || 1089485+++++++++++++++op:getuserlist  query spaefield start
+1466567413 || 1089485+++++++++++++++op:getuserlist  query spaefield end
+1466567413 || 1089485+++++++++++++++op:getuserlist ....... prepare sql 
+1466567413 || 1089485+++++++++++++++op:getuserlist ....... query sql 
+1466567413 || -------- random: 748  |    deviceid:8124BDF510494F85C5984DB59EAD97DF   |    isfront:1
+1466567413 || 1089485+++++++++++++++op:getuserlist ....... end 
+1466567413 || -------- random: 274  |    deviceid:7789A13792C347E145CDF563D2E9027F   |    isfront:1
+1466567413 || -------- random: 47  |    deviceid:111898969D6714AC5F0CFF02CB72CCAE   |    isfront:1
+1466567414 || -------- random: 817  |    deviceid:9D1171008AD5F23024D1242CBC61A4E4   |    isfront:1
+1466567414 || -------- random: 167  |    deviceid:53EBEBC5267251664876693403EF56DA   |    isfront:1
+1466567414 || -------- random: 267  |    deviceid:BB7D61147742F44506162FF14C4FD18C   |    isfront:1
+1466567414 || -------- random: 357  |    deviceid:018E3B03EEE1042384CAB14F5F96F1C7   |    isfront:1
+1466567414 || -------- random: 667  |    deviceid:C4742DE94CA0B6D97CAD9B841651B68C   |    isfront:1
+1466567414 || -------- random: 239  |    deviceid:5DA9DB8CF231116380D69F6B27D6BAA2   |    isfront:1
+1466567414 || -------- random: 362  |    deviceid:F86B40215E3F2FFDFEA53B618BAF51AE   |    isfront:1
+1466567415 || -------- random: 803  |    deviceid:AF7913AC85F03586CBC8DD64955379E2   |    isfront:2
+1466567415 || -------- random: 472  |    deviceid:BF80E9E0A65B1E894E0D33BCECD96FCA   |    isfront:1
+1466567415 || -------- random: 401  |    deviceid:802DC7BEB08F67F6A82C90A52FBB5BCE   |    isfront:1
+1466567415 || -------- random: 142  |    deviceid:35B9AB5A36F3234DD26DB357FD4A0DC1   |    isfront:1
+1466567415 || -------- random: 33  |    deviceid:5E58220EF5B2B2EE4E51887FAB57B326   |    isfront:1
+1466567415 || -------- random: 7  |    deviceid:FD5961AF41304BB82886D8127FBCA1AC   |    isfront:1
+1466567415 || -------- random: 905  |    deviceid:99F277D925F09A9B8191EDE6FCFD5B4D   |    isfront:1
+1466567415 || -------- random: 236  |    deviceid:763FFBF726A2888003CE37F6BDB11CC6   |    isfront:1
+1466567415 || -------- random: 359  |    deviceid:BD2C8E5DF5F7E4E6DD710D918016DE21   |    isfront:2
+1466567416 || -------- random: 352  |    deviceid:A4FFB87F78A3475B0C1F9243F8C97482   |    isfront:1
+1466567416 || -------- random: 174  |    deviceid:426A02E254EED3FF4C761446AACCDAEB   |    isfront:1
+1466567416 || -------- random: 164  |    deviceid:   |    isfront:1
+1466567416 || -------- random: 55  |    deviceid:7C0BACFAC9F20AB8ADAD981CBB28C8D7   |    isfront:1
+1466567416 || -------- random: 590  |    deviceid:08B538BC74670F07E9FEBDF94CCA3A77   |    isfront:1
+1466567416 || -------- random: 859  |    deviceid:5669D74580E432402BAC4D1A96271B5B   |    isfront:1
+1466567417 || -------- random: 612  |    deviceid:   |    isfront:1
+1466567418 || -------- random: 141  |    deviceid:88A0D2190E4C7F2152F67E00C261D346   |    isfront:1
+1466567418 || -------- random: 91  |    deviceid:7ABA34C7549A215E4D2CF8BC781E0C6A   |    isfront:1
+1466567418 || -------- random: 539  |    deviceid:BC0A72C0BD8288CA94ABE728099A2555   |    isfront:1
+1466567418 || -------- random: 860  |    deviceid:   |    isfront:1
+1466567418 || -------- random: 172  |    deviceid:D190E0725CF16D84FE429BD6F66B4E8D   |    isfront:1
+1466567418 || -------- random: 996  |    deviceid:E830615E57B766552DE35A4519BC8260   |    isfront:1
+1466567418 || -------- random: 360  |    deviceid:195FD901CB7BEA54DB1A1EAB4E910C1A   |    isfront:1
+1466567418 || -------- random: 321  |    deviceid:F4D663AE4C4C16F1CFAA52D6512258E4   |    isfront:1
+1466567418 || -------- random: 161  |    deviceid:E5144686324C9B1ABF16B30CF29550B2   |    isfront:1
+1466567419 || -------- random: 379  |    deviceid:6369235CE0FC822E5598169FDCEE6678   |    isfront:1
+1466567419 || -------- random: 275  |    deviceid:67A4BC41271FFA62E11CEA9F2F5A9B35   |    isfront:1
+1466567419 || -------- random: 862  |    deviceid:B937042E787403731CC1BF9C5DF54488   |    isfront:1
+1466567419 || -------- random: 835  |    deviceid:492BD892AA6E8FFBE06F479A4E00F18C   |    isfront:1
+1466567419 || -------- random: 498  |    deviceid:A296B1B7ADCBBAC4111392AD32C73903   |    isfront:1
+1466567420 || -------- random: 976  |    deviceid:F54ED813556DF6235BE13CA39552FDE9   |    isfront:1
+1466567420 || -------- random: 485  |    deviceid:9534625EACACC0359B4E248864AA7279   |    isfront:1
+1466567420 || -------- random: 186  |    deviceid:   |    isfront:1
+1466567420 || 1094031+++++++++++++++op:getuserlist
+1466567420 || 1094031+++++++++++++++op:getuserlist  query spaefield start
+1466567420 || 1094031+++++++++++++++op:getuserlist  query spaefield end
+1466567420 || 1094031+++++++++++++++op:getuserlist ....... prepare sql 
+1466567420 || -------- random: 518  |    deviceid:   |    isfront:1
+1466567420 || -------- random: 115  |    deviceid:7F0D29FD05D7C52A9612C603ACF4F0ED   |    isfront:1
+1466567420 || -------- random: 829  |    deviceid:2CC5C01DEB3613065295B3B84BBAF629   |    isfront:1
+1466567420 || -------- random: 265  |    deviceid:4E98BACA0FC107F9EF45145C36788B2D   |    isfront:1
+1466567421 || -------- random: 701  |    deviceid:D97D94CD3294F0E79F65E15C7C1D11A6   |    isfront:1
+1466567421 || -------- random: 555  |    deviceid:A51A30FD27D0B1C426994DC0E1491144   |    isfront:1
+1466567421 || -------- random: 204  |    deviceid:95FAF836EB8B7F6995031FA81AF7595A   |    isfront:1
+1466567421 || -------- random: 701  |    deviceid:   |    isfront:1
+1466567421 || -------- random: 393  |    deviceid:CEB90B6A3D44A08EE52999011667A778   |    isfront:1
+1466567421 || 1094031+++++++++++++++op:getuserlist ....... query sql 
+1466567421 || -------- random: 555  |    deviceid:B6A58872CD3C76AE3783B875AA1DC57F   |    isfront:1
+1466567421 || -------- random: 61  |    deviceid:7FC6539A844EA38C96BB7BE4DB46363F   |    isfront:1
+1466567421 || -------- random: 166  |    deviceid:A99075FCD4D66555A815F3C51A081B98   |    isfront:1
+1466567421 || -------- random: 629  |    deviceid:8A125DF901EBDAA6B4EBE5E776D88815   |    isfront:1
+1466567422 || -------- random: 649  |    deviceid:FCE16A7A0A39538C813AE92C4517659B   |    isfront:1
+1466567422 || -------- random: 826  |    deviceid:A7B081BC7E769BFB4BA71F521E56B1E9   |    isfront:1
+1466567422 || -------- random: 509  |    deviceid:882507A1BCD47AF68AF228B7CEB7AFAC   |    isfront:1
+1466567422 || -------- random: 328  |    deviceid:D38CD16C2E0E20590777146617427AEB   |    isfront:1
+1466567422 || -------- random: 923  |    deviceid:1A090FEA4F731798E8EE128933193495   |    isfront:1
+1466567422 || -------- random: 382  |    deviceid:EF13D2EFFE434D976103F6E59E3BF87C   |    isfront:1
+1466567422 || -------- random: 82  |    deviceid:   |    isfront:1
+1466567423 || -------- random: 881  |    deviceid:DD15C284CD19AB58BEA2C55E6E519400   |    isfront:1
+1466567423 || -------- random: 729  |    deviceid:5EB27397661C4B2C7887C0DF3BE60B08   |    isfront:1
+1466567423 || -------- random: 360  |    deviceid:2CACB23AFF20CDB9381DA7E0DFC83465   |    isfront:1
+1466567423 || -------- random: 88  |    deviceid:081EF650FFFAB54531DB5721632FA544   |    isfront:1
+1466567423 || -------- random: 920  |    deviceid:048407B891CC24E0F06B0EFB73E633E8   |    isfront:2
+1466567423 || 1094031+++++++++++++++op:getuserlist ....... end 
+1466567423 || -------- random: 292  |    deviceid:D05F15C524916C59A618749D38685944   |    isfront:1
+1466567424 || -------- random: 945  |    deviceid:D887E89F95C77280A39EE76E70477051   |    isfront:1
+1466567424 || -------- random: 923  |    deviceid:0588D83DF9DB8E6AD4B5891186784D46   |    isfront:1
+1466567424 || -------- random: 532  |    deviceid:B9B1A549CEC511E13AEBB721A5F4884B   |    isfront:1
+1466567424 || -------- random: 102  |    deviceid:45B53D0F6992DA3F16B93D9BD8AC4404   |    isfront:1
+1466567424 || -------- random: 828  |    deviceid:A476D26449845DA292F5E28E8FFCC8A6   |    isfront:1
+1466567424 || -------- random: 316  |    deviceid:4989BD122462F3EBBB2A362D2D9AA2F1   |    isfront:1
+1466567425 || -------- random: 392  |    deviceid:E566B796A913CA76CAE91E0D885B52BE   |    isfront:1
+1466567425 || -------- random: 987  |    deviceid:622ED7FC20CB4EF6210800C4A0BC36C6   |    isfront:1
+1466567425 || -------- random: 793  |    deviceid:7749144B89A7D797ECC2858DB74AC667   |    isfront:1
+1466567425 || -------- random: 114  |    deviceid:E801E3DAD022EBB0D636C1517EA80C34   |    isfront:1
+1466567425 || -------- random: 140  |    deviceid:F6A959032C3F2B663CF2C3C1C1B222AB   |    isfront:1
+1466567425 || -------- random: 686  |    deviceid:06E4ED09C411A5AA11B5377C6750DE8F   |    isfront:1
+1466567425 || -------- random: 720  |    deviceid:36AF23319C1B306EB03C8839385A4B96   |    isfront:1
+1466567425 || -------- random: 35  |    deviceid:   |    isfront:1
+1466567425 || -------- random: 936  |    deviceid:   |    isfront:1
+1466567425 || -------- random: 449  |    deviceid:6A03DB3D0C317727A42D1E99EEF13518   |    isfront:1
+1466567426 || -------- random: 393  |    deviceid:98730278CD5ED6DD266BD34F98D1AECE   |    isfront:1
+1466567426 || -------- random: 184  |    deviceid:   |    isfront:1
+1466567426 || -------- random: 205  |    deviceid:5593D3E0D4949E58E5AC67A284DC4C7E   |    isfront:1
+1466567426 || -------- random: 633  |    deviceid:389DD0CD52C54051C3B79C1B90CE684D   |    isfront:1
+1466567426 || -------- random: 431  |    deviceid:E0A5584A2F500D9A00DBC6EDCBA7EF30   |    isfront:1
+1466567426 || -------- random: 864  |    deviceid:   |    isfront:1
+1466567426 || -------- random: 16  |    deviceid:4955D9E86D6AB47DD03A96721513EB57   |    isfront:1
+1466567426 || -------- random: 289  |    deviceid:   |    isfront:1
+1466567426 || -------- random: 644  |    deviceid:7A31F13341FA66B147AAD2F45B80EBCD   |    isfront:1
+1466567427 || -------- random: 940  |    deviceid:CC5498C9D05504170B95485E749AF262   |    isfront:1
+1466567427 || -------- random: 587  |    deviceid:C183C257C76A73C06090C5F84A46B8A3   |    isfront:1
+1466567427 || -------- random: 516  |    deviceid:9DCB4CC17769DD6B64DAB0C89175C736   |    isfront:1
+1466567427 || -------- random: 938  |    deviceid:B3E49DDF1D64EE40D10034328AAAF8B7   |    isfront:1
+1466567427 || -------- random: 197  |    deviceid:764717ABB7D705411288F0897D7CE7BD   |    isfront:1
+1466567427 || -------- random: 727  |    deviceid:3F98CE5633AA54478795BFD5630FE6FC   |    isfront:1
+1466567428 || -------- random: 512  |    deviceid:CD8310FEA89B8F6360BA88E3B701558C   |    isfront:1
+1466567428 || -------- random: 266  |    deviceid:AC3E6E941672B886969A2EAF952D27A8   |    isfront:1
+1466567428 || 1098877+++++++++++++++op:getuserlist
+1466567428 || 1098877+++++++++++++++op:getuserlist  query spaefield start
+1466567428 || 1098877+++++++++++++++op:getuserlist  query spaefield end
+1466567428 || 1098877+++++++++++++++op:getuserlist ....... prepare sql 
+1466567428 || 1098940+++++++++++++++op:getuserlist
+1466567428 || 1098940+++++++++++++++op:getuserlist  query spaefield start
+1466567428 || 1098940+++++++++++++++op:getuserlist  query spaefield end
+1466567428 || -------- random: 17  |    deviceid:F06D6F5428CCEC98EBBD1642420BFC22   |    isfront:1
+1466567428 || -------- random: 234  |    deviceid:276BC209F3D157F57041CFFD9B21D89E   |    isfront:1
+1466567428 || 1098939+++++++++++++++op:getuserlist
+1466567428 || 1098939+++++++++++++++op:getuserlist  query spaefield start
+1466567428 || 1098939+++++++++++++++op:getuserlist  query spaefield end
+1466567429 || -------- random: 37  |    deviceid:CA4E4E744AFC3403E3CE2B83BD60AF7C   |    isfront:1
+1466567429 || -------- random: 624  |    deviceid:   |    isfront:1
+1466567429 || 1098940+++++++++++++++op:getuserlist ....... prepare sql 
+1466567429 || 1098939+++++++++++++++op:getuserlist ....... prepare sql 
+1466567429 || 1098940+++++++++++++++op:getuserlist ....... query sql 
+1466567429 || 1098877+++++++++++++++op:getuserlist ....... query sql 
+1466567429 || 1098939+++++++++++++++op:getuserlist ....... query sql 
+1466567429 || 1098877+++++++++++++++op:getuserlist ....... end 
+1466567429 || 1098939+++++++++++++++op:getuserlist ....... end 
+1466567429 || 1098940+++++++++++++++op:getuserlist ....... end 
+1466567429 || -------- random: 834  |    deviceid:EE995E7E7435283CC9B41476347EB3E0   |    isfront:1
+1466567429 || -------- random: 221  |    deviceid:FAF46512137798DABF055955207CBFA2   |    isfront:2
+1466567429 || -------- random: 753  |    deviceid:C3DEF51E7A9FE1C24459867B49D542AF   |    isfront:1
+1466567429 || -------- random: 249  |    deviceid:E172BC3817B7A5B1F651E5A77FA7AE2B   |    isfront:1
+1466567429 || -------- random: 811  |    deviceid:95D9176277027F7E3C700816CF431390   |    isfront:1
+1466567429 || -------- random: 16  |    deviceid:12E409C64AD5A026F87EEECB98780307   |    isfront:1
+1466567429 || 1089485+++++++++++++++op:getuserlist
+1466567429 || 1089485+++++++++++++++op:getuserlist  query spaefield start
+1466567429 || 1089485+++++++++++++++op:getuserlist  query spaefield end
+1466567429 || -------- random: 851  |    deviceid:   |    isfront:1
+1466567429 || 1089485+++++++++++++++op:getuserlist ....... prepare sql 
+1466567429 || -------- random: 796  |    deviceid:0E5ECFFB4206B92F3861B04B7365CFD6   |    isfront:1
+1466567429 || -------- random: 40  |    deviceid:882507A1BCD47AF68AF228B7CEB7AFAC   |    isfront:1
+1466567430 || -------- random: 602  |    deviceid:0198E53FE18C5D27E920770F29C6C65E   |    isfront:2
+1466567430 || -------- random: 993  |    deviceid:09B10C8A559A7BFF4D86C5C4552EBAB8   |    isfront:1
+1466567430 || 1089485+++++++++++++++op:getuserlist ....... query sql 
+1466567430 || -------- random: 739  |    deviceid:C8E01AF6B0E819BC06F1281E92F7A551   |    isfront:1
+1466567430 || -------- random: 366  |    deviceid:29E6481E8111834474C18D527ABF363B   |    isfront:1
+1466567430 || -------- random: 63  |    deviceid:7C8CFBD3C9B3E5BFA1DA4432C08857D8   |    isfront:1
+1466567430 || -------- random: 419  |    deviceid:2B93A9148A2F0DF2F432C582ACE56140   |    isfront:1
+1466567430 || -------- random: 499  |    deviceid:AFE4B1D87D853802381B35F402242049   |    isfront:1
+1466567430 || -------- random: 975  |    deviceid:2F511C20C522C77CF440FA5FF00D8F42   |    isfront:1
+1466567430 || -------- random: 215  |    deviceid:872F9DF6C4AAD5BECF695786D8C6802A   |    isfront:1
+1466567430 || 1002387+++++++++++++++op:getuserlist
+1466567430 || 1002387+++++++++++++++op:getuserlist  query spaefield start
+1466567430 || -------- random: 1  |    deviceid:ADA2CC4F54EA48D2FDC295E7B445B28E   |    isfront:1
+1466567431 || -------- random: 643  |    deviceid:   |    isfront:1
+1466567431 || -------- random: 644  |    deviceid:   |    isfront:2
+1466567431 || 1089485+++++++++++++++op:getuserlist ....... end 
+1466567431 || 1002387+++++++++++++++op:getuserlist  query spaefield end
+1466567431 || 1002387+++++++++++++++op:getuserlist ....... prepare sql 
+1466567431 || 1002387+++++++++++++++op:getuserlist ....... query sql 
+1466567431 || -------- random: 483  |    deviceid:97920EE4CE75188091EC073EBBCB5CF6   |    isfront:1
+1466567432 || -------- random: 628  |    deviceid:A5A69E85233FCBA8862A8474761CC199   |    isfront:1
+1466567432 || -------- random: 275  |    deviceid:601BFD50C22B29778B9C758A715DEB4E   |    isfront:1
+1466567432 || -------- random: 587  |    deviceid:   |    isfront:1
+1466567432 || 1002387+++++++++++++++op:getuserlist ....... end 
+1466567432 || -------- random: 972  |    deviceid:AC52492363C18B58F781BEE2F875D60A   |    isfront:1
+1466567432 || -------- random: 784  |    deviceid:DD3D81244D092D6B0560EDE496CACD7B   |    isfront:1
+1466567432 || -------- random: 783  |    deviceid:AD3BD60EACDC2618ED3B3047A57CDD77   |    isfront:1
+1466567432 || -------- random: 48  |    deviceid:CB61DA1E98B5DF53932D7C3394851FF1   |    isfront:1
+1466567432 || -------- random: 89  |    deviceid:7C02EC9C8D8F8A6BC1CAE189BC554085   |    isfront:1
+1466567432 || -------- random: 640  |    deviceid:39348E6004CEBE920D36213389138B68   |    isfront:1
+1466567433 || -------- random: 279  |    deviceid:A8C60AF6DEB99C9E23815E6DE48E3F6E   |    isfront:1
+1466567433 || -------- random: 548  |    deviceid:8ABD11A27F067A4C566387FE8831941C   |    isfront:1
+1466567433 || -------- random: 45  |    deviceid:180118ACC6B3501058FD07BB95AB423F   |    isfront:1
+1466567433 || -------- random: 737  |    deviceid:   |    isfront:1
+1466567433 || -------- random: 376  |    deviceid:08FDC1C5E09110CBC846AB72EDB70B85   |    isfront:1
+1466567433 || -------- random: 777  |    deviceid:7428012C6D64BF9FFF23A0EBF23077F2   |    isfront:1
+1466567433 || -------- random: 622  |    deviceid:9823B533A959D6CCC5B0FE2B2CAB3B45   |    isfront:1
+1466567433 || -------- random: 594  |    deviceid:76943600D883F553A6F682D5DCA865D8   |    isfront:1
+1466567434 || -------- random: 134  |    deviceid:   |    isfront:1
+1466567434 || -------- random: 610  |    deviceid:767CC6B5A7471ACFAD0AE16B5819A48A   |    isfront:2
+1466567434 || -------- random: 250  |    deviceid:   |    isfront:1
+1466567434 || -------- random: 226  |    deviceid:F403A69C89EFB3BD00C020DA80700518   |    isfront:1
+1466567434 || 1098877+++++++++++++++op:getuserlist
+1466567434 || 1098877+++++++++++++++op:getuserlist  query spaefield start
+1466567434 || 1098877+++++++++++++++op:getuserlist  query spaefield end
+1466567434 || 1098877+++++++++++++++op:getuserlist ....... prepare sql 
+1466567434 || -------- random: 670  |    deviceid:2084DE8078B336855D25B1C2ACAA6446   |    isfront:1
+1466567434 || -------- random: 372  |    deviceid:9D0DB974540C9F208ABB80B50978BEE0   |    isfront:1
+1466567434 || -------- random: 861  |    deviceid:011FFCB3E7094227D6F302C390918376   |    isfront:1
+1466567434 || -------- random: 8  |    deviceid:   |    isfront:1
+1466567434 || 1098877+++++++++++++++op:getuserlist ....... query sql 
+1466567434 || 1098877+++++++++++++++op:getuserlist ....... end 
+1466567435 || -------- random: 235  |    deviceid:59138EBD31E723E812DDFE7A73F48BC3   |    isfront:1
+1466567435 || -------- random: 666  |    deviceid:3FBB58DBF21BC85F107D0F923DC44079   |    isfront:1
+1466567435 || 1098940+++++++++++++++op:getuserlist
+1466567435 || 1098940+++++++++++++++op:getuserlist  query spaefield start
+1466567435 || 1098940+++++++++++++++op:getuserlist  query spaefield end
+1466567435 || 1098940+++++++++++++++op:getuserlist ....... prepare sql 
+1466567435 || 1098940+++++++++++++++op:getuserlist ....... query sql 
+1466567435 || 1098940+++++++++++++++op:getuserlist ....... end 
+1466567435 || -------- random: 341  |    deviceid:2AAC063C8C9FF36207494D52AA13E27C   |    isfront:1
+1466567435 || -------- random: 881  |    deviceid:152DFCCF9570A1A00EB8DB1583ADBFFB   |    isfront:1
+1466567436 || -------- random: 979  |    deviceid:0B3C3B24621D771CD6C175A20108EFD9   |    isfront:1
+1466567436 || -------- random: 831  |    deviceid:   |    isfront:1
+1466567436 || -------- random: 436  |    deviceid:A40AE29C612B113570A78CFF54523E99   |    isfront:1
+1466567436 || -------- random: 278  |    deviceid:1575B38AA8D1C48FB89D740F04156455   |    isfront:1
+1466567436 || -------- random: 228  |    deviceid:F2029C5A3B2E88E8F1BA16E96E9FC3DE   |    isfront:1
+1466567436 || -------- random: 239  |    deviceid:C6A1B29BD7941DDAB8B758941E95844C   |    isfront:1
+1466567437 || -------- random: 190  |    deviceid:   |    isfront:2
+1466567437 || -------- random: 389  |    deviceid:F0305092ECD06E778CF4C598A6EEE73A   |    isfront:1
+1466567437 || -------- random: 457  |    deviceid:C930FF3CC4E9F641AB761A44601AE10B   |    isfront:1
+1466567437 || -------- random: 18  |    deviceid:A75307BC9CE5D4B329C3925ED031346E   |    isfront:1
+1466567437 || -------- random: 886  |    deviceid:4A2ADCCE866835B99B0EEA896884DB36   |    isfront:1
+1466567438 || -------- random: 111  |    deviceid:CC6AC9E0E4739CA96D54569F5D41A572   |    isfront:1
+1466567438 || -------- random: 110  |    deviceid:   |    isfront:1
+1466567438 || -------- random: 598  |    deviceid:C64592FD796D3989EDD0E6DDCE0BEFD2   |    isfront:1
+1466567438 || -------- random: 953  |    deviceid:678CC4C4977DD30E12AB0EC06505718D   |    isfront:1
+1466567439 || -------- random: 998  |    deviceid:4E55FF3A229385F07101AD34D44B235C   |    isfront:1
+1466567439 || -------- random: 32  |    deviceid:1605BC1EB6CEE5A9EB1A8DF37A629F8D   |    isfront:1
+1466567439 || -------- random: 665  |    deviceid:   |    isfront:1
+1466567439 || -------- random: 810  |    deviceid:4D1BC76241FC9EDEF08EDEA0C76B4638   |    isfront:1
+1466567439 || -------- random: 652  |    deviceid:   |    isfront:1
+1466567439 || -------- random: 613  |    deviceid:B1B1BC1B0478DD789A97C3A158C59043   |    isfront:1
+1466567439 || -------- random: 974  |    deviceid:32EE277CCF2F36E3484DE786A5F7758C   |    isfront:1
+1466567440 || 1098877+++++++++++++++op:getuserlist
+1466567440 || 1098877+++++++++++++++op:getuserlist  query spaefield start
+1466567440 || 1098877+++++++++++++++op:getuserlist  query spaefield end
+1466567440 || 1098877+++++++++++++++op:getuserlist ....... prepare sql 
+1466567440 || -------- random: 963  |    deviceid:EAF30E275D4E5DA88F64627B8CDAA04D   |    isfront:1
+1466567440 || -------- random: 9  |    deviceid:E5BEE5C86A1671C186BC2A0ACC22E092   |    isfront:1
+1466567440 || 1098877+++++++++++++++op:getuserlist ....... query sql 
+1466567440 || 1098877+++++++++++++++op:getuserlist ....... end 
+1466567440 || -------- random: 7  |    deviceid:C6AF80ADEAB418D8DE68645E72EE23EB   |    isfront:2
+1466567440 || -------- random: 714  |    deviceid:F81DA166E25A92A2DE1D50881DEFD809   |    isfront:1
+1466567441 || -------- random: 223  |    deviceid:69DD5E928F0C492CF51EA2D1D0C31305   |    isfront:1
+1466567441 || -------- random: 277  |    deviceid:2675796ABA1B33E24384D757BCA26BCA   |    isfront:1
+1466567441 || -------- random: 68  |    deviceid:9545A16BC199451908C1982D3705005C   |    isfront:1
+1466567441 || -------- random: 157  |    deviceid:9529264C1B923ADA38EA0A282F1DC59F   |    isfront:1
+1466567441 || -------- random: 219  |    deviceid:2F39620884C6323C98CD6EDA13EDA448   |    isfront:1
+1466567441 || -------- random: 644  |    deviceid:787B70164639865FE9D5EC9E140E5D67   |    isfront:1
+1466567441 || -------- random: 548  |    deviceid:EF7BC9DA554442158EF4213E28033704   |    isfront:1
+1466567442 || -------- random: 547  |    deviceid:5DB913BF9E2E25070CA88EA3BAED8729   |    isfront:1
+1466567442 || -------- random: 840  |    deviceid:E40E9ADBC78D93218190D35BC9FED5D6   |    isfront:1
+1466567442 || -------- random: 229  |    deviceid:B633F32134EA24814701AB0F3F42B601   |    isfront:1
+1466567442 || 1098877+++++++++++++++op:getuserlist
+1466567442 || 1098877+++++++++++++++op:getuserlist  query spaefield start
+1466567442 || 1098877+++++++++++++++op:getuserlist  query spaefield end
+1466567442 || 1098877+++++++++++++++op:getuserlist ....... prepare sql 
+1466567442 || 1098877+++++++++++++++op:getuserlist ....... query sql 
+1466567442 || 1098877+++++++++++++++op:getuserlist ....... end 
+1466567442 || -------- random: 827  |    deviceid:6A03DB3D0C317727A42D1E99EEF13518   |    isfront:1
+1466567443 || -------- random: 419  |    deviceid:0D5FD7229F2B3E30E915B2B19D41EDCF   |    isfront:1
+1466567443 || -------- random: 791  |    deviceid:E9B39E7625FB50D869E1FA2DB53BF836   |    isfront:1
+1466567443 || -------- random: 528  |    deviceid:428190A979BB92AA7DEF85490EC51890   |    isfront:1
+1466567443 || -------- random: 798  |    deviceid:8EB451CE446AD900A6FC05B00839C99E   |    isfront:1
+1466567443 || -------- random: 987  |    deviceid:EF13D2EFFE434D976103F6E59E3BF87C   |    isfront:1
+1466567443 || -------- random: 387  |    deviceid:D2A24245B4E44BAA3DB646E5F9EC7705   |    isfront:2
+1466567444 || -------- random: 994  |    deviceid:7C9C13C97BF349C5FBA57B73455A5CA5   |    isfront:1
+1466567444 || -------- random: 618  |    deviceid:D887E89F95C77280A39EE76E70477051   |    isfront:1
+1466567445 || -------- random: 452  |    deviceid:1F0347F4BCDC6CF7A351EBC2108E31EB   |    isfront:1
+1466567445 || -------- random: 737  |    deviceid:7080CC83A24C5CD5A690F30311F58719   |    isfront:1
+1466567445 || 1055414+++++++++++++++op:getuserlist
+1466567445 || 1055414+++++++++++++++op:getuserlist  query spaefield start
+1466567445 || 1055414+++++++++++++++op:getuserlist  query spaefield end
+1466567445 || 1055414+++++++++++++++op:getuserlist ....... prepare sql 
+1466567445 || -------- random: 334  |    deviceid:A4FFB87F78A3475B0C1F9243F8C97482   |    isfront:1
+1466567446 || -------- random: 421  |    deviceid:   |    isfront:1
+1466567446 || -------- random: 805  |    deviceid:DDE98D9F1A2E72920E4583233CDB20A9   |    isfront:1
+1466567446 || 1055414+++++++++++++++op:getuserlist ....... query sql 
+1466567446 || -------- random: 425  |    deviceid:6A03DB3D0C317727A42D1E99EEF13518   |    isfront:1
+1466567447 || -------- random: 567  |    deviceid:7CECDAC735CF61C48F66BC3D27395048   |    isfront:1

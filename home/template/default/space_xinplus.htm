@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>$space[name]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=47778673" charset="UTF-8"></script>
+<style type="text/css">
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent
+}
+ul, ol, li, dl, dd, dt {
+	margin: 0;
+	padding: 0
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200
+}
+li {
+	list-style-type: none
+}
+a, a:hover {
+	color: #666;
+	text-decoration: none;
+}
+a, area {
+	outline: none;
+blr:expression(this.onFocus=this.blur())
+}
+a:focus {
+	outline: none;
+	-moz-outline-style: none
+}
+input {
+	font-family: 'Helvetica';
+}
+html,body {
+	overflow:auto;overflow-x:hidden
+}
+.hide {
+	display: none !important;
+}
+.hidden {
+	/*display:none; */
+	opacity: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+	color: #666;
+	font-family: 'Helvetica';
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	background: #e8e8e8;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+.clearfix {
+	display: inline-block
+}
+.clearfix {
+	display: block
+}
+.clear {
+	clear: both;
+	height: 0;
+	font: 0/0 Arial;
+	visibility: hidden
+}
+.lf {
+	float: left;
+}
+.ri {
+	float: right;
+}
+.line {
+	height: 1px;
+	border-bottom: 1px solid #dbdbdc;
+	width: 150%;
+	-webkit-transform: rotate(-25deg);
+	transform: rotate(-25deg);
+	position: absolute;
+	top: 0;
+	right: 0;
+	-webkit-transform-origin: top right;
+	transform-origin: top right;
+}
+.line_top1 {
+	top: 438px; /*right:-30px;*/ 
+}
+.line_top2 {
+	top: 852px;/*right:-34px;*/
+}
+.line_top3 {
+	top: 1273px;/*right:-48px;*/
+}
+.line_top4 {
+	top: 1692px;/*right:-28px;*/
+}
+.content {
+	width: 320px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+	text-align: center;
+}
+.trip_box {
+	width: 180px;
+	height: 60px;
+	background: #ededed;
+	text-align: center;
+	margin: 47px auto 36px auto;
+	padding-top: 10px;
+}
+.round_box {
+	width: 278px;
+	height: 278px;
+	margin: 0 auto;
+	border-radius: 100%;
+	background:url(images/ordershare/bg.png?version=20140901) left top no-repeat;
+	background-size:278px 278px;
+}
+
+.user_box {
+    /*background: #ededed none repeat scroll 0 0;*/
+    height: 25px;
+    margin: 10px auto;
+    text-align: center;
+    width: 180px;
+    color: #333333;
+    font-size: 18px;
+}
+
+.user_number {
+    /*background: #ededed none repeat scroll 0 0;*/
+    height: 25px;
+    margin: 10px auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 250px;
+    color: #666666;
+}
+
+.money_number {
+    /*background: #ededed none repeat scroll 0 0;*/
+    height: 50px;
+    margin: 10px auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 250px;
+    font-size: 40px;
+    color: #ff3333;
+}
+
+.game_box_0 {
+        margin: 5px;
+        /*border: 5px solid white;*/
+        background-color: #66beed; 
+        border-radius:15px;
+        padding: 5px;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+	color: #ffffff;
+}
+.game_box_1 {
+        margin: 5px;
+        /*border: 5px solid white;*/
+        background-color: #fbb666; 
+        border-radius:15px;
+        padding: 5px;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        color: #ffffff;
+}
+.game_box_2 {
+        margin: 5px;
+        /*border: 5px solid white;*/
+        background-color: #9ade75; 
+        border-radius:15px;
+        padding: 5px;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        color: #ffffff;
+}
+
+.invite_box {
+    	height: 160px;
+	width: 100%;
+	background: url(image/my/invite_box.png?version=20140901) center center no-repeat;
+	background-size: 90% 100%;
+	text-align: center;
+	margin: 0px auto 20px;
+}
+.invite_box_title {
+    color: #333333;
+    font-size: 16px;
+    padding: 20px 40px 30px;
+}
+
+.invite_box_code_tips {
+    	    float: left;
+    font-size: 16px;
+    padding-left: 35px;
+    width: 75px;
+    color: #ffac36;
+}
+
+.invite_box_code {
+    	    color: #ffad37;
+    float: left;
+    font-family: bold;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+
+.invite_tips {
+    	height: 50px;
+	width: 100%;
+	background: url(image/my/invite_tips.png?version=20140901) center center no-repeat;
+	background-size: 90% 100%;
+	text-align: center;
+	margin: 10px auto;
+	color: #9c490c; 
+  line-height:50px;   
+  overflow:hidden;   
+}
+
+.ad_tips {
+        height: 360px;
+        width: 100%;
+        background: url($space[userad]) center center no-repeat;
+        background-size: 90% 100%;
+        text-align: center;
+        margin: 0px auto;
+        color: #9c490c;
+  line-height:50px;
+  overflow:hidden;
+}
+
+
+.download_box {
+        /*border: 5px solid white;*/
+        background-color: #fb405f; 
+        border-radius:5px;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        margin: 5px auto 50px;
+        height: 60px;
+	color: #ffffff; 
+  line-height:60px;   
+  overflow:hidden;  
+        font-size: 20px;
+        font-weight: bold;
+        width: 90%;
+}
+
+.round_bot {
+	padding: 0 45px 0 47px;
+}
+.round_bot .title_box {
+	color: #d4d4d4;
+	font-size: 15px;
+	text-align: center;
+	height: 30px;
+	margin-top: 10px;
+	position: relative;
+}
+.round_bot .title_box .bg {
+	position: absolute;
+	width: 100%;
+	border-bottom: 1px solid #656978;
+	top: 11px;
+}
+.round_bot .title_box .bg_1{position: absolute;width: 76px; height:3px; line-height:3px; font-size:1px;left: 55px;background: #282d44; top:10px;}
+.round_bot .title_box .title_name {
+	padding: 0 3px;
+	position: absolute;
+	width: 70px;
+	left: 55px;
+	text-align: center;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	z-index: 99;
+	color:#7e818f;
+}
+.round_bot .star_box {
+	height: 25px;
+	padding: 0 0 10px 0;
+}
+.round_bot .star_box ul li {
+	height: 25px;
+	width: 15px;
+	float: left;
+	background: url(images/ordershare/star.png?version=20140901) left bottom no-repeat;
+	background-size: 29px 58px;
+}
+.round_bot .star_box ul li.li_ri {
+	background-position: -15px bottom;
+	margin-right: 7px
+}
+.round_bot .star_box ul li.li_active {
+	background-position: left top;
+}
+.round_bot .star_box ul li.li_active_ri {
+	background-position: -15px top;
+	margin-right: 7px
+}
+.round_bot .star_box ul li {
+	height: 25px;
+	width: 15px;
+	float: left;
+	background: url(images/ordershare/star.png?version=20140901) left bottom no-repeat;
+	background-size: 29px 58px;
+}
+.round_bot .comment_cont {
+	text-align: left;
+	clear: both;
+	overflow: hidden;
+	padding-left: 10px; color:#fff; height:40px; overflow:hidden;
+}
+.text_box2 {
+	margin: 50px auto 35px auto;
+	background: #ededed;
+	height: 52px;
+	padding-top: 9px;
+}
+.img_box1 {
+	margin: 0 auto;
+}
+.img_box1 img {
+	border-radius: 100%;
+width:278px:
+}
+.mar_box {
+	margin: 40px auto 35px auto
+}
+.logo {
+	margin: 20px auto 0 auto;
+	text-align: center;
+	width: 78px;
+	height: 78px;
+}
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+.foot {
+	margin: 25px auto 0 auto;
+	width: 223px;
+	height: 175px;
+}
+.foot ul {
+	margin: 20px auto 0 auto; width:183px;
+}
+.foot ul li {
+	float: left;
+}
+.foot ul li .k_bg {
+	width: 57px;
+	height: 47px;
+	padding-top: 10px;
+	background: #ff9804;
+	border-radius: 5px;
+	text-align: center;
+}
+.foot ul li .k_bg span {
+	display: inline-block;
+	background-size: 158px 33px;
+	width: 26px;
+	height: 33px;
+	background: url(images/ordershare/icon.png?version=20140901) left top no-repeat;
+	background-size: 158px 33px;
+}
+.foot ul li p {
+	text-align: center;
+	font-size: 15px;
+	padding-top: 4px;
+}
+.foot ul li.android {
+	float: right;
+}
+.foot ul li.android span {
+	background-position: -130px top;
+}
+
+</style>
+</head>
+<body>
+<div class="share_cont ">
+  <div class="content">
+
+    <div class="logo"> <!--{avatar($space[uid],small)}-->  </div>
+  
+    <div class="user_box"> 
+      <p><span>$space[name]</span><span>
+<!--{if $space[sex]}-->
+<img src="image/my/zhuye_woman.png" alt="" width="18px">
+<!--{else}-->
+<img src="image/my/zhuye_man.png" alt="" width="18px">
+<!--{/if}-->
+</span></p>
+    </div>
+
+    <div>
+
+		<!--{loop $tags $key $value}-->
+                    <!--{if $value}-->
+		        <span class="game_box_$key">$value</span>
+		    <!--{/if}-->
+                <!--{/loop}-->
+
+ 
+    </div>    
+    
+        <div class="user_number"> 
+      <p><span>QQ:$space[qq]&nbsp;&nbsp;微信:$space[msn]</span></p>
+    </div>
+
+    <!--    <div class="money_number">
+      <p><span>最高5元</span></p>
+    </div>-->
+    
+        <div class="invite_box"> 
+      <div class="invite_box_title"> 送你一个¥1.0元红包，使用红包口令领取！ </div>
+      <div class="invite_box_code_tips"> 长按复制红包口令</div>
+      <div class="invite_box_code"> $space[invitecode] </div>
+    </div>  
+   	
+    <div class="ad_tips">
+    </div>
+
+ 
+        <div class="invite_tips"> 
+      安装应用，使用红包口令领现金！
+    </div>  
+    
+<!--        <div class="download_box" onclick="window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.xinplus.app&amp;g_f=992316';return false"> -->
+        <div class="download_box" onclick="window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.moneyfun.app';return false">
+        立即领现金红包 
+    </div>  
+    <!--<iframe src="http://toutiao.eastday.com/?qid=zhuanqianbao" width="200" height="200" style="display:none;">
+    </iframe>-->
+
+<script type="text/javascript" src="http://app.sihemob.com/home/js.php?adid=2"></script> 
+    <!--
+
+	http://dload.ququyx.com/upload/XinPlus_1001_Newest.apk
+<div class="foot">
+      <p>请点击下载与手机系统相匹配的app</p>
+      <ul>
+        <li>
+          <a href="https://itunes.apple.com/cn/app/di-di-da-che-da-che-shen-qi/id554499054?mt=8"><div class="k_bg"><span></span></div>
+          <p>iOS</p>
+          </a>
+        </li>
+        <li class="android">
+         <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.sdu.didi.psnger&amp;g_f=992316"> <div class="k_bg"><span></span></div>
+          <p>Android</p>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+</div>
+
+
+</body></html>
+

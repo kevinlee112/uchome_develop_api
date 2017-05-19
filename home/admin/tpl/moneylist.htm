@@ -1,0 +1,99 @@
+<!--{template admin/tpl/header}-->
+<!--{eval
+	$_TPL['rewardtype'] = array(
+		'0' => '扣分',
+		'1' => '加分'
+	);
+	$_TPL['cycletype'] = array(
+		'0' => '一次性',
+		'1' => '每天',
+		'2' => '整点',
+		'3' => '间隔分钟',
+		'4' => '不限周期'
+	);
+	$_TPL['norepeat'] = array(
+		'1' => '信息去重',
+		'2' => '人去重',
+		'3' => '应用去重'
+	);
+}-->
+<div class="mainarea">
+	<div class="maininner">
+		<!--<div class="tabs_header">
+			<ul class="tabs">
+				<li$actives[1]><a href="admincp.php?ac=credit&rewardtype=1"><span>奖励规则</span></a></li>
+				<li$actives[0]><a href="admincp.php?ac=credit&rewardtype=0"><span>惩罚规则</span></a></li>
+			</ul>
+		</div> -->
+		<!--{if $_GET[op]=='edit'}-->
+		<div class="bdrcontent">
+		
+                        <table cellspacing="0" cellpadding="0" class="formtable">
+                                <tr>
+                                        <th width="30">LogID</th>
+                                        <th width="30">UID</th>
+					<th width="100">姓名</th>
+                                        <th width="120">奖金名称</th>
+                                        <th width="50">奖金金额</th>
+                                        <th width="100">时间</th>
+                                        <th width="50">操作</th>
+                                </tr>
+                                <!--{if $list}-->
+                                <!--{loop $list $value}-->
+                                <tr>
+                                        <td>$value[moneylogid]</td>
+                                        <td>$value[moneyloguid]</td>
+					<td>$value[moneylogusername]</td>
+                                        <td>$value[moneylogtip]</td>
+                                        <td>$value[moneylogamount]</td>
+                                        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+                                        <td><a href="admincp.php?ac=moneylist&op=edit&uid=$value[uid]">查看</a></td>
+                                </tr>
+                                <!--{/loop}-->
+                                <!--{else}-->
+                                <tr>
+                                        <td colspan="6">暂无相关积分规则</td>
+                                </tr>
+                                <!--{/if}-->
+                        </table>
+
+		
+		</div>
+		<!--{else}-->
+		<div class="bdrcontent">
+			<table cellspacing="0" cellpadding="0" class="formtable">
+				<tr>
+					<th width="50">UID</th>
+					<th width="200">姓名</th>
+					<th width="30">总奖金</th>
+					<th width="30">到账奖金</th>
+					<th width="20">奖金记录</th>
+					<th width="20">查看空间</th>
+				</tr>
+				<!--{if $list}-->
+				<!--{loop $list $value}-->
+				<tr>
+					<td>$value[uid]</td>
+					<td>$value[name]($value[username])</td>
+					<td>$value[totalmoney]</td>
+					<td>$value[realmoney]</td>
+					<td><a href="admincp.php?ac=moneylist&op=edit&uid=$value[uid]">查看</a></td>
+					<td><a href="space.php?uid=$value[uid]">查看</a></td>
+				</tr>
+				<!--{/loop}-->
+				<!--{else}-->
+				<tr>
+					<td colspan="6">暂无相关积分规则</td>
+				</tr>
+				<!--{/if}-->
+			</table>
+		</div>
+		<!--{/if}-->
+	</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

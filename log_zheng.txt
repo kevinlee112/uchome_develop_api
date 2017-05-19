@@ -1,0 +1,744 @@
+2016-07-02 11:08:40
+调用聚合接口：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e2be43f43ccfe7d2e1b3e91915cd298b&game_userid=407094074&sign=3fce48f68d6d281df0f918430710fefa
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662026','0','1467450520')
+2016-07-02 17:13:37
+调用聚合接口：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e4e0557914db9d9f954e89f73e81e7de&game_userid=407094074&sign=ea6bed08f759c97c7c3a14d31cdf580c
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662055','0','1467450817')
+2016-07-02 17:24:31
+调用聚合接口：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=797a63b214288e9aa1af3375a305ac28&game_userid=407094074&sign=5ff5870ebc6be389ba18a2d502d23b77
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662095','0','1467451471')
+2016-07-02 17:59:40
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=534306d8f0ddaa64fbd98e80d1b20142&game_userid=407094074&sign=264a7eb5b25a09b57337c6c61fe1bb78
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662160','0','1467453581')
+2016-07-02 17:59:41
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=534306d8f0ddaa64fbd98e80d1b20142
+2016-07-02 18:02:57
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=509990f1f34de275158d848957327b8b&game_userid=407094074&sign=7f15fb45e3a52c6f4f464fcda41ba8f7
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662162','0','1467453778')
+2016-07-02 18:02:58
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=509990f1f34de275158d848957327b8b
+2016-07-02 18:16:00
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=509990f1f34de275158d848957327b8b&game_userid=407094074&sign=7f15fb45e3a52c6f4f464fcda41ba8f7
+2016-07-02 18:18:05
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=509990f1f34de275158d848957327b8b&game_userid=407094074&sign=7f15fb45e3a52c6f4f464fcda41ba8f7
+2016-07-02 18:18:57
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=fd4f1684b9154d7cb9973dd9bd13071a&game_userid=407094074&sign=44045011990a689d27aaf38ee5c5e3b5
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662167','0','1467454737')
+2016-07-02 18:18:57
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=fd4f1684b9154d7cb9973dd9bd13071a
+2016-07-02 18:19:24
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=fd4f1684b9154d7cb9973dd9bd13071a&game_userid=407094074&sign=44045011990a689d27aaf38ee5c5e3b5
+2016-07-02 18:23:45
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=418e3cb312dfb964bbc537162493ba77&game_userid=407094074&sign=8e6be4379297abce578d2537302a3abf
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662174','0','1467455025')
+2016-07-02 18:23:45
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+2016-07-02 18:23:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=418e3cb312dfb964bbc537162493ba77
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5662174
+2016-07-02 18:25:34
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=418e3cb312dfb964bbc537162493ba77&game_userid=407094074&sign=8e6be4379297abce578d2537302a3abf
+2016-07-02 18:26:29
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=a52d2a3ae2f35d1a5454e57edc44549e&game_userid=407094074&sign=ac38cbbd1be00e799f0354dbc20b806f
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662340','0','1467455189')
+2016-07-02 18:26:29
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a52d2a3ae2f35d1a5454e57edc44549e
+2016-07-02 18:26:29
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a52d2a3ae2f35d1a5454e57edc44549e
+2016-07-02 18:26:30
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a52d2a3ae2f35d1a5454e57edc44549e
+2016-07-02 18:26:30
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a52d2a3ae2f35d1a5454e57edc44549e
+2016-07-02 18:26:30
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a52d2a3ae2f35d1a5454e57edc44549e
+2016-07-02 18:26:30
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a52d2a3ae2f35d1a5454e57edc44549e
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5662340
+2016-07-02 18:26:30
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=961f73c64596df598463f3c1968676e6&game_userid=407094074&sign=d142d2cbab4bd2b642f3d3de9d29e900
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662358','0','1467455191')
+2016-07-02 18:26:31
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:31
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:31
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:31
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:31
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:32
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:32
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:32
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:32
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:32
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:33
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:34
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:34
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:34
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:34
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:34
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:35
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:35
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:35
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+2016-07-02 18:26:35
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=961f73c64596df598463f3c1968676e6
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5662358
+2016-07-02 18:26:35
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=22d9b1e1f0a5b1a9298a62167f10b351&game_userid=407094074&sign=ee1f59f41af99cd1dcf82971f08f7394
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662373','0','1467455196')
+2016-07-02 18:26:36
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:36
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:36
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:36
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:36
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:36
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:37
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:37
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:37
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:37
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:37
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:37
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:38
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:38
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:38
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:38
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:38
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:39
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:40
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:40
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:40
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:40
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+2016-07-02 18:26:40
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=22d9b1e1f0a5b1a9298a62167f10b351
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5662373
+2016-07-02 18:26:41
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=4a1823114046d4c85e9737c94c2d5e8e&game_userid=407094074&sign=4f205646e0e559182517fec2a4d4f218
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662389','0','1467455201')
+2016-07-02 18:26:41
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:41
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:41
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:41
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:42
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:43
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:43
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:43
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:43
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:43
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:43
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:44
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:45
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:45
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+2016-07-02 18:26:45
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=4a1823114046d4c85e9737c94c2d5e8e
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5662389
+2016-07-02 18:26:45
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=701e863358f81145ac68a55fa612df66&game_userid=407094074&sign=97b859293c365731d9e4a7d7fcb4ebd9
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5662399','0','1467455206')
+2016-07-02 18:26:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:46
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:47
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+2016-07-02 18:26:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=701e863358f81145ac68a55fa612df66
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5662399
+2016-07-04 10:40:41
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e2fc97ffe1487d51980f680facdb9383&game_userid=407094074&sign=a42d9688d6eb6e585093636bcfe2c07e
+2016-07-04 10:41:52
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e2fc97ffe1487d51980f680facdb9383&game_userid=407094074&sign=a42d9688d6eb6e585093636bcfe2c07e
+2016-07-04 10:44:14
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=509990f1f34de275158d848957327b8b&game_userid=407094074&sign=7f15fb45e3a52c6f4f464fcda41ba8f7
+2016-07-04 10:45:35
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e2fc97ffe1487d51980f680facdb9383&game_userid=407094074&sign=a42d9688d6eb6e585093636bcfe2c07e
+2016-07-04 16:01:46
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardnum=1&orderid=e2fc97ffe1487d51980f680facdb9383&game_userid=407094074&sign=74329f8cfd6ac2ea05404edaa82edb7d
+2016-07-04 16:05:56
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardnum=1&orderid=a0987d8809b7ec171320cdea7a27c7a0&game_userid=407094074&sign=3f38545ae7f1501d27c4854d5224449e
+2016-07-04 16:12:25
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=eda4a58d2651b527e1287b4e51c4b0da&game_userid=407094074&sign=a000bc32c70c061ff2c96071712277a4
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5676530','0','1467619946')
+2016-07-04 16:12:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+2016-07-04 16:12:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=eda4a58d2651b527e1287b4e51c4b0da
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5676530
+2016-07-04 16:14:07
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=a0987d8809b7ec171320cdea7a27c7a0&game_userid=407094074&sign=f77b4563f0887a18407975cd7d59b758
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5676432','0','1467620051')
+2016-07-04 16:14:11
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a0987d8809b7ec171320cdea7a27c7a0
+2016-07-04 16:14:57
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a0987d8809b7ec171320cdea7a27c7a0
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5676432
+2016-07-04 16:20:59
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e40965053afc883785d7e61c9914516a&game_userid=407094074&sign=22c25404f133d481876837a795d66631
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5676134','0','1467620459')
+2016-07-04 16:20:59
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:01
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+2016-07-04 16:21:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e40965053afc883785d7e61c9914516a
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5676134
+2016-07-04 16:21:54
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=bbc8aa0880e21eeb77dce0ed026f0a31&game_userid=407094074&sign=49f869efc5bd959f7322954fe8188375
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675831','0','1467620518')
+2016-07-04 16:21:58
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=bbc8aa0880e21eeb77dce0ed026f0a31
+2016-07-04 16:21:58
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=bbc8aa0880e21eeb77dce0ed026f0a31
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675831
+2016-07-04 16:21:58
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=ab3ffd628c4b8bbcf1bf862a999e689f&game_userid=407094074&sign=15446aa46b36b390740f2ef6785e3c40
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5676110','0','1467620519')
+2016-07-04 16:21:59
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+2016-07-04 16:21:59
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+2016-07-04 16:21:59
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+2016-07-04 16:22:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+2016-07-04 16:22:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+2016-07-04 16:22:00
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+2016-07-04 16:22:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=ab3ffd628c4b8bbcf1bf862a999e689f
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5676110
+2016-07-04 16:43:23
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e31b7722a65cb85d9c4a96908c8ea349&game_userid=407094074&sign=32075fe5af93b4b4c9a2f439ca4506a9
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675808','0','1467621804')
+2016-07-04 16:43:24
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:24
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:24
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:24
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:25
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:25
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:25
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:25
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:25
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:25
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:26
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:27
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+2016-07-04 16:43:28
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e31b7722a65cb85d9c4a96908c8ea349
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675808
+2016-07-04 16:49:03
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=a570882a38b5a438fb7ec467bd0f3670&game_userid=407094074&sign=72a6705d10e8584b6066c7a65181c70e
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675574','0','1467622143')
+2016-07-04 16:49:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+2016-07-04 16:49:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=a570882a38b5a438fb7ec467bd0f3670
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675574
+2016-07-04 16:49:47
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=9f3f774168a4b1fc1eca30c3ac509034&game_userid=2541042636&sign=b0c5ff1e792017b15dd896e476f73b40
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675355','0','1467622187')
+2016-07-04 16:49:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=9f3f774168a4b1fc1eca30c3ac509034
+2016-07-04 16:49:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=9f3f774168a4b1fc1eca30c3ac509034
+2016-07-04 16:49:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=9f3f774168a4b1fc1eca30c3ac509034
+2016-07-04 16:49:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=9f3f774168a4b1fc1eca30c3ac509034
+2016-07-04 16:49:48
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=9f3f774168a4b1fc1eca30c3ac509034
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675355
+2016-07-04 16:49:48
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=5a294a7360043f9b9c0d88091627ab20&game_userid=407094074&sign=1e64e88452a43dcc713ccf70d2edff49
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675494','0','1467622189')
+2016-07-04 16:49:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:49
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:50
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:51
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:52
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:52
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:52
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:52
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:52
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:52
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:53
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:53
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:53
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+2016-07-04 16:49:53
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=5a294a7360043f9b9c0d88091627ab20
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675494
+2016-07-04 16:52:58
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=e5f496b66ac2f45090052917d0e4c10c&game_userid=407094074&sign=43be9685abc6422f7eb747dce2680cca
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675257','0','1467622378')
+2016-07-04 16:52:58
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:52:58
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:52:59
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:02
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:03
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+2016-07-04 16:53:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=e5f496b66ac2f45090052917d0e4c10c
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675257
+2016-07-04 16:53:04
+调用聚合接口充值：http://op.juhe.cn/ofpay/game/order?key=4982e48fc1b77cb4f0b15fe35283befc&cardid=220612&cardnum=1&orderid=cea17644942fdb2c1380a896543d92c3&game_userid=407094074&sign=c50c2170c5d9d3093b60dc1b17cce5c4
+接口返回值写入数据库：INSERT INTO uchome_autoaward(autoawardmid,autoawardstatus,dateline) values ('5675354','0','1467622384')
+2016-07-04 16:53:04
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:05
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:06
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:07
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+2016-07-04 16:53:08
+调用聚合接口查询状态：http://op.juhe.cn/ofpay/game/ordersta?key=4982e48fc1b77cb4f0b15fe35283befc&orderid=cea17644942fdb2c1380a896543d92c3
+修改数据库接口返回值：UPDATE uchome_autoaward SET autoawardstatus=1 WHERE autoawardmid=5675354

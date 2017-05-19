@@ -1,0 +1,255 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+<div class="maininner">
+
+<div class="tabs_header">
+	<ul class="tabs">
+		<li$actives[view]><a href="admincp.php?ac=banner"><span>浏览广告</span></a></li>
+		<li class="null"><a href="admincp.php?ac=banner&op=add">添加新广告</a></li>
+	</ul>
+</div>
+
+<!--{if $list }-->
+
+<!--{eval
+        $_TPL['type'] = array(
+                '0' => '无动作',
+                '1' => '指定页面',
+                '2' => '指定网页',
+		'3' => 'QQ群'
+        );
+}-->
+
+	<form method="post" action="admincp.php?ac=usergroup">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+	<div class="bdrcontent">
+
+	<div class="title">
+	<h3>广告列表</h3>
+	<p>客户端会根据广告列表的更新时间来显示列表顺序</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+	<th width="100">名称</th>
+	<td width="50">种类</td>
+	<td width="60">显示方式</td>
+	<td width="40">Game</td>
+        <td width="100">封面</td>
+        <th width="100">说明</th>
+        <td width="50">是否启用</td>
+        <td width="50">时间</td>
+
+		
+	<td width="100">操作</td>
+	</tr>
+	<!--{loop $list $value}-->
+	<tr>
+	<th><span>$value[title]</span></th>
+	<!--{if $value['category'] == 0}-->
+	<td>HOME首页</td>
+	<!--{elseif $value['category'] == 1}-->
+	<td>玩友动态</td>
+    <!--{elseif $value['category'] == 2}-->
+    <td>福利页面</td>
+    <!--{elseif $value['category'] == 3}-->
+    <td>启动页面</td>
+    <!--{elseif $value['category'] == 4}-->
+    <td>开屏网页</td>
+    <!--{elseif $value['category'] == 5}-->
+    <td>金额显示</td>
+    <!--{elseif $value['category'] == 6}-->
+	<td>签到红包</td>
+	<!--{elseif $value['category'] == 7}-->
+	<td>返利页面</td>
+	<!--{else}-- >
+	<td>其他</td>
+	<!--{/if}-->
+	<td>
+
+
+                        <select>
+                                <!--{loop $_TPL[type] $key $val}-->
+                                <option value="$key" <!--{if $value['type'] == $key}--> selected<!--{/if}-->>$val</option>
+                                <!--{/loop}-->
+                        </select>
+
+	</td>
+	<th><span>$value[gid]</span></th>
+        <td><img src="$value[thumb]" width="40" height="20" /></td>
+        <td>$value[discription]</td>
+        <!--{if $value['available'] == 1}-->
+        <td>生效中</td>
+        <!--{else}-->
+        <td>禁用中</td>
+        <!--{/if}-->
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+	<td width="100">
+	<a href="admincp.php?ac=banner&op=edit&bid=$value[bid]">编辑</a>
+	<!--{if $value['available'] == 1}-->
+	<a href="admincp.php?ac=banner&op=editdisavailable&bid=$value[bid]">禁用</a>
+	<!--{else}-->
+	<a href="admincp.php?ac=banner&op=editavailable&bid=$value[bid]">生效</a>
+	<!--{/if}-->
+	</td>
+	</tr>
+	<!--{/loop}-->
+	</table>
+	</div>
+	<!--<div class="footactions">
+		<input type="submit" name="updatesubmit" value="提交更新" class="submit">
+	</div> -->
+	</form>
+
+
+<!--{/if}-->
+
+<!--{if $listuser }-->
+        <form method="post" action="admincp.php?ac=usergroup">
+        <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+        <div class="bdrcontent">
+
+        <div class="title">
+        <h3>中奖者列表</h3>
+        <p>根据中奖顺序来显示列表顺序</p>
+        </div>
+
+        <table cellspacing="0" cellpadding="0" class="formtable">
+        <tr>
+        <th width="100">用户名</th>
+        <th width="100">QQ</th>
+        <td width="50">时间</td>
+
+
+        <td width="80">操作</td>
+        </tr>
+        <!--{loop $listuser $value}-->
+        <tr>
+        <th><span>$value[name]</span></th>
+	<th><span>$value[qq]</span></th>
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+        <td width="100">
+        <a href="admincp.php?ac=creditlist&op=edit&uid=$value[uid]">查看</a>
+        </td>
+        </tr>
+        <!--{/loop}-->
+        </table>
+        </div>
+        </form>
+
+
+<!--{/if}-->
+
+
+<!--{if $thevalue}-->
+	<script type="text/javascript">
+	function credisshow(value) {
+		/*if(value=='0') {
+			document.getElementById('tr_credit').style.display = 'none';
+		} else {
+			document.getElementById('tr_credit').style.display = '';
+		}*/
+	}
+	</script>
+
+<!--{eval
+        $_TPL['type'] = array(
+                '0' => '无动作',
+                '1' => '指定页面',
+                '2' => '指定网页',
+		'3' => 'QQ群',
+        );
+}-->
+
+	<form method="post" action="admincp.php?ac=banner&bid=$thevalue[bid]">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+	<div class="bdrcontent">
+
+	<div class="title">
+		<h3>$thevalue[title] 广告</h3>
+		<p>这里设置广告属性</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr><th style="width:12em;">广告名称</th><td><input type="text" name="set[title]" value="$thevalue[title]"></td></tr>
+
+	<tr>
+		<th>广告类别</th>
+		<td>
+			<input type="radio" name="set[category]" value="0" <!--{if $thevalue[category]==0}--> checked<!--{/if}-->> HOME首页
+			<input type="radio" name="set[category]" value="1" <!--{if $thevalue[category]==1}--> checked<!--{/if}-->>好友动态
+			<input type="radio" name="set[category]" value="2" <!--{if $thevalue[category]==2}--> checked<!--{/if}-->>福利页面
+            <input type="radio" name="set[category]" value="3" <!--{if $thevalue[category]==3}--> checked<!--{/if}-->>启动页面
+            <input type="radio" name="set[category]" value="4" <!--{if $thevalue[category]==4}--> checked<!--{/if}-->>开屏网页
+            <input type="radio" name="set[category]" value="5" <!--{if $thevalue[category]==5}--> checked<!--{/if}-->>金额显示
+            <input type="radio" name="set[category]" value="6" <!--{if $thevalue[category]==6}--> checked<!--{/if}-->>签到红包
+			<input type="radio" name="set[category]" value="7" <!--{if $thevalue[category]==7}--> checked<!--{/if}-->>返利页面
+		</td>
+	</tr>
+	<tr><th>显示方式</th><td>
+	                        <select name="set[type]">
+                                <!--{loop $_TPL[type] $key $val}-->
+                                <option value="$key" <!--{if $thevalue['type'] == $key}--> selected<!--{/if}-->>$val</option>
+                                <!--{/loop}-->
+                        </select>
+
+	</td></tr>
+
+	<tr><th>广告动作</th><td><input type="text" name="set[action]" value="$thevalue[action]" size="10"> 例如：1.com.xxx 2.http://www.xxx</td></tr>
+	<tr><th>Game</th><td><input type="text" name="set[gid]" value="$thevalue[gid]" size="6"> 例如：1 2 3</td></tr>
+	<tr>
+		<th>显示金额范围</th>
+		<td>
+			<select name="set[moneyrange]">
+				<option value="">-----</option>
+				<!--{loop $rangeValue $value}-->
+					<option value="$value[mrid]" <!--{if $thevalue['moneyrange']==$value['mrid']}-->selected<!--{/if}-->><!--{$value[firstrange]}-->--<!--{$value[secondrange]}--></option>
+				<!--{/loop}-->
+			</select>
+		</td>
+	</tr>
+	<tr><th>商品图标</th><td><input type="text" name="set[icon]" value="$thevalue[icon]" size="40"> 填写URL地址，大小 50*50 最佳</td></tr>
+
+	<tr><th>商品说明图</th><td><input type="text" name="set[thumb]" value="$thevalue[thumb]" size="40"> 填写URL地址，大小 250*50 最佳</td></tr>
+
+        <tr><th>商品说明</th><td>
+        <textarea name="set[discription]" cols="60" rows="2">$thevalue[discription]</textarea></td></tr>
+
+	<tr>
+		<th>是否启用</th>
+		<td>
+			<input type="radio" name="set[available]" value="1"<!--{if $thevalue['available']==1}--> checked<!--{/if}-->> 启用
+			<input type="radio" name="set[available]" value="0"<!--{if $thevalue['available']!=1}--> checked<!--{/if}-->> 禁用
+		</td>
+	</tr>
+	</table>
+
+	<!--{if $thevalue[system]}-->
+	<br />
+	<div class="title">
+	<h3>$thevalue[grouptitle] 管理权限</h3>
+	<!--{/if}-->
+
+	</div>
+
+	<div class="footactions">
+	<input type="hidden" name="set[bid]" value="$thevalue[bid]">
+	<input type="submit" name="thevaluesubmit" value="提交" class="submit">
+	</div>
+
+	</form>
+
+<!--{/if}-->
+
+</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->

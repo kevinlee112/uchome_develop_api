@@ -1,0 +1,182 @@
+<!--{template admin/tpl/header}-->
+
+<div class="mainarea">
+<div class="maininner">
+
+<div class="tabs_header">
+	<ul class="tabs">
+		<li$actives[view]><a href="admincp.php?ac=subject"><span>浏览话题</span></a></li>
+		<li class="null"><a href="admincp.php?ac=subject&op=add">添加新话题</a></li>
+	</ul>
+</div>
+
+<!--{if $list }-->
+	<form method="post" action="admincp.php?ac=usergroup">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+	<div class="bdrcontent">
+
+	<div class="title">
+	<h3>话题列表</h3>
+	<p>客户端会根据话题列表的更新时间来显示列表顺序</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr>
+	<th width="100">名称</th>
+        <th width="40">小图</th>
+        <th width="40">封面</th>
+        <th width="100">介绍</th>
+        <th width="40">参与数</th>
+        <td width="50">时间</td>
+	<td width="50">是否启用</td>
+	<td width="100">操作</td>
+	</tr>
+	<!--{loop $list $value}-->
+	<tr>
+	<th><span>$value[title]</span></th>
+        <td><img src="$value[icon]" width="20" height="20" /></td>
+        <td><img src="$value[image]" width="20" height="20" /></td>
+        <td>$value[description]</td>
+        <td>$value[total]</td>
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+      <!--{if $value['available'] == 1}-->
+        <td>生效中</td>
+        <!--{else}-->
+        <td>禁用中</td>
+        <!--{/if}-->
+
+	<td width="100">
+	<a href="admincp.php?ac=subject&op=edit&sid=$value[sid]">编辑</a>
+	<a href="admincp.php?ac=subject&op=viewuser&sid=$value[sid]">参与者</a>
+        <!--{if $value['available'] == 1}-->
+        <a href="admincp.php?ac=subject&op=editdisavailable&sid=$value[sid]">禁用</a>
+        <!--{else}-->
+        <a href="admincp.php?ac=subject&op=editavailable&sid=$value[sid]">生效</a>
+        <!--{/if}-->
+
+	</td>
+	</tr>
+	<!--{/loop}-->
+	</table>
+	</div>
+	<!--<div class="footactions">
+		<input type="submit" name="updatesubmit" value="提交更新" class="submit">
+	</div> -->
+	</form>
+
+
+<!--{/if}-->
+
+<!--{if $listuser }-->
+        <form method="post" action="admincp.php?ac=usergroup">
+        <input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+        <div class="bdrcontent">
+
+        <div class="title">
+        <h3>中奖者列表</h3>
+        <p>根据中奖顺序来显示列表顺序</p>
+        </div>
+
+        <table cellspacing="0" cellpadding="0" class="formtable">
+        <tr>
+        <th width="100">用户名</th>
+        <th width="100">QQ</th>
+        <td width="50">时间</td>
+
+
+        <td width="80">操作</td>
+        </tr>
+        <!--{loop $listuser $value}-->
+        <tr>
+        <th><span>$value[name]</span></th>
+	<th><span>$value[qq]</span></th>
+
+        <td><!--{date('Y-m-d H:i:s',$value[dateline])}--></td>
+        <td width="100">
+        <a href="admincp.php?ac=creditlist&op=edit&uid=$value[uid]">查看</a>
+        </td>
+        </tr>
+        <!--{/loop}-->
+        </table>
+        </div>
+        </form>
+
+
+<!--{/if}-->
+
+
+<!--{if $thevalue}-->
+	<script type="text/javascript">
+	function credisshow(value) {
+		/*if(value=='0') {
+			document.getElementById('tr_credit').style.display = 'none';
+		} else {
+			document.getElementById('tr_credit').style.display = '';
+		}*/
+	}
+	</script>
+<!--{eval
+	$_TPL['discount'] = array(
+		'0' => '不打折',
+		'1' => '1折',
+		'2' => '2折',
+		'3' => '3折',
+		'4' => '4折',
+		'5' => '5折',
+		'6' => '6折',
+		'7' => '7折',
+		'8' => '8折',
+		'9' => '9折',
+		'-1' => '免费'
+	);
+}-->
+	<form method="post" action="admincp.php?ac=subject&sid=$thevalue[sid]">
+	<input type="hidden" name="formhash" value="<!--{eval echo formhash();}-->" />
+
+	<div class="bdrcontent">
+
+	<div class="title">
+		<h3>$thevalue[title] 话题</h3>
+		<p>这里设置话题属性</p>
+	</div>
+
+	<table cellspacing="0" cellpadding="0" class="formtable">
+	<tr><th style="width:12em;">话题名称</th><td><input type="text" name="set[title]" value="$thevalue[title]"></td></tr>
+
+
+	
+	<tr><th>商品图标</th><td><input type="text" name="set[icon]" value="$thevalue[icon]" size="40"> 填写URL地址，大小 50*50 最佳</td></tr>
+
+	<tr><th>商品说明图</th><td><input type="text" name="set[thumb]" value="$thevalue[thumb]" size="40"> 填写URL地址，大小 250*250 最佳</td></tr>
+
+        <tr><th>商品说明</th><td>
+        <textarea name="set[discription]" cols="60" rows="2">$thevalue[discription]</textarea></td></tr>
+
+	</table>
+
+	<!--{if $thevalue[system]}-->
+	<br />
+	<div class="title">
+	<h3>$thevalue[grouptitle] 管理权限</h3>
+	<!--{/if}-->
+
+	</div>
+
+	<div class="footactions">
+	<input type="hidden" name="set[gid]" value="$thevalue[gid]">
+	<input type="submit" name="thevaluesubmit" value="提交" class="submit">
+	</div>
+
+	</form>
+
+<!--{/if}-->
+
+</div>
+</div>
+
+<div class="side">
+	<!--{template admin/tpl/side}-->
+</div>
+
+<!--{template admin/tpl/footer}-->
